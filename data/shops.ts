@@ -1039,7 +1039,7 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
 
-        mapImage: "/shops/generic/map.png",
+        mapImage: "/shops/sairam-paris-04/map.png",
         mapsUrl: "https://www.google.fr/maps/place/Sairam+Alimentation+Generale/@48.8479642,2.3650404,17z/data=!4m17!1m10!3m9!1s0x47e671f86159dc3b:0x4218eb78eb739c6e!2sSairam+Alimentation+Generale!8m2!3d48.8479758!4d2.3652469!10e5!14m1!1BCgIgARICCAI!16s%2Fg%2F11lgskzw26!3m5!1s0x47e671f86159dc3b:0x4218eb78eb739c6e!8m2!3d48.8479758!4d2.3652469!16s%2Fg%2F11lgskzw26?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoASAFQAw%3D%3D",
 
         contact: {
