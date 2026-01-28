@@ -94,8 +94,8 @@ export const SHOPS: Shop[] = [
     },
 
         {
-        slug: "hanout1-paris04",
-        name: "Hanout 1",
+        slug: "heynouth1-paris04",
+        name: "Heynouth 1",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -132,7 +132,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -142,8 +142,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout2-paris04",
-        name: "Hanout 2",
+        slug: "heynouth2-paris04",
+        name: "Heynouth 2",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -180,7 +180,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -190,8 +190,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout3-paris04",
-        name: "Hanout 3",
+        slug: "heynouth3-paris04",
+        name: "Heynouth 3",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -228,7 +228,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -238,8 +238,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout4-paris04",
-        name: "Hanout 4",
+        slug: "heynouth4-paris04",
+        name: "Heynouth 4",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -276,7 +276,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -286,8 +286,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout5-paris04",
-        name: "Hanout 5",
+        slug: "heynouth5-paris04",
+        name: "Heynouth 5",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -324,7 +324,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -334,8 +334,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout6-paris04",
-        name: "Hanout 6",
+        slug: "heynouth6-paris04",
+        name: "Heynouth 6",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -372,7 +372,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -382,8 +382,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout7-paris04",
-        name: "Hanout 7",
+        slug: "heynouth7-paris04",
+        name: "Heynouth 7",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -420,7 +420,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -430,8 +430,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout8-paris04",
-        name: "Hanout 8",
+        slug: "heynouth8-paris04",
+        name: "Heynouth 8",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -468,7 +468,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -478,8 +478,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout9-paris04",
-        name: "Hanout 9",
+        slug: "heynouth9-paris04",
+        name: "Heynouth 9",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -516,7 +516,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -526,8 +526,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout10-paris04",
-        name: "Hanout 10",
+        slug: "heynouth10-paris04",
+        name: "Heynouth 10",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -564,7 +564,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -574,8 +574,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout11-paris04",
-        name: "Hanout 11",
+        slug: "heynouth11-paris04",
+        name: "Heynouth 11",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -612,7 +612,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -622,8 +622,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout12-paris04",
-        name: "Hanout 12",
+        slug: "heynouth12-paris04",
+        name: "Heynouth 12",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -660,7 +660,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -670,8 +670,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout13-paris04",
-        name: "Hanout 13",
+        slug: "heynouth13-paris04",
+        name: "Heynouth 13",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -708,7 +708,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -718,8 +718,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout14-paris04",
-        name: "Hanout 14",
+        slug: "heynouth14-paris04",
+        name: "Heynouth 14",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -756,7 +756,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -766,8 +766,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout15-paris04",
-        name: "Hanout 15",
+        slug: "heynouth15-paris04",
+        name: "Heynouth 15",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -804,7 +804,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -814,8 +814,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout16-paris04",
-        name: "Hanout 16",
+        slug: "heynouth16-paris04",
+        name: "Heynouth 16",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -852,7 +852,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -862,8 +862,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout17-paris04",
-        name: "Hanout 17",
+        slug: "heynouth17-paris04",
+        name: "Heynouth 17",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -900,7 +900,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -910,8 +910,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout18-paris04",
-        name: "Hanout 18",
+        slug: "heynouth18-paris04",
+        name: "Heynouth 18",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -948,7 +948,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -958,8 +958,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout19-paris04",
-        name: "Hanout 19",
+        slug: "heynouth19-paris04",
+        name: "Heynouth 19",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -996,7 +996,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -1006,8 +1006,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout20-paris04",
-        name: "Hanout 20",
+        slug: "heynouth20-paris04",
+        name: "Heynouth 20",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -1044,7 +1044,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -1054,8 +1054,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout21-paris04",
-        name: "Hanout 21",
+        slug: "heynouth21-paris04",
+        name: "Heynouth 21",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -1092,7 +1092,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -1102,8 +1102,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout22-paris04",
-        name: "Hanout 22",
+        slug: "heynouth22-paris04",
+        name: "Heynouth 22",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -1140,7 +1140,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -1150,8 +1150,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout23-paris04",
-        name: "Hanout 23",
+        slug: "heynouth23-paris04",
+        name: "Heynouth 23",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -1188,7 +1188,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -1198,8 +1198,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout24-paris04",
-        name: "Hanout 24",
+        slug: "heynouth24-paris04",
+        name: "Heynouth 24",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -1236,7 +1236,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -1246,8 +1246,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout25-paris04",
-        name: "Hanout 25",
+        slug: "heynouth25-paris04",
+        name: "Heynouth 25",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -1284,7 +1284,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -1294,8 +1294,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout26-paris04",
-        name: "Hanout 26",
+        slug: "heynouth26-paris04",
+        name: "Heynouth 26",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -1332,7 +1332,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -1342,8 +1342,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout27-paris04",
-        name: "Hanout 27",
+        slug: "heynouth27-paris04",
+        name: "Heynouth 27",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -1380,7 +1380,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -1390,8 +1390,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout28-paris04",
-        name: "Hanout 28",
+        slug: "heynouth28-paris04",
+        name: "Heynouth 28",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -1428,7 +1428,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -1438,8 +1438,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout29-paris04",
-        name: "Hanout 29",
+        slug: "heynouth29-paris04",
+        name: "Heynouth 29",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -1476,7 +1476,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -1486,8 +1486,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout30-paris04",
-        name: "Hanout 30",
+        slug: "heynouth30-paris04",
+        name: "Heynouth 30",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -1524,7 +1524,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -1534,8 +1534,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout31-paris04",
-        name: "Hanout 31",
+        slug: "heynouth31-paris04",
+        name: "Heynouth 31",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -1572,7 +1572,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -1582,8 +1582,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout32-paris04",
-        name: "Hanout 32",
+        slug: "heynouth32-paris04",
+        name: "Heynouth 32",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -1620,7 +1620,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -1630,8 +1630,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout33-paris04",
-        name: "Hanout 33",
+        slug: "heynouth33-paris04",
+        name: "Heynouth 33",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -1668,7 +1668,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -1678,8 +1678,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout34-paris04",
-        name: "Hanout 34",
+        slug: "heynouth34-paris04",
+        name: "Heynouth 34",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -1716,7 +1716,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -1726,8 +1726,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout35-paris04",
-        name: "Hanout 35",
+        slug: "heynouth35-paris04",
+        name: "Heynouth 35",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -1764,7 +1764,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -1774,8 +1774,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout36-paris04",
-        name: "Hanout 36",
+        slug: "heynouth36-paris04",
+        name: "Heynouth 36",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -1812,7 +1812,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -1822,8 +1822,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout37-paris04",
-        name: "Hanout 37",
+        slug: "heynouth37-paris04",
+        name: "Heynouth 37",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -1860,7 +1860,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -1870,8 +1870,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout38-paris04",
-        name: "Hanout 38",
+        slug: "heynouth38-paris04",
+        name: "Heynouth 38",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -1908,7 +1908,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -1918,8 +1918,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout39-paris04",
-        name: "Hanout 39",
+        slug: "heynouth39-paris04",
+        name: "Heynouth 39",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -1956,7 +1956,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -1966,8 +1966,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout40-paris04",
-        name: "Hanout 40",
+        slug: "heynouth40-paris04",
+        name: "Heynouth 40",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -2004,7 +2004,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -2014,8 +2014,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout41-paris04",
-        name: "Hanout 41",
+        slug: "heynouth41-paris04",
+        name: "Heynouth 41",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -2052,7 +2052,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -2062,8 +2062,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout42-paris04",
-        name: "Hanout 42",
+        slug: "heynouth42-paris04",
+        name: "Heynouth 42",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -2100,7 +2100,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -2110,8 +2110,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout43-paris04",
-        name: "Hanout 43",
+        slug: "heynouth43-paris04",
+        name: "Heynouth 43",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -2148,7 +2148,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -2158,8 +2158,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout44-paris04",
-        name: "Hanout 44",
+        slug: "heynouth44-paris04",
+        name: "Heynouth 44",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -2196,7 +2196,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -2206,8 +2206,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout45-paris04",
-        name: "Hanout 45",
+        slug: "heynouth45-paris04",
+        name: "Heynouth 45",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -2244,7 +2244,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -2254,8 +2254,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout46-paris04",
-        name: "Hanout 46",
+        slug: "heynouth46-paris04",
+        name: "Heynouth 46",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -2292,7 +2292,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -2302,8 +2302,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout47-paris04",
-        name: "Hanout 47",
+        slug: "heynouth47-paris04",
+        name: "Heynouth 47",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -2340,7 +2340,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -2350,8 +2350,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout48-paris04",
-        name: "Hanout 48",
+        slug: "heynouth48-paris04",
+        name: "Heynouth 48",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -2388,7 +2388,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -2398,8 +2398,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout49-paris04",
-        name: "Hanout 49",
+        slug: "heynouth49-paris04",
+        name: "Heynouth 49",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -2436,7 +2436,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -2446,8 +2446,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout50-paris04",
-        name: "Hanout 50",
+        slug: "heynouth50-paris04",
+        name: "Heynouth 50",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -2484,7 +2484,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -2494,8 +2494,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout51-paris04",
-        name: "Hanout 51",
+        slug: "heynouth51-paris04",
+        name: "Heynouth 51",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -2532,7 +2532,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -2542,8 +2542,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout52-paris04",
-        name: "Hanout 52",
+        slug: "heynouth52-paris04",
+        name: "Heynouth 52",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -2580,7 +2580,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -2590,8 +2590,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout53-paris04",
-        name: "Hanout 53",
+        slug: "heynouth53-paris04",
+        name: "Heynouth 53",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -2628,7 +2628,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -2638,8 +2638,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout54-paris04",
-        name: "Hanout 54",
+        slug: "heynouth54-paris04",
+        name: "Heynouth 54",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -2676,7 +2676,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -2686,8 +2686,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout55-paris04",
-        name: "Hanout 55",
+        slug: "heynouth55-paris04",
+        name: "Heynouth 55",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -2724,7 +2724,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -2734,8 +2734,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout56-paris04",
-        name: "Hanout 56",
+        slug: "heynouth56-paris04",
+        name: "Heynouth 56",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -2772,7 +2772,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -2782,8 +2782,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout57-paris04",
-        name: "Hanout 57",
+        slug: "heynouth57-paris04",
+        name: "Heynouth 57",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -2820,7 +2820,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -2830,8 +2830,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout58-paris04",
-        name: "Hanout 58",
+        slug: "heynouth58-paris04",
+        name: "Heynouth 58",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -2868,7 +2868,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -2878,8 +2878,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout59-paris04",
-        name: "Hanout 59",
+        slug: "heynouth59-paris04",
+        name: "Heynouth 59",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -2916,7 +2916,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -2926,8 +2926,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout60-paris04",
-        name: "Hanout 60",
+        slug: "heynouth60-paris04",
+        name: "Heynouth 60",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -2964,7 +2964,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -2974,8 +2974,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout61-paris04",
-        name: "Hanout 61",
+        slug: "heynouth61-paris04",
+        name: "Heynouth 61",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -3012,7 +3012,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -3022,8 +3022,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout62-paris04",
-        name: "Hanout 62",
+        slug: "heynouth62-paris04",
+        name: "Heynouth 62",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -3060,7 +3060,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -3070,8 +3070,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout63-paris04",
-        name: "Hanout 63",
+        slug: "heynouth63-paris04",
+        name: "Heynouth 63",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -3108,7 +3108,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -3118,8 +3118,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout64-paris04",
-        name: "Hanout 64",
+        slug: "heynouth64-paris04",
+        name: "Heynouth 64",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -3156,7 +3156,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -3166,8 +3166,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout65-paris04",
-        name: "Hanout 65",
+        slug: "heynouth65-paris04",
+        name: "Heynouth 65",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -3204,7 +3204,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -3214,8 +3214,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout66-paris04",
-        name: "Hanout 66",
+        slug: "heynouth66-paris04",
+        name: "Heynouth 66",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -3252,7 +3252,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -3262,8 +3262,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout67-paris04",
-        name: "Hanout 67",
+        slug: "heynouth67-paris04",
+        name: "Heynouth 67",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -3300,7 +3300,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -3310,8 +3310,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout68-paris04",
-        name: "Hanout 68",
+        slug: "heynouth68-paris04",
+        name: "Heynouth 68",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -3348,7 +3348,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -3358,8 +3358,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout69-paris04",
-        name: "Hanout 69",
+        slug: "heynouth69-paris04",
+        name: "Heynouth 69",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -3396,7 +3396,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -3406,8 +3406,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout70-paris04",
-        name: "Hanout 70",
+        slug: "heynouth70-paris04",
+        name: "Heynouth 70",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -3444,7 +3444,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -3454,8 +3454,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout71-paris04",
-        name: "Hanout 71",
+        slug: "heynouth71-paris04",
+        name: "Heynouth 71",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -3492,7 +3492,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -3502,8 +3502,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout72-paris04",
-        name: "Hanout 72",
+        slug: "heynouth72-paris04",
+        name: "Heynouth 72",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -3540,7 +3540,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -3550,8 +3550,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout73-paris04",
-        name: "Hanout 73",
+        slug: "heynouth73-paris04",
+        name: "Heynouth 73",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -3588,7 +3588,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -3598,8 +3598,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout74-paris04",
-        name: "Hanout 74",
+        slug: "heynouth74-paris04",
+        name: "Heynouth 74",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -3636,7 +3636,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -3646,8 +3646,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout75-paris04",
-        name: "Hanout 75",
+        slug: "heynouth75-paris04",
+        name: "Heynouth 75",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -3684,7 +3684,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -3694,8 +3694,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout76-paris04",
-        name: "Hanout 76",
+        slug: "heynouth76-paris04",
+        name: "Heynouth 76",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -3732,7 +3732,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -3742,8 +3742,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout77-paris04",
-        name: "Hanout 77",
+        slug: "heynouth77-paris04",
+        name: "Heynouth 77",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -3780,7 +3780,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -3790,8 +3790,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout78-paris04",
-        name: "Hanout 78",
+        slug: "heynouth78-paris04",
+        name: "Heynouth 78",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -3828,7 +3828,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -3838,8 +3838,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout79-paris04",
-        name: "Hanout 79",
+        slug: "heynouth79-paris04",
+        name: "Heynouth 79",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -3876,7 +3876,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -3886,8 +3886,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout80-paris04",
-        name: "Hanout 80",
+        slug: "heynouth80-paris04",
+        name: "Heynouth 80",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -3924,7 +3924,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -3934,8 +3934,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout81-paris04",
-        name: "Hanout 81",
+        slug: "heynouth81-paris04",
+        name: "Heynouth 81",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -3972,7 +3972,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -3982,8 +3982,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout82-paris04",
-        name: "Hanout 82",
+        slug: "heynouth82-paris04",
+        name: "Heynouth 82",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -4020,7 +4020,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -4030,8 +4030,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout83-paris04",
-        name: "Hanout 83",
+        slug: "heynouth83-paris04",
+        name: "Heynouth 83",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -4068,7 +4068,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -4078,8 +4078,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout84-paris04",
-        name: "Hanout 84",
+        slug: "heynouth84-paris04",
+        name: "Heynouth 84",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -4116,7 +4116,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -4126,8 +4126,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout85-paris04",
-        name: "Hanout 85",
+        slug: "heynouth85-paris04",
+        name: "Heynouth 85",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -4164,7 +4164,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -4174,8 +4174,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout86-paris04",
-        name: "Hanout 86",
+        slug: "heynouth86-paris04",
+        name: "Heynouth 86",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -4212,7 +4212,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -4222,8 +4222,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout87-paris04",
-        name: "Hanout 87",
+        slug: "heynouth87-paris04",
+        name: "Heynouth 87",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -4260,7 +4260,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -4270,8 +4270,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout88-paris04",
-        name: "Hanout 88",
+        slug: "heynouth88-paris04",
+        name: "Heynouth 88",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -4308,7 +4308,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -4318,8 +4318,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout89-paris04",
-        name: "Hanout 89",
+        slug: "heynouth89-paris04",
+        name: "Heynouth 89",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -4356,7 +4356,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -4366,8 +4366,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout90-paris04",
-        name: "Hanout 90",
+        slug: "heynouth90-paris04",
+        name: "Heynouth 90",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -4404,7 +4404,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -4414,8 +4414,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout91-paris04",
-        name: "Hanout 91",
+        slug: "heynouth91-paris04",
+        name: "Heynouth 91",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -4452,7 +4452,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -4462,8 +4462,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout92-paris04",
-        name: "Hanout 92",
+        slug: "heynouth92-paris04",
+        name: "Heynouth 92",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -4500,7 +4500,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -4510,8 +4510,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout93-paris04",
-        name: "Hanout 93",
+        slug: "heynouth93-paris04",
+        name: "Heynouth 93",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -4548,7 +4548,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -4558,8 +4558,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout94-paris04",
-        name: "Hanout 94",
+        slug: "heynouth94-paris04",
+        name: "Heynouth 94",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -4596,7 +4596,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -4606,8 +4606,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout95-paris04",
-        name: "Hanout 95",
+        slug: "heynouth95-paris04",
+        name: "Heynouth 95",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -4644,7 +4644,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -4654,8 +4654,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout96-paris04",
-        name: "Hanout 96",
+        slug: "heynouth96-paris04",
+        name: "Heynouth 96",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -4692,7 +4692,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -4702,8 +4702,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout97-paris04",
-        name: "Hanout 97",
+        slug: "heynouth97-paris04",
+        name: "Heynouth 97",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -4740,7 +4740,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -4750,8 +4750,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout98-paris04",
-        name: "Hanout 98",
+        slug: "heynouth98-paris04",
+        name: "Heynouth 98",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -4788,7 +4788,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -4798,8 +4798,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout99-paris04",
-        name: "Hanout 99",
+        slug: "heynouth99-paris04",
+        name: "Heynouth 99",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -4836,7 +4836,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -4846,8 +4846,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout100-paris04",
-        name: "Hanout 100",
+        slug: "heynouth100-paris04",
+        name: "Heynouth 100",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -4884,7 +4884,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -4894,8 +4894,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout101-paris04",
-        name: "Hanout 101",
+        slug: "heynouth101-paris04",
+        name: "Heynouth 101",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -4932,7 +4932,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -4942,8 +4942,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout102-paris04",
-        name: "Hanout 102",
+        slug: "heynouth102-paris04",
+        name: "Heynouth 102",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -4980,7 +4980,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -4990,8 +4990,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout103-paris04",
-        name: "Hanout 103",
+        slug: "heynouth103-paris04",
+        name: "Heynouth 103",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -5028,7 +5028,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -5038,8 +5038,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout104-paris04",
-        name: "Hanout 104",
+        slug: "heynouth104-paris04",
+        name: "Heynouth 104",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -5076,7 +5076,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -5086,8 +5086,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout105-paris04",
-        name: "Hanout 105",
+        slug: "heynouth105-paris04",
+        name: "Heynouth 105",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -5124,7 +5124,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -5134,8 +5134,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout106-paris04",
-        name: "Hanout 106",
+        slug: "heynouth106-paris04",
+        name: "Heynouth 106",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -5172,7 +5172,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -5182,8 +5182,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout107-paris04",
-        name: "Hanout 107",
+        slug: "heynouth107-paris04",
+        name: "Heynouth 107",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -5220,7 +5220,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -5230,8 +5230,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout108-paris04",
-        name: "Hanout 108",
+        slug: "heynouth108-paris04",
+        name: "Heynouth 108",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -5268,7 +5268,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -5278,8 +5278,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout109-paris04",
-        name: "Hanout 109",
+        slug: "heynouth109-paris04",
+        name: "Heynouth 109",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -5316,7 +5316,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -5326,8 +5326,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout110-paris04",
-        name: "Hanout 110",
+        slug: "heynouth110-paris04",
+        name: "Heynouth 110",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -5364,7 +5364,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -5374,8 +5374,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout111-paris04",
-        name: "Hanout 111",
+        slug: "heynouth111-paris04",
+        name: "Heynouth 111",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -5412,7 +5412,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -5422,8 +5422,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout112-paris04",
-        name: "Hanout 112",
+        slug: "heynouth112-paris04",
+        name: "Heynouth 112",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -5460,7 +5460,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -5470,8 +5470,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout113-paris04",
-        name: "Hanout 113",
+        slug: "heynouth113-paris04",
+        name: "Heynouth 113",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -5508,7 +5508,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -5518,8 +5518,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout114-paris04",
-        name: "Hanout 114",
+        slug: "heynouth114-paris04",
+        name: "Heynouth 114",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -5556,7 +5556,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -5566,8 +5566,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout115-paris04",
-        name: "Hanout 115",
+        slug: "heynouth115-paris04",
+        name: "Heynouth 115",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -5604,7 +5604,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -5614,8 +5614,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout116-paris04",
-        name: "Hanout 116",
+        slug: "heynouth116-paris04",
+        name: "Heynouth 116",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -5652,7 +5652,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -5662,8 +5662,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout117-paris04",
-        name: "Hanout 117",
+        slug: "heynouth117-paris04",
+        name: "Heynouth 117",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -5700,7 +5700,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -5710,8 +5710,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout118-paris04",
-        name: "Hanout 118",
+        slug: "heynouth118-paris04",
+        name: "Heynouth 118",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -5748,7 +5748,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -5758,8 +5758,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout119-paris04",
-        name: "Hanout 119",
+        slug: "heynouth119-paris04",
+        name: "Heynouth 119",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -5796,7 +5796,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
@@ -5806,8 +5806,8 @@ export const SHOPS: Shop[] = [
         },
     },
     {
-        slug: "hanout120-paris04",
-        name: "Hanout 120",
+        slug: "heynouth120-paris04",
+        name: "Heynouth 120",
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
@@ -5844,7 +5844,7 @@ export const SHOPS: Shop[] = [
             { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Hanout, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
+            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
             p2: "Notre principe est simple : du service humain et du temps gagné.",
             images: [
                 "/shops/generic/a1.png",
