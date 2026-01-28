@@ -93,8 +93,8 @@ export const SHOPS: Shop[] = [
         },
     },
 
-    // Generated Hanout Shops 1-20
-    ...Array.from({ length: 20 }).map((_, i) => ({
+    // Generated Hanout Shops 1-120
+    ...Array.from({ length: 120 }).map((_, i) => ({
         slug: `hanout${i + 1}-paris04`,
         name: `Hanout ${i + 1}`,
         districtLabel: "PARIS 04",
