@@ -212,15 +212,8 @@ export default function ShopLanding({ shop }: { shop: Shop }) {
                         {/* Store header */}
                         <div className="pb-2 pt-6 text-center">
                             <h1 className="text-3xl font-black tracking-tight">{shop.name}</h1>
-                            <div className="flex flex-col items-center gap-2">
-                                <div className="mt-3 inline-flex rounded-full bg-brand-yellow px-4 py-1 text-[11px] font-extrabold text-[#3b2a00] shadow-yellow">
-                                    {shop.districtLabel}
-                                </div>
-                                {shop.contact.address && (
-                                    <p className="text-[12px] font-bold text-gray-500 tracking-wide">
-                                        {shop.contact.address}
-                                    </p>
-                                )}
+                            <div className="mt-3 inline-flex rounded-full bg-brand-yellow px-4 py-1 text-[11px] font-extrabold text-[#3b2a00] shadow-yellow">
+                                {shop.districtLabel}
                             </div>
                         </div>
                     </div>
@@ -438,8 +431,10 @@ export default function ShopLanding({ shop }: { shop: Shop }) {
                                         <div className="mt-2 text-sm font-black text-brand-green">{shop.contact.phoneDisplay}</div>
                                     </div>
                                     <div className="rounded-3xl border border-slate-200 bg-white p-4 text-center">
-                                        <div className="text-[11px] font-extrabold tracking-widest text-slate-400">EMAIL</div>
-                                        <div className="mt-2 text-[12px] font-black text-brand-green break-all">{shop.contact.email}</div>
+                                        <div className="text-[11px] font-extrabold tracking-widest text-slate-400">ADRESSE</div>
+                                        <div className="mt-2 text-[12px] font-black text-brand-green leading-tight">
+                                            {shop.contact.address || "Adresse non renseignée"}
+                                        </div>
                                     </div>
                                 </div>
 

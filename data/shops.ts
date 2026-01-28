@@ -17,8 +17,7 @@ export type Shop = {
     contact: {
         phoneE164: string;   // "+33695842569"
         phoneDisplay: string;// "06 95 84 25 69"
-        email: string;
-        address?: string;    // "77 Rue Crozatier, 75012"
+        address: string;     // "77 Rue Crozatier, 75012"
     };
 
     dailyOffer: {
@@ -66,10 +65,10 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "0140190033", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
             phoneDisplay: "01 40 19 00 33",
-            email: "contact@ehshop.com",
             // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
             // I will put the address in "about" or just leave it implicitly in mapsUrl.
             // Actually, I'll add it to 'about.p1' to make it visible.
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -114,10 +113,10 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "0142574299", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
             phoneDisplay: "01 42 57 42 99",
-            email: "contact@ehshop.com",
             // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
             // I will put the address in "about" or just leave it implicitly in mapsUrl.
             // Actually, I'll add it to 'about.p1' to make it visible.
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -162,10 +161,10 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "0142798002", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
             phoneDisplay: "01 42 79 80 02",
-            email: "contact@ehshop.com",
             // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
             // I will put the address in "about" or just leave it implicitly in mapsUrl.
             // Actually, I'll add it to 'about.p1' to make it visible.
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -210,10 +209,10 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "0142892335", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
             phoneDisplay: "01 42 89 23 35",
-            email: "contact@ehshop.com",
             // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
             // I will put the address in "about" or just leave it implicitly in mapsUrl.
             // Actually, I'll add it to 'about.p1' to make it visible.
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -258,10 +257,10 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "0143260870", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
             phoneDisplay: "01 43 26 08 70",
-            email: "contact@ehshop.com",
             // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
             // I will put the address in "about" or just leave it implicitly in mapsUrl.
             // Actually, I'll add it to 'about.p1' to make it visible.
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -306,10 +305,10 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "0143267057", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
             phoneDisplay: "01 43 26 70 57",
-            email: "contact@ehshop.com",
             // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
             // I will put the address in "about" or just leave it implicitly in mapsUrl.
             // Actually, I'll add it to 'about.p1' to make it visible.
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -354,10 +353,10 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "0143546308", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
             phoneDisplay: "01 43 54 63 08",
-            email: "contact@ehshop.com",
             // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
             // I will put the address in "about" or just leave it implicitly in mapsUrl.
             // Actually, I'll add it to 'about.p1' to make it visible.
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -402,10 +401,10 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "0143958971", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
             phoneDisplay: "01 43 95 89 71",
-            email: "contact@ehshop.com",
             // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
             // I will put the address in "about" or just leave it implicitly in mapsUrl.
             // Actually, I'll add it to 'about.p1' to make it visible.
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -450,10 +449,10 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "0145669581", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
             phoneDisplay: "01 45 66 95 81",
-            email: "contact@ehshop.com",
             // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
             // I will put the address in "about" or just leave it implicitly in mapsUrl.
             // Actually, I'll add it to 'about.p1' to make it visible.
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -498,10 +497,10 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "0145711421", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
             phoneDisplay: "01 45 71 14 21",
-            email: "contact@ehshop.com",
             // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
             // I will put the address in "about" or just leave it implicitly in mapsUrl.
             // Actually, I'll add it to 'about.p1' to make it visible.
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -546,10 +545,10 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "0145857992", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
             phoneDisplay: "01 45 85 79 92",
-            email: "contact@ehshop.com",
             // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
             // I will put the address in "about" or just leave it implicitly in mapsUrl.
             // Actually, I'll add it to 'about.p1' to make it visible.
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -594,10 +593,10 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "0146347080", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
             phoneDisplay: "01 46 34 70 80",
-            email: "contact@ehshop.com",
             // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
             // I will put the address in "about" or just leave it implicitly in mapsUrl.
             // Actually, I'll add it to 'about.p1' to make it visible.
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -642,10 +641,10 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "0158052092", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
             phoneDisplay: "01 58 05 20 92",
-            email: "contact@ehshop.com",
             // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
             // I will put the address in "about" or just leave it implicitly in mapsUrl.
             // Actually, I'll add it to 'about.p1' to make it visible.
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -690,10 +689,10 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "0173712195", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
             phoneDisplay: "01 73 71 21 95",
-            email: "contact@ehshop.com",
             // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
             // I will put the address in "about" or just leave it implicitly in mapsUrl.
             // Actually, I'll add it to 'about.p1' to make it visible.
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -738,10 +737,10 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "0177125480", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
             phoneDisplay: "01 77 12 54 80",
-            email: "contact@ehshop.com",
             // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
             // I will put the address in "about" or just leave it implicitly in mapsUrl.
             // Actually, I'll add it to 'about.p1' to make it visible.
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -786,10 +785,10 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "0658336250", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
             phoneDisplay: "06 58 33 62 50",
-            email: "contact@ehshop.com",
             // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
             // I will put the address in "about" or just leave it implicitly in mapsUrl.
             // Actually, I'll add it to 'about.p1' to make it visible.
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -834,10 +833,10 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "0673244651", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
             phoneDisplay: "06 73 24 46 51",
-            email: "contact@ehshop.com",
             // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
             // I will put the address in "about" or just leave it implicitly in mapsUrl.
             // Actually, I'll add it to 'about.p1' to make it visible.
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -882,10 +881,10 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "0695131290", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
             phoneDisplay: "06 95 13 12 90",
-            email: "contact@ehshop.com",
             // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
             // I will put the address in "about" or just leave it implicitly in mapsUrl.
             // Actually, I'll add it to 'about.p1' to make it visible.
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -930,10 +929,10 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "0745256983", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
             phoneDisplay: "07 45 25 69 83",
-            email: "contact@ehshop.com",
             // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
             // I will put the address in "about" or just leave it implicitly in mapsUrl.
             // Actually, I'll add it to 'about.p1' to make it visible.
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -978,10 +977,10 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "0758123257", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
             phoneDisplay: "07 58 12 32 57",
-            email: "contact@ehshop.com",
             // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
             // I will put the address in "about" or just leave it implicitly in mapsUrl.
             // Actually, I'll add it to 'about.p1' to make it visible.
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -1026,10 +1025,10 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "0950878549", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
             phoneDisplay: "09 50 87 85 49",
-            email: "contact@ehshop.com",
             // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
             // I will put the address in "about" or just leave it implicitly in mapsUrl.
             // Actually, I'll add it to 'about.p1' to make it visible.
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -1074,10 +1073,10 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "0952380560", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
             phoneDisplay: "09 52 38 05 60",
-            email: "contact@ehshop.com",
             // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
             // I will put the address in "about" or just leave it implicitly in mapsUrl.
             // Actually, I'll add it to 'about.p1' to make it visible.
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -1122,10 +1121,10 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "0981864250", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
             phoneDisplay: "09 81 86 42 50",
-            email: "contact@ehshop.com",
             // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
             // I will put the address in "about" or just leave it implicitly in mapsUrl.
             // Actually, I'll add it to 'about.p1' to make it visible.
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -1170,10 +1169,10 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "0982367107", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
             phoneDisplay: "09 82 36 71 07",
-            email: "contact@ehshop.com",
             // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
             // I will put the address in "about" or just leave it implicitly in mapsUrl.
             // Actually, I'll add it to 'about.p1' to make it visible.
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -1218,10 +1217,10 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "0982532078", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
             phoneDisplay: "09 82 53 20 78",
-            email: "contact@ehshop.com",
             // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
             // I will put the address in "about" or just leave it implicitly in mapsUrl.
             // Actually, I'll add it to 'about.p1' to make it visible.
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -1266,10 +1265,10 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "0983585258", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
             phoneDisplay: "09 83 58 52 58",
-            email: "contact@ehshop.com",
             // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
             // I will put the address in "about" or just leave it implicitly in mapsUrl.
             // Actually, I'll add it to 'about.p1' to make it visible.
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -1314,10 +1313,10 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "0984037859", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
             phoneDisplay: "09 84 03 78 59",
-            email: "contact@ehshop.com",
             // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
             // I will put the address in "about" or just leave it implicitly in mapsUrl.
             // Actually, I'll add it to 'about.p1' to make it visible.
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -1362,10 +1361,10 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "0984245291", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
             phoneDisplay: "09 84 24 52 91",
-            email: "contact@ehshop.com",
             // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
             // I will put the address in "about" or just leave it implicitly in mapsUrl.
             // Actually, I'll add it to 'about.p1' to make it visible.
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -1410,10 +1409,10 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "0986124881", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
             phoneDisplay: "09 86 12 48 81",
-            email: "contact@ehshop.com",
             // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
             // I will put the address in "about" or just leave it implicitly in mapsUrl.
             // Actually, I'll add it to 'about.p1' to make it visible.
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -1463,7 +1462,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -1511,7 +1510,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -1559,7 +1558,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -1607,7 +1606,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -1655,7 +1654,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -1703,7 +1702,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -1751,7 +1750,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -1799,7 +1798,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -1847,7 +1846,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -1895,7 +1894,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -1943,7 +1942,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -1991,7 +1990,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -2039,7 +2038,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -2087,7 +2086,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -2135,7 +2134,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -2183,7 +2182,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -2231,7 +2230,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -2279,7 +2278,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -2327,7 +2326,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -2375,7 +2374,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -2423,7 +2422,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -2471,7 +2470,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -2519,7 +2518,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -2567,7 +2566,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -2615,7 +2614,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -2663,7 +2662,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -2711,7 +2710,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -2759,7 +2758,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -2807,7 +2806,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -2855,7 +2854,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -2903,7 +2902,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -2951,7 +2950,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -2999,7 +2998,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -3047,7 +3046,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -3095,7 +3094,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -3143,7 +3142,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -3191,7 +3190,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -3239,7 +3238,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -3287,7 +3286,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -3335,7 +3334,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -3383,7 +3382,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -3431,7 +3430,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -3479,7 +3478,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -3527,7 +3526,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -3575,7 +3574,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -3623,7 +3622,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -3671,7 +3670,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -3719,7 +3718,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -3767,7 +3766,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -3815,7 +3814,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -3863,7 +3862,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -3911,7 +3910,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -3959,7 +3958,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -4007,7 +4006,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -4055,7 +4054,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -4103,7 +4102,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -4151,7 +4150,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -4199,7 +4198,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -4247,7 +4246,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -4295,7 +4294,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -4343,7 +4342,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -4391,7 +4390,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -4439,7 +4438,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -4487,7 +4486,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -4535,7 +4534,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -4583,7 +4582,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -4631,7 +4630,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -4679,7 +4678,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -4727,7 +4726,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -4775,7 +4774,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -4823,7 +4822,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -4871,7 +4870,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -4919,7 +4918,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -4967,7 +4966,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -5015,7 +5014,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -5063,7 +5062,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -5111,7 +5110,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -5159,7 +5158,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -5207,7 +5206,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -5255,7 +5254,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -5303,7 +5302,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -5351,7 +5350,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -5399,7 +5398,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -5447,7 +5446,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -5495,7 +5494,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -5543,7 +5542,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -5591,7 +5590,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -5639,7 +5638,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -5687,7 +5686,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -5735,7 +5734,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -5783,7 +5782,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -5831,7 +5830,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -5879,7 +5878,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -5927,7 +5926,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -5975,7 +5974,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -6023,7 +6022,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -6071,7 +6070,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -6119,7 +6118,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -6167,7 +6166,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -6215,7 +6214,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -6263,7 +6262,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -6311,7 +6310,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -6359,7 +6358,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -6407,7 +6406,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -6455,7 +6454,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -6503,7 +6502,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -6551,7 +6550,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -6599,7 +6598,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -6647,7 +6646,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -6695,7 +6694,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -6743,7 +6742,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -6791,7 +6790,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -6839,7 +6838,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -6887,7 +6886,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -6935,7 +6934,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -6983,7 +6982,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -7031,7 +7030,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -7079,7 +7078,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -7127,7 +7126,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -7175,7 +7174,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",
@@ -7223,7 +7222,7 @@ export const SHOPS: Shop[] = [
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            email: "nomducommerce@hey.com",
+            address: "8 shou édition, 75000",
         },
         dailyOffer: {
             title: "Nom du produit",

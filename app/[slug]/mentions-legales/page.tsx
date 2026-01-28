@@ -42,7 +42,7 @@ export default async function LegalPage({ params }: { params: Promise<{ slug: st
                             <h2 className="mb-2 font-bold text-brand-ink">1. Éditeur du site</h2>
                             <p>
                                 Le site est édité par <strong>{shop.name}</strong>.<br />
-                                Contact : <a href={`mailto:${shop.contact.email}`} className="underline">{shop.contact.email}</a>
+                                Adresse : {shop.contact.address}
                             </p>
                         </section>
 
