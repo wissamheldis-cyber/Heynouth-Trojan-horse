@@ -81,7 +81,7 @@ export default function HubClient() {
                         <div className="relative w-12 h-12">
                             <Image src="/logo-hey.png" alt="Heynouth" fill className="object-contain" />
                         </div>
-                        <h1 className={`${ubuntu.className} text-3xl font-bold tracking-tight text-[#2F6B2B]`}>Heynouth</h1>
+                        <h1 className={`font-bukra text-3xl font-bold tracking-tight text-[#2F6B2B]`}>Heynouth</h1>
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-3 w-full max-w-2xl">
