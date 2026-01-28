@@ -85,18 +85,19 @@ export default function HubClient() {
 
                     <div className="flex flex-col sm:flex-row gap-3 w-full max-w-2xl">
                         {/* District Dropdown */}
-                        <div className="relative min-w-[160px]">
+                        <div className="relative min-w-[180px] group">
+                            <div className="absolute inset-0 bg-gradient-to-br from-white/80 to-white/40 rounded-2xl blur-sm opacity-50 group-hover:opacity-100 transition-opacity" />
                             <select
                                 value={selectedDistrict}
                                 onChange={(e) => setSelectedDistrict(e.target.value)}
-                                className="w-full appearance-none pl-4 pr-10 py-3 rounded-2xl bg-white border border-gray-200 outline-none focus:border-[#2F6B2B] focus:ring-1 focus:ring-[#2F6B2B] shadow-sm transition-all text-gray-700 cursor-pointer"
+                                className="relative w-full appearance-none pl-5 pr-10 py-3 rounded-2xl bg-white/60 backdrop-blur-xl border border-white/60 outline-none focus:border-[#2F6B2B]/50 focus:ring-2 focus:ring-[#2F6B2B]/20 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all text-gray-700 font-medium cursor-pointer"
                             >
                                 <option value="all">Tout Paris</option>
                                 {districts.map(d => (
                                     <option key={d} value={d}>{d}</option>
                                 ))}
                             </select>
-                            <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400">
+                            <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-500 group-hover:text-[#2F6B2B] transition-colors">
                                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" /></svg>
                             </div>
                         </div>
