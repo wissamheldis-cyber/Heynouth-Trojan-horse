@@ -36,7 +36,8 @@ const config: Config = {
                 "5xl": "3rem",
             },
             fontFamily: {
-                bukra: ['"29LT Bukra"', "sans-serif"],
+                sans: ["var(--font-bukra)", "sans-serif"],
+                bukra: ["var(--font-bukra)", "sans-serif"],
             },
         },
     },

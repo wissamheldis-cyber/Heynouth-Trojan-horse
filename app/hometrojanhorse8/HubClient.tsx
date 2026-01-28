@@ -9,12 +9,7 @@ import { QuickIconSearch } from "@/components/icons/QuickActionIcons";
 // Custom icons defined below to avoid dependencies
 // If lucide-react is not available, I will use text or SVGs. I saw QuickActionIcons, I'll stick to simple SVGs or text if I'm not sure about lucide.
 // Actually, I'll just use simple SVG icons inline to be safe and dependency-free for now, similar to QuickActionIcons.
-import { Ubuntu } from "next/font/google";
 
-const ubuntu = Ubuntu({
-    weight: ["300", "400", "500", "700"],
-    subsets: ["latin"],
-});
 
 export default function HubClient() {
     const [query, setQuery] = useState("");
@@ -81,7 +76,7 @@ export default function HubClient() {
                         <div className="relative w-12 h-12">
                             <Image src="/logo-hey.png" alt="Heynouth" fill className="object-contain" />
                         </div>
-                        <h1 className={`font-bukra text-3xl font-bold tracking-tight text-[#2F6B2B]`}>Heynouth</h1>
+                        <h1 className={`text-3xl font-bold tracking-tight text-[#2F6B2B]`}>Heynouth</h1>
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-3 w-full max-w-2xl">
