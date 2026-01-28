@@ -18,6 +18,7 @@ export type Shop = {
         phoneE164: string;   // "+33695842569"
         phoneDisplay: string;// "06 95 84 25 69"
         email: string;
+        address?: string;    // "77 Rue Crozatier, 75012"
     };
 
     dailyOffer: {

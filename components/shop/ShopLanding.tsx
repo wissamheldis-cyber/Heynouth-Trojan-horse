@@ -212,8 +212,15 @@ export default function ShopLanding({ shop }: { shop: Shop }) {
                         {/* Store header */}
                         <div className="pb-2 pt-6 text-center">
                             <h1 className="text-3xl font-black tracking-tight">{shop.name}</h1>
-                            <div className="mt-3 inline-flex rounded-full bg-brand-yellow px-4 py-1 text-[11px] font-extrabold text-[#3b2a00] shadow-yellow">
-                                {shop.districtLabel}
+                            <div className="flex flex-col items-center gap-2">
+                                <div className="mt-3 inline-flex rounded-full bg-brand-yellow px-4 py-1 text-[11px] font-extrabold text-[#3b2a00] shadow-yellow">
+                                    {shop.districtLabel}
+                                </div>
+                                {shop.contact.address && (
+                                    <p className="text-[12px] font-bold text-gray-500 tracking-wide">
+                                        {shop.contact.address}
+                                    </p>
+                                )}
                             </div>
                         </div>
                     </div>
