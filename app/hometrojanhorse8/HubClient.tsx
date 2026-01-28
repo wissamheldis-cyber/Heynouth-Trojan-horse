@@ -85,20 +85,22 @@ export default function HubClient() {
 
                     <div className="flex flex-col sm:flex-row gap-3 w-full max-w-2xl">
                         {/* District Dropdown */}
-                        <div className="relative min-w-[180px] group">
-                            <div className="absolute inset-0 bg-gradient-to-br from-white/80 to-white/40 rounded-2xl blur-sm opacity-50 group-hover:opacity-100 transition-opacity" />
+                        <div className="relative min-w-[200px] group">
+                            {/* Glow Effect Backend */}
+                            <div className="absolute -inset-0.5 bg-gradient-to-r from-[#2F6B2B]/30 to-[#F2C94C]/30 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500" />
+
                             <select
                                 value={selectedDistrict}
                                 onChange={(e) => setSelectedDistrict(e.target.value)}
-                                className="relative w-full appearance-none pl-5 pr-10 py-3 rounded-2xl bg-white/60 backdrop-blur-xl border border-white/60 outline-none focus:border-[#2F6B2B]/50 focus:ring-2 focus:ring-[#2F6B2B]/20 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all text-gray-700 font-medium cursor-pointer"
+                                className="relative w-full appearance-none pl-5 pr-12 py-3.5 rounded-2xl bg-white/70 backdrop-blur-2xl border border-white/80 outline-none focus:border-[#2F6B2B]/50 focus:ring-4 focus:ring-[#2F6B2B]/10 shadow-lg group-hover:shadow-xl transition-all text-gray-800 font-medium cursor-pointer tracking-wide"
                             >
                                 <option value="all">Tout Paris</option>
                                 {districts.map(d => (
                                     <option key={d} value={d}>{d}</option>
                                 ))}
                             </select>
-                            <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-500 group-hover:text-[#2F6B2B] transition-colors">
-                                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" /></svg>
+                            <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-500 group-hover:text-[#2F6B2B] transition-colors duration-300">
+                                <svg className="w-5 h-5 drop-shadow-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" /></svg>
                             </div>
                         </div>
 
