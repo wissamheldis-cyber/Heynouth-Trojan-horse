@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import QRCode from "react-qr-code";
 
 interface QrButtonProps {
@@ -11,8 +12,10 @@ interface QrButtonProps {
 export default function QrButton({ slug, name }: QrButtonProps) {
     const [isOpen, setIsOpen] = useState(false);
     const [url, setUrl] = useState("");
+    const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
+        setMounted(true);
         if (typeof window !== "undefined") {
             setUrl(`${window.location.origin}/${slug}`);
         }
@@ -42,7 +45,7 @@ export default function QrButton({ slug, name }: QrButtonProps) {
                 QR
             </button>
 
-            {isOpen && (
+            {isOpen && mounted && createPortal(
                 <div
                     className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4"
                     onClick={(e) => {
@@ -93,7 +96,8 @@ export default function QrButton({ slug, name }: QrButtonProps) {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>,
+                document.body
             )}
         </>
     );
