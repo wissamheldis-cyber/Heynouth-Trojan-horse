@@ -1022,7 +1022,7 @@ export const SHOPS: Shop[] = [
     },
     {
         slug: "sairam-paris04",
-        name: "Nom de commerce 021",
+        name: "SAIRAM",
         isPartner: true,
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
@@ -1040,33 +1040,33 @@ export const SHOPS: Shop[] = [
         },
 
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/Bill's+Burger+Chatelet/@48.8597703,2.3461398,19z/data=!4m9!1m2!10m1!1e1!3m5!1s0x47e66f001250df6d:0x4cbbed7619ea4303!8m2!3d48.8599556!4d2.3467894!16s%2Fg%2F11w2mk38ps?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoASAFQAw%3D%3D",
+        mapsUrl: "https://www.google.fr/maps/place/Sairam+Alimentation+Generale/@48.8479642,2.3650404,17z/data=!4m17!1m10!3m9!1s0x47e671f86159dc3b:0x4218eb78eb739c6e!2sSairam+Alimentation+Generale!8m2!3d48.8479758!4d2.3652469!10e5!14m1!1BCgIgARICCAI!16s%2Fg%2F11lgskzw26!3m5!1s0x47e671f86159dc3b:0x4218eb78eb739c6e!8m2!3d48.8479758!4d2.3652469!16s%2Fg%2F11lgskzw26?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoASAFQAw%3D%3D",
 
         contact: {
             phoneE164: "+33695842569",
             phoneDisplay: "06 95 84 25 69",
-            address: "8 shou édition, 75000",
+            address: "4 Bd Morland, 75004",
         },
         dailyOffer: {
             label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
-            image: "/shops/generic/offer.png",
+            image: "/shops/sairam-paris-04/offer.png",
             protocolHref: "#reservation",
         },
         products: [
-            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
-            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
-            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/sairam-paris-04/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/sairam-paris-04/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/sairam-paris-04/p3.png" },
         ],
         about: {
             p1: "Bienvenue chez Sairam, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien : boissons, snacks, produits frais et basiques, avec une sélection qui bouge selon les arrivages.",
             p2: "Notre principe est simple : du service humain et du temps gagné. Vous appelez, vous réservez ce qu’il vous faut, vous passez à l’heure qui vous arrange — on prépare et on met de côté selon le stock.",
             images: [
-                "/shops/generic/a1.png",
-                "/shops/generic/a2.png",
-                "/shops/generic/a3.png",
+                "/shops/sairam-paris-04/a1.png",
+                "/shops/sairam-paris-04/a2.png",
+                "/shops/sairam-paris-04/a3.png",
             ],
         },
     },
