@@ -5,6 +5,7 @@ import { useState, useRef, useEffect } from "react";
 import type { Shop } from "@/data/shops";
 import { isShopOpen, formatTodayHoursLabel } from "@/lib/shopHours";
 import { QuickIconSearch, QuickIconTimer, QuickIconPhone, QuickIconQuestion } from "@/components/icons/QuickActionIcons";
+import SmsSubscribeModal from "./SmsSubscribeModal";
 // ...
 
 
@@ -132,6 +133,7 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
 
 export default function ShopLanding({ shop }: { shop: Shop }) {
     const [isOpen, setIsOpen] = useState(true);
+    const [isSmsModalOpen, setIsSmsModalOpen] = useState(false);
     const [hoursLabel, setHoursLabel] = useState("");
 
     useEffect(() => {
@@ -217,6 +219,38 @@ export default function ShopLanding({ shop }: { shop: Shop }) {
                             </div>
                         </div>
                     </div>
+
+                    {/* SMS CTA */}
+                    <div className="px-6 pt-5">
+                        <button
+                            onClick={() => setIsSmsModalOpen(true)}
+                            className="w-full relative overflow-hidden rounded-3xl bg-white border border-brand-green/20 shadow-sm p-4 text-left group hover:shadow-md hover:border-brand-green/40 transition-all active:scale-[0.98]"
+                        >
+                            <div className="absolute top-0 right-0 p-3 opacity-10 group-hover:opacity-20 transition-opacity">
+                                <svg className="w-16 h-16 text-brand-green rotate-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
+                            </div>
+                            <div className="relative flex items-center gap-3">
+                                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-brand-yellow/20 flex items-center justify-center text-[#3b2a00]">
+                                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
+                                </div>
+                                <div>
+                                    <h4 className="text-[13px] font-black text-brand-green leading-tight">
+                                        Recevez un SMS
+                                    </h4>
+                                    <p className="text-[11px] font-medium text-gray-500 leading-tight mt-0.5">
+                                        Dès la mise à jour de votre commerçant
+                                    </p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+
+                    <SmsSubscribeModal
+                        isOpen={isSmsModalOpen}
+                        onClose={() => setIsSmsModalOpen(false)}
+                        shopSlug={shop.slug}
+                        shopName={shop.name}
+                    />
 
                     {/* Daily offer */}
                     <div className="px-6 pt-5">
