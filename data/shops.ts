@@ -43,7 +43,6 @@ export type Shop = {
 };
 
 export const SHOPS: Shop[] = [
-
     {
         slug: "hey-77-rue-crozatier-75012",
         name: "Hey",
@@ -61,14 +60,11 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/77%20Rue%20Crozatier%2075012",
+        mapsUrl: "https://www.google.fr/maps/place/77%20Rue%20Crozatier%2C%2075012%20Paris",
         contact: {
-            phoneE164: "0140190033", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneE164: "0140190033",
             phoneDisplay: "01 40 19 00 33",
-            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
-            // I will put the address in "about" or just leave it implicitly in mapsUrl.
-            // Actually, I'll add it to 'about.p1' to make it visible.
-            address: "8 shou édition, 75000",
+            address: "77 Rue Crozatier, 75012 Paris",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -109,14 +105,11 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/2%20Rue%20Fernand%20Labori%2075018",
+        mapsUrl: "https://www.google.fr/maps/place/2%20Rue%20Fernand%20Labori%2C%2075018%20Paris",
         contact: {
-            phoneE164: "0142574299", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneE164: "0142574299",
             phoneDisplay: "01 42 57 42 99",
-            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
-            // I will put the address in "about" or just leave it implicitly in mapsUrl.
-            // Actually, I'll add it to 'about.p1' to make it visible.
-            address: "8 shou édition, 75000",
+            address: "2 Rue Fernand Labori, 75018 Paris",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -157,14 +150,11 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/123%20Rue%20Falgui%C3%A8re%2075015",
+        mapsUrl: "https://www.google.fr/maps/place/123%20Rue%20Falgui%C3%A8re%2C%2075015%20Paris",
         contact: {
-            phoneE164: "0142798002", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneE164: "0142798002",
             phoneDisplay: "01 42 79 80 02",
-            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
-            // I will put the address in "about" or just leave it implicitly in mapsUrl.
-            // Actually, I'll add it to 'about.p1' to make it visible.
-            address: "8 shou édition, 75000",
+            address: "123 Rue Falguière, 75015 Paris",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -205,14 +195,11 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/124%20Rue%20du%20Cherche-midi%2075006",
+        mapsUrl: "https://www.google.fr/maps/place/124%20Rue%20du%20Cherche-midi%2C%2075006%20Paris",
         contact: {
-            phoneE164: "0142892335", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneE164: "0142892335",
             phoneDisplay: "01 42 89 23 35",
-            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
-            // I will put the address in "about" or just leave it implicitly in mapsUrl.
-            // Actually, I'll add it to 'about.p1' to make it visible.
-            address: "8 shou édition, 75000",
+            address: "124 Rue du Cherche-midi, 75006 Paris",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -253,14 +240,11 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/24%20Rue%20Monge%2075005",
+        mapsUrl: "https://www.google.fr/maps/place/24%20Rue%20Monge%2C%2075005%20Paris",
         contact: {
-            phoneE164: "0143260870", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneE164: "0143260870",
             phoneDisplay: "01 43 26 08 70",
-            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
-            // I will put the address in "about" or just leave it implicitly in mapsUrl.
-            // Actually, I'll add it to 'about.p1' to make it visible.
-            address: "8 shou édition, 75000",
+            address: "24 Rue Monge, 75005 Paris",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -301,14 +285,11 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/10%20Rue%20de%20Pontoise%2075005",
+        mapsUrl: "https://www.google.fr/maps/place/10%20Rue%20de%20Pontoise%2C%2075005%20Paris",
         contact: {
-            phoneE164: "0143267057", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneE164: "0143267057",
             phoneDisplay: "01 43 26 70 57",
-            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
-            // I will put the address in "about" or just leave it implicitly in mapsUrl.
-            // Actually, I'll add it to 'about.p1' to make it visible.
-            address: "8 shou édition, 75000",
+            address: "10 Rue de Pontoise, 75005 Paris",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -349,14 +330,11 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/153%20Rue%20Saint-Jacques%2075005",
+        mapsUrl: "https://www.google.fr/maps/place/153%20Rue%20Saint-Jacques%2C%2075005%20Paris",
         contact: {
-            phoneE164: "0143546308", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneE164: "0143546308",
             phoneDisplay: "01 43 54 63 08",
-            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
-            // I will put the address in "about" or just leave it implicitly in mapsUrl.
-            // Actually, I'll add it to 'about.p1' to make it visible.
-            address: "8 shou édition, 75000",
+            address: "153 Rue Saint-Jacques, 75005 Paris",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -397,14 +375,11 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/146%20Rue%20du%20Faubourg%20St%20Antoine%2075011",
+        mapsUrl: "https://www.google.fr/maps/place/146%20Rue%20du%20Faubourg%20St%20Antoine%2C%2075011%20Paris",
         contact: {
-            phoneE164: "0143958971", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneE164: "0143958971",
             phoneDisplay: "01 43 95 89 71",
-            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
-            // I will put the address in "about" or just leave it implicitly in mapsUrl.
-            // Actually, I'll add it to 'about.p1' to make it visible.
-            address: "8 shou édition, 75000",
+            address: "146 Rue du Faubourg St Antoine, 75011 Paris",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -445,14 +420,11 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/202%20Rue%20de%20Vaugirard%2075015",
+        mapsUrl: "https://www.google.fr/maps/place/202%20Rue%20de%20Vaugirard%2C%2075015%20Paris",
         contact: {
-            phoneE164: "0145669581", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneE164: "0145669581",
             phoneDisplay: "01 45 66 95 81",
-            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
-            // I will put the address in "about" or just leave it implicitly in mapsUrl.
-            // Actually, I'll add it to 'about.p1' to make it visible.
-            address: "8 shou édition, 75000",
+            address: "202 Rue de Vaugirard, 75015 Paris",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -493,14 +465,11 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/53%20Boulevard%20Blanqui%2075013",
+        mapsUrl: "https://www.google.fr/maps/place/53%20Boulevard%20Blanqui%2C%2075013%20Paris",
         contact: {
-            phoneE164: "0145711421", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneE164: "0145711421",
             phoneDisplay: "01 45 71 14 21",
-            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
-            // I will put the address in "about" or just leave it implicitly in mapsUrl.
-            // Actually, I'll add it to 'about.p1' to make it visible.
-            address: "8 shou édition, 75000",
+            address: "53 Boulevard Blanqui, 75013 Paris",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -541,14 +510,11 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/73%20Boulevard%20Vincent%20Auriol%2075013",
+        mapsUrl: "https://www.google.fr/maps/place/73%20Boulevard%20Vincent%20Auriol%2C%2075013%20Paris",
         contact: {
-            phoneE164: "0145857992", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneE164: "0145857992",
             phoneDisplay: "01 45 85 79 92",
-            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
-            // I will put the address in "about" or just leave it implicitly in mapsUrl.
-            // Actually, I'll add it to 'about.p1' to make it visible.
-            address: "8 shou édition, 75000",
+            address: "73 Boulevard Vincent Auriol, 75013 Paris",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -589,14 +555,11 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/67%20Rue%20Saint-Louis%20en%20l'%C3%8Ele%2075004",
+        mapsUrl: "https://www.google.fr/maps/place/67%20Rue%20Saint-Louis%20en%20l'%C3%8Ele%2C%2075004%20Paris",
         contact: {
-            phoneE164: "0146347080", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneE164: "0146347080",
             phoneDisplay: "01 46 34 70 80",
-            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
-            // I will put the address in "about" or just leave it implicitly in mapsUrl.
-            // Actually, I'll add it to 'about.p1' to make it visible.
-            address: "8 shou édition, 75000",
+            address: "67 Rue Saint-Louis en l'Île, 75004 Paris",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -637,14 +600,11 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/35%20Rue%20Georges%20Pitard%2075015",
+        mapsUrl: "https://www.google.fr/maps/place/35%20Rue%20Georges%20Pitard%2C%2075015%20Paris",
         contact: {
-            phoneE164: "0158052092", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneE164: "0158052092",
             phoneDisplay: "01 58 05 20 92",
-            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
-            // I will put the address in "about" or just leave it implicitly in mapsUrl.
-            // Actually, I'll add it to 'about.p1' to make it visible.
-            address: "8 shou édition, 75000",
+            address: "35 Rue Georges Pitard, 75015 Paris",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -685,14 +645,11 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/107%20Rue%20de%20Charenton%2075012",
+        mapsUrl: "https://www.google.fr/maps/place/107%20Rue%20de%20Charenton%2C%2075012%20Paris",
         contact: {
-            phoneE164: "0173712195", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneE164: "0173712195",
             phoneDisplay: "01 73 71 21 95",
-            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
-            // I will put the address in "about" or just leave it implicitly in mapsUrl.
-            // Actually, I'll add it to 'about.p1' to make it visible.
-            address: "8 shou édition, 75000",
+            address: "107 Rue de Charenton, 75012 Paris",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -733,14 +690,11 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/13%20Rue%20de%20la%20Roquette%2075004",
+        mapsUrl: "https://www.google.fr/maps/place/13%20Rue%20de%20la%20Roquette%2C%2075004%20Paris",
         contact: {
-            phoneE164: "0177125480", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneE164: "0177125480",
             phoneDisplay: "01 77 12 54 80",
-            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
-            // I will put the address in "about" or just leave it implicitly in mapsUrl.
-            // Actually, I'll add it to 'about.p1' to make it visible.
-            address: "8 shou édition, 75000",
+            address: "13 Rue de la Roquette, 75004 Paris",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -781,14 +735,11 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/3%20Rue%20des%20%C3%89coles%2075005",
+        mapsUrl: "https://www.google.fr/maps/place/3%20Rue%20des%20%C3%89coles%2C%2075005%20Paris",
         contact: {
-            phoneE164: "0658336250", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneE164: "0658336250",
             phoneDisplay: "06 58 33 62 50",
-            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
-            // I will put the address in "about" or just leave it implicitly in mapsUrl.
-            // Actually, I'll add it to 'about.p1' to make it visible.
-            address: "8 shou édition, 75000",
+            address: "3 Rue des Écoles, 75005 Paris",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -829,14 +780,11 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/94%20Avenue%20Philippe%20Auguste%2075011",
+        mapsUrl: "https://www.google.fr/maps/place/94%20Avenue%20Philippe%20Auguste%2C%2075011%20Paris",
         contact: {
-            phoneE164: "0673244651", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneE164: "0673244651",
             phoneDisplay: "06 73 24 46 51",
-            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
-            // I will put the address in "about" or just leave it implicitly in mapsUrl.
-            // Actually, I'll add it to 'about.p1' to make it visible.
-            address: "8 shou édition, 75000",
+            address: "94 Avenue Philippe Auguste, 75011 Paris",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -877,14 +825,11 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/5%20Rue%20Ren%C3%A9%20Boulanger%2075010",
+        mapsUrl: "https://www.google.fr/maps/place/5%20Rue%20Ren%C3%A9%20Boulanger%2C%2075010%20Paris",
         contact: {
-            phoneE164: "0695131290", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneE164: "0695131290",
             phoneDisplay: "06 95 13 12 90",
-            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
-            // I will put the address in "about" or just leave it implicitly in mapsUrl.
-            // Actually, I'll add it to 'about.p1' to make it visible.
-            address: "8 shou édition, 75000",
+            address: "5 Rue René Boulanger, 75010 Paris",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -925,14 +870,11 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/121%20Rue%20de%20Charenton%2075012",
+        mapsUrl: "https://www.google.fr/maps/place/121%20Rue%20de%20Charenton%2C%2075012%20Paris",
         contact: {
-            phoneE164: "0745256983", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneE164: "0745256983",
             phoneDisplay: "07 45 25 69 83",
-            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
-            // I will put the address in "about" or just leave it implicitly in mapsUrl.
-            // Actually, I'll add it to 'about.p1' to make it visible.
-            address: "8 shou édition, 75000",
+            address: "121 Rue de Charenton, 75012 Paris",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -973,14 +915,11 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/97%20Rue%20de%20Bagnolet%2075020",
+        mapsUrl: "https://www.google.fr/maps/place/97%20Rue%20de%20Bagnolet%2C%2075020%20Paris",
         contact: {
-            phoneE164: "0758123257", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneE164: "0758123257",
             phoneDisplay: "07 58 12 32 57",
-            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
-            // I will put the address in "about" or just leave it implicitly in mapsUrl.
-            // Actually, I'll add it to 'about.p1' to make it visible.
-            address: "8 shou édition, 75000",
+            address: "97 Rue de Bagnolet, 75020 Paris",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -1021,14 +960,11 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/35%20Rue%20Claude%20Bernard%2075005",
+        mapsUrl: "https://www.google.fr/maps/place/35%20Rue%20Claude%20Bernard%2C%2075005%20Paris",
         contact: {
-            phoneE164: "0950878549", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneE164: "0950878549",
             phoneDisplay: "09 50 87 85 49",
-            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
-            // I will put the address in "about" or just leave it implicitly in mapsUrl.
-            // Actually, I'll add it to 'about.p1' to make it visible.
-            address: "8 shou édition, 75000",
+            address: "35 Rue Claude Bernard, 75005 Paris",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -1069,14 +1005,11 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/57%20Rue%20Saint-Jacques%2075005",
+        mapsUrl: "https://www.google.fr/maps/place/57%20Rue%20Saint-Jacques%2C%2075005%20Paris",
         contact: {
-            phoneE164: "0952380560", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneE164: "0952380560",
             phoneDisplay: "09 52 38 05 60",
-            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
-            // I will put the address in "about" or just leave it implicitly in mapsUrl.
-            // Actually, I'll add it to 'about.p1' to make it visible.
-            address: "8 shou édition, 75000",
+            address: "57 Rue Saint-Jacques, 75005 Paris",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -1117,14 +1050,11 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/5%20Bd%20de%20Magenta%2075010",
+        mapsUrl: "https://www.google.fr/maps/place/5%20Bd%20de%20Magenta%2C%2075010%20Paris",
         contact: {
-            phoneE164: "0981864250", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneE164: "0981864250",
             phoneDisplay: "09 81 86 42 50",
-            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
-            // I will put the address in "about" or just leave it implicitly in mapsUrl.
-            // Actually, I'll add it to 'about.p1' to make it visible.
-            address: "8 shou édition, 75000",
+            address: "5 Bd de Magenta, 75010 Paris",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -1165,14 +1095,11 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/74%20Rue%20du%20Bac%2075007",
+        mapsUrl: "https://www.google.fr/maps/place/74%20Rue%20du%20Bac%2C%2075007%20Paris",
         contact: {
-            phoneE164: "0982367107", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneE164: "0982367107",
             phoneDisplay: "09 82 36 71 07",
-            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
-            // I will put the address in "about" or just leave it implicitly in mapsUrl.
-            // Actually, I'll add it to 'about.p1' to make it visible.
-            address: "8 shou édition, 75000",
+            address: "74 Rue du Bac, 75007 Paris",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -1213,14 +1140,11 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/243%20Rue%20de%20Bercy%2075012",
+        mapsUrl: "https://www.google.fr/maps/place/243%20Rue%20de%20Bercy%2C%2075012%20Paris",
         contact: {
-            phoneE164: "0982532078", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneE164: "0982532078",
             phoneDisplay: "09 82 53 20 78",
-            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
-            // I will put the address in "about" or just leave it implicitly in mapsUrl.
-            // Actually, I'll add it to 'about.p1' to make it visible.
-            address: "8 shou édition, 75000",
+            address: "243 Rue de Bercy, 75012 Paris",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -1261,14 +1185,11 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/51%20Rue%20de%20l%E2%80%99%C3%89chiquier%2075010",
+        mapsUrl: "https://www.google.fr/maps/place/51%20Rue%20de%20l%E2%80%99%C3%89chiquier%2C%2075010%20Paris",
         contact: {
-            phoneE164: "0983585258", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneE164: "0983585258",
             phoneDisplay: "09 83 58 52 58",
-            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
-            // I will put the address in "about" or just leave it implicitly in mapsUrl.
-            // Actually, I'll add it to 'about.p1' to make it visible.
-            address: "8 shou édition, 75000",
+            address: "51 Rue de l’Échiquier, 75010 Paris",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -1309,14 +1230,11 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/73%20Rue%20de%20Charenton%2075012",
+        mapsUrl: "https://www.google.fr/maps/place/73%20Rue%20de%20Charenton%2C%2075012%20Paris",
         contact: {
-            phoneE164: "0984037859", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneE164: "0984037859",
             phoneDisplay: "09 84 03 78 59",
-            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
-            // I will put the address in "about" or just leave it implicitly in mapsUrl.
-            // Actually, I'll add it to 'about.p1' to make it visible.
-            address: "8 shou édition, 75000",
+            address: "73 Rue de Charenton, 75012 Paris",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -1357,14 +1275,11 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/1%20Rue%20du%20G%C3%A9n%C3%A9ral%20Lanrezac%2075017",
+        mapsUrl: "https://www.google.fr/maps/place/1%20Rue%20du%20G%C3%A9n%C3%A9ral%20Lanrezac%2C%2075017%20Paris",
         contact: {
-            phoneE164: "0984245291", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneE164: "0984245291",
             phoneDisplay: "09 84 24 52 91",
-            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
-            // I will put the address in "about" or just leave it implicitly in mapsUrl.
-            // Actually, I'll add it to 'about.p1' to make it visible.
-            address: "8 shou édition, 75000",
+            address: "1 Rue du Général Lanrezac, 75017 Paris",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -1405,14 +1320,11 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/24%20Avenue%20Ledru%20Rollin%2075012",
+        mapsUrl: "https://www.google.fr/maps/place/24%20Avenue%20Ledru%20Rollin%2C%2075012%20Paris",
         contact: {
-            phoneE164: "0986124881", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneE164: "0986124881",
             phoneDisplay: "09 86 12 48 81",
-            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
-            // I will put the address in "about" or just leave it implicitly in mapsUrl.
-            // Actually, I'll add it to 'about.p1' to make it visible.
-            address: "8 shou édition, 75000",
+            address: "24 Avenue Ledru Rollin, 75012 Paris",
         },
         dailyOffer: {
             title: "Offre du jour",
@@ -1436,7 +1348,6 @@ export const SHOPS: Shop[] = [
             ],
         },
     },
-
 
     {
         slug: "sairam-paris04",
