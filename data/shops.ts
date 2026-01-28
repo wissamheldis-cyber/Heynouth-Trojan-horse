@@ -61,7 +61,7 @@ export const SHOPS: Shop[] = [
             sun: [["12:00", "02:00"]],
         },
 
-        mapImage: "/shops/demo-epicerie/map.jpg",
+        mapImage: "/shops/generic/map.png",
         mapsUrl: "https://www.google.fr/maps/place/Bill's+Burger+Chatelet/@48.8597703,2.3461398,19z/data=!4m9!1m2!10m1!1e1!3m5!1s0x47e66f001250df6d:0x4cbbed7619ea4303!8m2!3d48.8599556!4d2.3467894!16s%2Fg%2F11w2mk38ps?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoASAFQAw%3D%3D",
 
         contact: {
@@ -73,21 +73,21 @@ export const SHOPS: Shop[] = [
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
-            image: "/shops/demo-epicerie/offer.jpg",
+            image: "/shops/generic/offer.png",
             protocolHref: "#reservation",
         },
         products: [
-            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/demo-epicerie/p1.jpg" },
-            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/demo-epicerie/p2.jpg" },
-            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/demo-epicerie/p3.jpg" },
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/dgeneric/p3.png" },
         ],
         about: {
             p1: "Bienvenue chez [Nom du commerce], votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien : boissons, snacks, produits frais et basiques, avec une sélection qui bouge selon les arrivages.",
             p2: "Notre principe est simple : du service humain et du temps gagné. Vous appelez, vous réservez ce qu’il vous faut, vous passez à l’heure qui vous arrange — on prépare et on met de côté selon le stock.",
             images: [
-                "/shops/demo-epicerie/a1.jpg",
-                "/shops/demo-epicerie/a2.jpg",
-                "/shops/demo-epicerie/a3.jpg",
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
             ],
         },
     },
