@@ -21,6 +21,7 @@ export type Shop = {
     };
 
     dailyOffer: {
+
         label?: string;      // ex: "OFFRE DE LA SEMAINE"
         title: string;       // "Nom du produit"
         price: string;       // "4,99 €"
@@ -68,6 +69,7 @@ export const SHOPS: Shop[] = [
             address: "77 Rue Crozatier, 75012 Paris",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Offre du jour",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -113,6 +115,7 @@ export const SHOPS: Shop[] = [
             address: "2 Rue Fernand Labori, 75018 Paris",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Offre du jour",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -158,6 +161,7 @@ export const SHOPS: Shop[] = [
             address: "123 Rue Falguière, 75015 Paris",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Offre du jour",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -203,6 +207,7 @@ export const SHOPS: Shop[] = [
             address: "124 Rue du Cherche-midi, 75006 Paris",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Offre du jour",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -248,6 +253,7 @@ export const SHOPS: Shop[] = [
             address: "24 Rue Monge, 75005 Paris",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Offre du jour",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -293,6 +299,7 @@ export const SHOPS: Shop[] = [
             address: "10 Rue de Pontoise, 75005 Paris",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Offre du jour",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -338,6 +345,7 @@ export const SHOPS: Shop[] = [
             address: "153 Rue Saint-Jacques, 75005 Paris",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Offre du jour",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -383,6 +391,7 @@ export const SHOPS: Shop[] = [
             address: "146 Rue du Faubourg St Antoine, 75011 Paris",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Offre du jour",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -428,6 +437,7 @@ export const SHOPS: Shop[] = [
             address: "202 Rue de Vaugirard, 75015 Paris",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Offre du jour",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -473,6 +483,7 @@ export const SHOPS: Shop[] = [
             address: "53 Boulevard Blanqui, 75013 Paris",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Offre du jour",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -518,6 +529,7 @@ export const SHOPS: Shop[] = [
             address: "73 Boulevard Vincent Auriol, 75013 Paris",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Offre du jour",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -563,6 +575,7 @@ export const SHOPS: Shop[] = [
             address: "67 Rue Saint-Louis en l'Île, 75004 Paris",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Offre du jour",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -608,6 +621,7 @@ export const SHOPS: Shop[] = [
             address: "35 Rue Georges Pitard, 75015 Paris",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Offre du jour",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -653,6 +667,7 @@ export const SHOPS: Shop[] = [
             address: "107 Rue de Charenton, 75012 Paris",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Offre du jour",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -698,6 +713,7 @@ export const SHOPS: Shop[] = [
             address: "13 Rue de la Roquette, 75004 Paris",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Offre du jour",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -743,6 +759,7 @@ export const SHOPS: Shop[] = [
             address: "3 Rue des Écoles, 75005 Paris",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Offre du jour",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -788,6 +805,7 @@ export const SHOPS: Shop[] = [
             address: "94 Avenue Philippe Auguste, 75011 Paris",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Offre du jour",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -833,6 +851,7 @@ export const SHOPS: Shop[] = [
             address: "5 Rue René Boulanger, 75010 Paris",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Offre du jour",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -878,6 +897,7 @@ export const SHOPS: Shop[] = [
             address: "121 Rue de Charenton, 75012 Paris",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Offre du jour",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -923,6 +943,7 @@ export const SHOPS: Shop[] = [
             address: "97 Rue de Bagnolet, 75020 Paris",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Offre du jour",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -968,6 +989,7 @@ export const SHOPS: Shop[] = [
             address: "35 Rue Claude Bernard, 75005 Paris",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Offre du jour",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -1013,6 +1035,7 @@ export const SHOPS: Shop[] = [
             address: "57 Rue Saint-Jacques, 75005 Paris",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Offre du jour",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -1058,6 +1081,7 @@ export const SHOPS: Shop[] = [
             address: "5 Bd de Magenta, 75010 Paris",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Offre du jour",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -1103,6 +1127,7 @@ export const SHOPS: Shop[] = [
             address: "74 Rue du Bac, 75007 Paris",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Offre du jour",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -1148,6 +1173,7 @@ export const SHOPS: Shop[] = [
             address: "243 Rue de Bercy, 75012 Paris",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Offre du jour",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -1193,6 +1219,7 @@ export const SHOPS: Shop[] = [
             address: "51 Rue de l’Échiquier, 75010 Paris",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Offre du jour",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -1238,6 +1265,7 @@ export const SHOPS: Shop[] = [
             address: "73 Rue de Charenton, 75012 Paris",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Offre du jour",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -1283,6 +1311,7 @@ export const SHOPS: Shop[] = [
             address: "1 Rue du Général Lanrezac, 75017 Paris",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Offre du jour",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -1328,6 +1357,7 @@ export const SHOPS: Shop[] = [
             address: "24 Avenue Ledru Rollin, 75012 Paris",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Offre du jour",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -1377,6 +1407,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -1425,6 +1456,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -1473,6 +1505,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -1521,6 +1554,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -1569,6 +1603,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -1617,6 +1652,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -1665,6 +1701,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -1713,6 +1750,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -1761,6 +1799,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -1809,6 +1848,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -1857,6 +1897,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -1905,6 +1946,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -1953,6 +1995,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -2001,6 +2044,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -2049,6 +2093,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -2097,6 +2142,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -2145,6 +2191,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -2193,6 +2240,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -2241,6 +2289,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -2289,6 +2338,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -2337,6 +2387,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -2385,6 +2436,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -2433,6 +2485,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -2481,6 +2534,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -2529,6 +2583,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -2577,6 +2632,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -2625,6 +2681,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -2673,6 +2730,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -2721,6 +2779,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -2769,6 +2828,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -2817,6 +2877,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -2865,6 +2926,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -2913,6 +2975,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -2961,6 +3024,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -3009,6 +3073,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -3057,6 +3122,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -3105,6 +3171,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -3153,6 +3220,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -3201,6 +3269,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -3249,6 +3318,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -3297,6 +3367,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -3345,6 +3416,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -3393,6 +3465,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -3441,6 +3514,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -3489,6 +3563,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -3537,6 +3612,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -3585,6 +3661,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -3633,6 +3710,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -3681,6 +3759,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -3729,6 +3808,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -3777,6 +3857,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -3825,6 +3906,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -3873,6 +3955,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -3921,6 +4004,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -3969,6 +4053,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -4017,6 +4102,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -4065,6 +4151,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -4113,6 +4200,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -4161,6 +4249,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -4209,6 +4298,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -4257,6 +4347,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -4305,6 +4396,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -4353,6 +4445,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -4401,6 +4494,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -4449,6 +4543,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -4497,6 +4592,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -4545,6 +4641,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -4593,6 +4690,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -4641,6 +4739,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -4689,6 +4788,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -4737,6 +4837,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -4785,6 +4886,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -4833,6 +4935,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -4881,6 +4984,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -4929,6 +5033,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -4977,6 +5082,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -5025,6 +5131,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -5073,6 +5180,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -5121,6 +5229,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -5169,6 +5278,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -5217,6 +5327,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -5265,6 +5376,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -5313,6 +5425,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -5361,6 +5474,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -5409,6 +5523,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -5457,6 +5572,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -5505,6 +5621,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -5553,6 +5670,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -5601,6 +5719,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -5649,6 +5768,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -5697,6 +5817,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -5745,6 +5866,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -5793,6 +5915,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -5841,6 +5964,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -5889,6 +6013,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -5937,6 +6062,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -5985,6 +6111,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -6033,6 +6160,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -6081,6 +6209,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -6129,6 +6258,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -6177,6 +6307,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -6225,6 +6356,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -6273,6 +6405,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -6321,6 +6454,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -6369,6 +6503,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -6417,6 +6552,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -6465,6 +6601,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -6513,6 +6650,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -6561,6 +6699,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -6609,6 +6748,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -6657,6 +6797,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -6705,6 +6846,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -6753,6 +6895,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -6801,6 +6944,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -6849,6 +6993,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -6897,6 +7042,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -6945,6 +7091,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -6993,6 +7140,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DE LA SEMAINE",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -7041,6 +7189,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -7089,6 +7238,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU MOIS",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
@@ -7137,6 +7287,7 @@ export const SHOPS: Shop[] = [
             address: "8 shou édition, 75000",
         },
         dailyOffer: {
+            label: "OFFRE DU JOUR",
             title: "Nom du produit",
             price: "4,99 €",
             oldPrice: "7,99 €",
