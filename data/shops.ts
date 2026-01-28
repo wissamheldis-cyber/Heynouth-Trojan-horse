@@ -92,11 +92,10 @@ export const SHOPS: Shop[] = [
             ],
         },
     },
-
-        {
+    {
         slug: "heynouth1-paris01",
         name: "Heynouth 1",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 01",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -144,7 +143,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth2-paris01",
         name: "Heynouth 2",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 01",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -192,7 +191,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth3-paris01",
         name: "Heynouth 3",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 01",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -240,7 +239,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth4-paris01",
         name: "Heynouth 4",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 01",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -288,7 +287,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth5-paris01",
         name: "Heynouth 5",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 01",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -336,7 +335,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth6-paris01",
         name: "Heynouth 6",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 01",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -384,7 +383,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth7-paris02",
         name: "Heynouth 7",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 02",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -432,7 +431,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth8-paris02",
         name: "Heynouth 8",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 02",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -480,7 +479,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth9-paris02",
         name: "Heynouth 9",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 02",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -528,7 +527,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth10-paris02",
         name: "Heynouth 10",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 02",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -576,7 +575,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth11-paris02",
         name: "Heynouth 11",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 02",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -624,7 +623,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth12-paris02",
         name: "Heynouth 12",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 02",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -672,7 +671,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth13-paris03",
         name: "Heynouth 13",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 03",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -720,7 +719,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth14-paris03",
         name: "Heynouth 14",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 03",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -768,7 +767,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth15-paris03",
         name: "Heynouth 15",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 03",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -816,7 +815,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth16-paris03",
         name: "Heynouth 16",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 03",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -864,7 +863,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth17-paris03",
         name: "Heynouth 17",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 03",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -912,7 +911,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth18-paris03",
         name: "Heynouth 18",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 03",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -1248,7 +1247,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth25-paris05",
         name: "Heynouth 25",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 05",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -1296,7 +1295,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth26-paris05",
         name: "Heynouth 26",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 05",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -1344,7 +1343,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth27-paris05",
         name: "Heynouth 27",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 05",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -1392,7 +1391,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth28-paris05",
         name: "Heynouth 28",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 05",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -1440,7 +1439,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth29-paris05",
         name: "Heynouth 29",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 05",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -1488,7 +1487,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth30-paris05",
         name: "Heynouth 30",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 05",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -1536,7 +1535,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth31-paris06",
         name: "Heynouth 31",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 06",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -1584,7 +1583,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth32-paris06",
         name: "Heynouth 32",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 06",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -1632,7 +1631,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth33-paris06",
         name: "Heynouth 33",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 06",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -1680,7 +1679,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth34-paris06",
         name: "Heynouth 34",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 06",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -1728,7 +1727,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth35-paris06",
         name: "Heynouth 35",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 06",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -1776,7 +1775,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth36-paris06",
         name: "Heynouth 36",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 06",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -1824,7 +1823,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth37-paris07",
         name: "Heynouth 37",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 07",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -1872,7 +1871,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth38-paris07",
         name: "Heynouth 38",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 07",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -1920,7 +1919,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth39-paris07",
         name: "Heynouth 39",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 07",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -1968,7 +1967,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth40-paris07",
         name: "Heynouth 40",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 07",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -2016,7 +2015,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth41-paris07",
         name: "Heynouth 41",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 07",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -2064,7 +2063,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth42-paris07",
         name: "Heynouth 42",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 07",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -2112,7 +2111,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth43-paris08",
         name: "Heynouth 43",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 08",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -2160,7 +2159,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth44-paris08",
         name: "Heynouth 44",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 08",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -2208,7 +2207,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth45-paris08",
         name: "Heynouth 45",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 08",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -2256,7 +2255,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth46-paris08",
         name: "Heynouth 46",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 08",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -2304,7 +2303,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth47-paris08",
         name: "Heynouth 47",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 08",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -2352,7 +2351,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth48-paris08",
         name: "Heynouth 48",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 08",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -2400,7 +2399,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth49-paris09",
         name: "Heynouth 49",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 09",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -2448,7 +2447,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth50-paris09",
         name: "Heynouth 50",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 09",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -2496,7 +2495,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth51-paris09",
         name: "Heynouth 51",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 09",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -2544,7 +2543,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth52-paris09",
         name: "Heynouth 52",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 09",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -2592,7 +2591,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth53-paris09",
         name: "Heynouth 53",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 09",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -2640,7 +2639,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth54-paris09",
         name: "Heynouth 54",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 09",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -2688,7 +2687,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth55-paris10",
         name: "Heynouth 55",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 10",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -2736,7 +2735,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth56-paris10",
         name: "Heynouth 56",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 10",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -2784,7 +2783,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth57-paris10",
         name: "Heynouth 57",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 10",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -2832,7 +2831,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth58-paris10",
         name: "Heynouth 58",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 10",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -2880,7 +2879,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth59-paris10",
         name: "Heynouth 59",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 10",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -2928,7 +2927,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth60-paris10",
         name: "Heynouth 60",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 10",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -2976,7 +2975,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth61-paris11",
         name: "Heynouth 61",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 11",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -3024,7 +3023,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth62-paris11",
         name: "Heynouth 62",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 11",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -3072,7 +3071,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth63-paris11",
         name: "Heynouth 63",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 11",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -3120,7 +3119,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth64-paris11",
         name: "Heynouth 64",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 11",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -3168,7 +3167,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth65-paris11",
         name: "Heynouth 65",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 11",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -3216,7 +3215,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth66-paris11",
         name: "Heynouth 66",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 11",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -3264,7 +3263,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth67-paris12",
         name: "Heynouth 67",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 12",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -3312,7 +3311,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth68-paris12",
         name: "Heynouth 68",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 12",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -3360,7 +3359,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth69-paris12",
         name: "Heynouth 69",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 12",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -3408,7 +3407,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth70-paris12",
         name: "Heynouth 70",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 12",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -3456,7 +3455,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth71-paris12",
         name: "Heynouth 71",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 12",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -3504,7 +3503,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth72-paris12",
         name: "Heynouth 72",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 12",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -3552,7 +3551,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth73-paris13",
         name: "Heynouth 73",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 13",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -3600,7 +3599,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth74-paris13",
         name: "Heynouth 74",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 13",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -3648,7 +3647,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth75-paris13",
         name: "Heynouth 75",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 13",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -3696,7 +3695,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth76-paris13",
         name: "Heynouth 76",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 13",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -3744,7 +3743,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth77-paris13",
         name: "Heynouth 77",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 13",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -3792,7 +3791,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth78-paris13",
         name: "Heynouth 78",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 13",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -3840,7 +3839,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth79-paris14",
         name: "Heynouth 79",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 14",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -3888,7 +3887,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth80-paris14",
         name: "Heynouth 80",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 14",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -3936,7 +3935,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth81-paris14",
         name: "Heynouth 81",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 14",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -3984,7 +3983,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth82-paris14",
         name: "Heynouth 82",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 14",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -4032,7 +4031,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth83-paris14",
         name: "Heynouth 83",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 14",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -4080,7 +4079,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth84-paris14",
         name: "Heynouth 84",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 14",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -4128,7 +4127,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth85-paris15",
         name: "Heynouth 85",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 15",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -4176,7 +4175,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth86-paris15",
         name: "Heynouth 86",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 15",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -4224,7 +4223,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth87-paris15",
         name: "Heynouth 87",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 15",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -4272,7 +4271,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth88-paris15",
         name: "Heynouth 88",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 15",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -4320,7 +4319,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth89-paris15",
         name: "Heynouth 89",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 15",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -4368,7 +4367,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth90-paris15",
         name: "Heynouth 90",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 15",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -4416,7 +4415,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth91-paris16",
         name: "Heynouth 91",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 16",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -4464,7 +4463,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth92-paris16",
         name: "Heynouth 92",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 16",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -4512,7 +4511,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth93-paris16",
         name: "Heynouth 93",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 16",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -4560,7 +4559,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth94-paris16",
         name: "Heynouth 94",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 16",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -4608,7 +4607,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth95-paris16",
         name: "Heynouth 95",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 16",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -4656,7 +4655,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth96-paris16",
         name: "Heynouth 96",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 16",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -4704,7 +4703,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth97-paris17",
         name: "Heynouth 97",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 17",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -4752,7 +4751,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth98-paris17",
         name: "Heynouth 98",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 17",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -4800,7 +4799,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth99-paris17",
         name: "Heynouth 99",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 17",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -4848,7 +4847,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth100-paris17",
         name: "Heynouth 100",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 17",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -4896,7 +4895,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth101-paris17",
         name: "Heynouth 101",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 17",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -4944,7 +4943,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth102-paris17",
         name: "Heynouth 102",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 17",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -4992,7 +4991,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth103-paris18",
         name: "Heynouth 103",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 18",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -5040,7 +5039,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth104-paris18",
         name: "Heynouth 104",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 18",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -5088,7 +5087,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth105-paris18",
         name: "Heynouth 105",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 18",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -5136,7 +5135,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth106-paris18",
         name: "Heynouth 106",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 18",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -5184,7 +5183,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth107-paris18",
         name: "Heynouth 107",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 18",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -5232,7 +5231,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth108-paris18",
         name: "Heynouth 108",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 18",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -5280,7 +5279,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth109-paris19",
         name: "Heynouth 109",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 19",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -5328,7 +5327,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth110-paris19",
         name: "Heynouth 110",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 19",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -5376,7 +5375,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth111-paris19",
         name: "Heynouth 111",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 19",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -5424,7 +5423,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth112-paris19",
         name: "Heynouth 112",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 19",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -5472,7 +5471,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth113-paris19",
         name: "Heynouth 113",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 19",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -5520,7 +5519,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth114-paris19",
         name: "Heynouth 114",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 19",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -5568,7 +5567,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth115-paris20",
         name: "Heynouth 115",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 20",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -5616,7 +5615,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth116-paris20",
         name: "Heynouth 116",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 20",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -5664,7 +5663,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth117-paris20",
         name: "Heynouth 117",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 20",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -5712,7 +5711,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth118-paris20",
         name: "Heynouth 118",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 20",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -5760,7 +5759,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth119-paris20",
         name: "Heynouth 119",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 20",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -5808,7 +5807,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "heynouth120-paris20",
         name: "Heynouth 120",
-        districtLabel: "PARIS 04",
+        districtLabel: "PARIS 20",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",
 
@@ -5852,7 +5851,7 @@ export const SHOPS: Shop[] = [
                 "/shops/generic/a3.png",
             ],
         },
-    },
+    }
 ];
 
 export const getShop = (slug: string) => SHOPS.find((s) => s.slug === slug);

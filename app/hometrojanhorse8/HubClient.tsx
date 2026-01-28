@@ -18,17 +18,28 @@ const ubuntu = Ubuntu({
 
 export default function HubClient() {
     const [query, setQuery] = useState("");
+    const [selectedDistrict, setSelectedDistrict] = useState("all");
+
+    // Extract unique districts
+    const districts = useMemo(() => {
+        const unique = new Set(SHOPS.map(s => s.districtLabel));
+        return Array.from(unique).sort();
+    }, []);
 
     const filteredShops = useMemo(() => {
         const lowerQ = query.toLowerCase();
         return SHOPS.filter((shop) => {
-            return (
+            const matchesQuery = (
                 shop.name.toLowerCase().includes(lowerQ) ||
                 shop.slug.toLowerCase().includes(lowerQ) ||
                 shop.districtLabel.toLowerCase().includes(lowerQ)
             );
+
+            const matchesDistrict = selectedDistrict === "all" || shop.districtLabel === selectedDistrict;
+
+            return matchesQuery && matchesDistrict;
         });
-    }, [query]);
+    }, [query, selectedDistrict]);
 
     const copyLink = (e: React.MouseEvent, slug: string) => {
         e.preventDefault();
@@ -72,17 +83,37 @@ export default function HubClient() {
                         <h1 className={`${ubuntu.className} text-3xl font-bold tracking-tight text-[#2F6B2B]`}>Heynouth</h1>
                     </div>
 
-                    <div className="relative w-full max-w-md group">
-                        <div className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-[#2F6B2B] transition-colors">
-                            <QuickIconSearch className="w-5 h-5" />
+                    <div className="flex flex-col sm:flex-row gap-3 w-full max-w-2xl">
+                        {/* District Dropdown */}
+                        <div className="relative min-w-[160px]">
+                            <select
+                                value={selectedDistrict}
+                                onChange={(e) => setSelectedDistrict(e.target.value)}
+                                className="w-full appearance-none pl-4 pr-10 py-3 rounded-2xl bg-white border border-gray-200 outline-none focus:border-[#2F6B2B] focus:ring-1 focus:ring-[#2F6B2B] shadow-sm transition-all text-gray-700 cursor-pointer"
+                            >
+                                <option value="all">Tout Paris</option>
+                                {districts.map(d => (
+                                    <option key={d} value={d}>{d}</option>
+                                ))}
+                            </select>
+                            <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400">
+                                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" /></svg>
+                            </div>
                         </div>
-                        <input
-                            type="text"
-                            value={query}
-                            onChange={(e) => setQuery(e.target.value)}
-                            placeholder="Rechercher un commerce..."
-                            className="w-full pl-10 pr-4 py-3 rounded-2xl bg-white border border-gray-200 outline-none focus:border-[#2F6B2B] focus:ring-1 focus:ring-[#2F6B2B] shadow-sm transition-all"
-                        />
+
+                        {/* Search Input */}
+                        <div className="relative w-full group">
+                            <div className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-[#2F6B2B] transition-colors">
+                                <QuickIconSearch className="w-5 h-5" />
+                            </div>
+                            <input
+                                type="text"
+                                value={query}
+                                onChange={(e) => setQuery(e.target.value)}
+                                placeholder="Rechercher un commerce..."
+                                className="w-full pl-10 pr-4 py-3 rounded-2xl bg-white border border-gray-200 outline-none focus:border-[#2F6B2B] focus:ring-1 focus:ring-[#2F6B2B] shadow-sm transition-all"
+                            />
+                        </div>
                     </div>
                 </div>
 
