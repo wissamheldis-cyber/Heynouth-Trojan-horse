@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-bukra);
 
   --color-brand-paper: #f0f0f0;
   --color-brand-ink: #0F172A;
