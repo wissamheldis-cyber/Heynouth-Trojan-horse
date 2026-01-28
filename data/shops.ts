@@ -1049,20 +1049,20 @@ export const SHOPS: Shop[] = [
         },
         dailyOffer: {
             label: "OFFRE DE LA SEMAINE",
-            title: "Nom du produit",
+            title: "Panier Frais",
             price: "4,99 €",
             oldPrice: "7,99 €",
             image: "/shops/sairam-paris-04/offer.png",
             protocolHref: "#reservation",
         },
         products: [
-            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/sairam-paris-04/p1.png" },
-            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/sairam-paris-04/p2.png" },
-            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/sairam-paris-04/p3.png" },
+            { id: "p1", title: "Panier de Fruits", price: "7,99 €", image: "/shops/sairam-paris-04/p1.png" },
+            { id: "p2", title: "Les Essentiels", price: "5,50 €", image: "/shops/sairam-paris-04/p2.png" },
+            { id: "p3", title: "Snack Box", price: "12,00 €", image: "/shops/sairam-paris-04/p3.png" },
         ],
         about: {
             p1: "Bienvenue chez Sairam, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien : boissons, snacks, produits frais et basiques, avec une sélection qui bouge selon les arrivages.",
-            p2: "Notre principe est simple : du service humain et du temps gagné. Vous appelez, vous réservez ce qu’il vous faut, vous passez à l’heure qui vous arrange — on prépare et on met de côté selon le stock.",
+            p2: "Notre principe est simple : du service humain et du temps gagné. Vous appelez, vous réservez ce qu’il vous faut, vous passez à l’heure qui vous arrange, on prépare et on met de côté selon le stock.",
             images: [
                 "/shops/sairam-paris-04/a1.png",
                 "/shops/sairam-paris-04/a2.png",
