@@ -48,7 +48,7 @@ export default function HubClient() {
     }
 
     return (
-        <div className="min-h-screen bg-[#FDFBF7] text-[#111827] p-4 md:p-8 font-sans">
+        <div className="min-h-screen bg-brand-paper text-[#111827] p-4 md:p-8 font-sans">
             <div className="max-w-6xl mx-auto space-y-8">
 
                 {/* Header & Search */}
