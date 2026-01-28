@@ -48,8 +48,20 @@ export default function HubClient() {
     }
 
     return (
-        <div className="min-h-screen bg-brand-paper text-[#111827] p-4 md:p-8 font-sans">
-            <div className="max-w-6xl mx-auto space-y-8">
+        <main className="relative min-h-screen w-full overflow-x-hidden bg-[#F4F2EC] px-4 py-10 md:py-8 font-sans">
+            {/* Desktop Background Shell */}
+            <div className="pointer-events-none fixed inset-0 z-0 hidden md:block">
+                {/* Left Green Gradient */}
+                <div className="absolute -left-[10%] top-[-10%] h-[90vh] w-[50vw] rounded-full bg-brand-green/20 blur-[120px] mix-blend-multiply" />
+
+                {/* Right Yellow Gradient */}
+                <div className="absolute -right-[10%] bottom-[-10%] h-[90vh] w-[50vw] rounded-full bg-brand-yellow/30 blur-[120px] mix-blend-multiply" />
+
+                {/* Global White Veil */}
+                <div className="absolute inset-0 bg-white/40 backdrop-blur-[1px]" />
+            </div>
+
+            <div className="relative z-10 max-w-6xl mx-auto space-y-8">
 
                 {/* Header & Search */}
                 <div className="flex flex-col md:flex-row items-center justify-between gap-4">
@@ -163,7 +175,7 @@ export default function HubClient() {
                     })}
                 </div>
             </div>
-        </div>
+        </main>
     );
 }
 
