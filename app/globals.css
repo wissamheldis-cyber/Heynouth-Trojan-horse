@@ -40,3 +40,27 @@
     overflow: hidden;
   }
 }
+
+@media print {
+  body>*:not(.print-portal) {
+    display: none !important;
+  }
+
+  .print-portal {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    z-index: 99999 !important;
+    background: white !important;
+    padding: 0 !important;
+  }
+
+  /* Reset layout for print */
+  .print-portal>div {
+    box-shadow: none !important;
+    max-width: none !important;
+    width: 100% !important;
+  }
+}

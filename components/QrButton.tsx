@@ -47,20 +47,20 @@ export default function QrButton({ slug, name }: QrButtonProps) {
 
             {isOpen && mounted && createPortal(
                 <div
-                    className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4"
+                    className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 print-portal"
                     onClick={(e) => {
                         e.stopPropagation();
                         setIsOpen(false);
                     }}
                 >
                     <div
-                        className="bg-white rounded-3xl p-8 max-w-sm w-full shadow-2xl relative animate-in fade-in zoom-in duration-200"
+                        className="bg-white rounded-3xl p-8 max-w-sm w-full shadow-2xl relative animate-in fade-in zoom-in duration-200 print:shadow-none print:w-auto"
                         onClick={(e) => e.stopPropagation()}
                     >
                         {/* Close Button */}
                         <button
                             onClick={() => setIsOpen(false)}
-                            className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-full text-gray-500 transition-colors"
+                            className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-full text-gray-500 transition-colors print:hidden"
                         >
                             ✕
                         </button>
@@ -71,7 +71,7 @@ export default function QrButton({ slug, name }: QrButtonProps) {
                                 <p className="text-sm text-gray-500 break-all">{url}</p>
                             </div>
 
-                            <div className="bg-white p-4 rounded-xl border-2 border-gray-100 inline-block">
+                            <div className="bg-white p-4 rounded-xl border-2 border-gray-100 inline-block print:border-0">
                                 <QRCode
                                     value={url}
                                     size={220}
@@ -80,7 +80,7 @@ export default function QrButton({ slug, name }: QrButtonProps) {
                                 />
                             </div>
 
-                            <div className="grid grid-cols-2 gap-3">
+                            <div className="grid grid-cols-2 gap-3 print:hidden">
                                 <button
                                     onClick={copyUrl}
                                     className="py-2.5 px-4 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-xl font-semibold text-sm transition-colors"
