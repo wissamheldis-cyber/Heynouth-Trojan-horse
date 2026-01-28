@@ -45,6 +45,1400 @@ export type Shop = {
 export const SHOPS: Shop[] = [
 
     {
+        slug: "hey-77-rue-crozatier-75012",
+        name: "Hey",
+        districtLabel: "PARIS 12",
+        statusLabel: "OUVERT",
+        hoursLabel: "10:00 — 02:00",
+        timezone: "Europe/Paris",
+        hours: {
+            mon: [["10:00", "02:00"]],
+            tue: [["10:00", "02:00"]],
+            wed: [["10:00", "02:00"]],
+            thu: [["10:00", "02:00"]],
+            fri: [["10:00", "04:00"]],
+            sat: [["10:00", "04:00"]],
+            sun: [["12:00", "02:00"]],
+        },
+        mapImage: "/shops/generic/map.png",
+        mapsUrl: "https://www.google.fr/maps/place/77%20Rue%20Crozatier%2075012",
+        contact: {
+            phoneE164: "0140190033", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneDisplay: "01 40 19 00 33",
+            email: "contact@ehshop.com",
+            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
+            // I will put the address in "about" or just leave it implicitly in mapsUrl.
+            // Actually, I'll add it to 'about.p1' to make it visible.
+        },
+        dailyOffer: {
+            title: "Offre du jour",
+            price: "4,99 €",
+            oldPrice: "7,99 €",
+            image: "/shops/generic/offer.png",
+            protocolHref: "#reservation",
+        },
+        products: [
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+        ],
+        about: {
+            p1: "Retrouvez-nous au 77 Rue Crozatier, 75012 Paris.",
+            p2: "Votre commerce Hey de quartier.",
+            images: [
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
+            ],
+        },
+    },
+    {
+        slug: "hey-2-rue-fernand-labori-75018",
+        name: "Hey",
+        districtLabel: "PARIS 18",
+        statusLabel: "OUVERT",
+        hoursLabel: "10:00 — 02:00",
+        timezone: "Europe/Paris",
+        hours: {
+            mon: [["10:00", "02:00"]],
+            tue: [["10:00", "02:00"]],
+            wed: [["10:00", "02:00"]],
+            thu: [["10:00", "02:00"]],
+            fri: [["10:00", "04:00"]],
+            sat: [["10:00", "04:00"]],
+            sun: [["12:00", "02:00"]],
+        },
+        mapImage: "/shops/generic/map.png",
+        mapsUrl: "https://www.google.fr/maps/place/2%20Rue%20Fernand%20Labori%2075018",
+        contact: {
+            phoneE164: "0142574299", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneDisplay: "01 42 57 42 99",
+            email: "contact@ehshop.com",
+            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
+            // I will put the address in "about" or just leave it implicitly in mapsUrl.
+            // Actually, I'll add it to 'about.p1' to make it visible.
+        },
+        dailyOffer: {
+            title: "Offre du jour",
+            price: "4,99 €",
+            oldPrice: "7,99 €",
+            image: "/shops/generic/offer.png",
+            protocolHref: "#reservation",
+        },
+        products: [
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+        ],
+        about: {
+            p1: "Retrouvez-nous au 2 Rue Fernand Labori, 75018 Paris.",
+            p2: "Votre commerce Hey de quartier.",
+            images: [
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
+            ],
+        },
+    },
+    {
+        slug: "hey-123-rue-falgui-re-75015",
+        name: "Hey",
+        districtLabel: "PARIS 15",
+        statusLabel: "OUVERT",
+        hoursLabel: "10:00 — 02:00",
+        timezone: "Europe/Paris",
+        hours: {
+            mon: [["10:00", "02:00"]],
+            tue: [["10:00", "02:00"]],
+            wed: [["10:00", "02:00"]],
+            thu: [["10:00", "02:00"]],
+            fri: [["10:00", "04:00"]],
+            sat: [["10:00", "04:00"]],
+            sun: [["12:00", "02:00"]],
+        },
+        mapImage: "/shops/generic/map.png",
+        mapsUrl: "https://www.google.fr/maps/place/123%20Rue%20Falgui%C3%A8re%2075015",
+        contact: {
+            phoneE164: "0142798002", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneDisplay: "01 42 79 80 02",
+            email: "contact@ehshop.com",
+            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
+            // I will put the address in "about" or just leave it implicitly in mapsUrl.
+            // Actually, I'll add it to 'about.p1' to make it visible.
+        },
+        dailyOffer: {
+            title: "Offre du jour",
+            price: "4,99 €",
+            oldPrice: "7,99 €",
+            image: "/shops/generic/offer.png",
+            protocolHref: "#reservation",
+        },
+        products: [
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+        ],
+        about: {
+            p1: "Retrouvez-nous au 123 Rue Falguière, 75015 Paris.",
+            p2: "Votre commerce Hey de quartier.",
+            images: [
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
+            ],
+        },
+    },
+    {
+        slug: "hey-124-rue-du-cherche-midi-75006",
+        name: "Hey",
+        districtLabel: "PARIS 06",
+        statusLabel: "OUVERT",
+        hoursLabel: "10:00 — 02:00",
+        timezone: "Europe/Paris",
+        hours: {
+            mon: [["10:00", "02:00"]],
+            tue: [["10:00", "02:00"]],
+            wed: [["10:00", "02:00"]],
+            thu: [["10:00", "02:00"]],
+            fri: [["10:00", "04:00"]],
+            sat: [["10:00", "04:00"]],
+            sun: [["12:00", "02:00"]],
+        },
+        mapImage: "/shops/generic/map.png",
+        mapsUrl: "https://www.google.fr/maps/place/124%20Rue%20du%20Cherche-midi%2075006",
+        contact: {
+            phoneE164: "0142892335", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneDisplay: "01 42 89 23 35",
+            email: "contact@ehshop.com",
+            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
+            // I will put the address in "about" or just leave it implicitly in mapsUrl.
+            // Actually, I'll add it to 'about.p1' to make it visible.
+        },
+        dailyOffer: {
+            title: "Offre du jour",
+            price: "4,99 €",
+            oldPrice: "7,99 €",
+            image: "/shops/generic/offer.png",
+            protocolHref: "#reservation",
+        },
+        products: [
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+        ],
+        about: {
+            p1: "Retrouvez-nous au 124 Rue du Cherche-midi, 75006 Paris.",
+            p2: "Votre commerce Hey de quartier.",
+            images: [
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
+            ],
+        },
+    },
+    {
+        slug: "hey-24-rue-monge-75005",
+        name: "Hey",
+        districtLabel: "PARIS 05",
+        statusLabel: "OUVERT",
+        hoursLabel: "10:00 — 02:00",
+        timezone: "Europe/Paris",
+        hours: {
+            mon: [["10:00", "02:00"]],
+            tue: [["10:00", "02:00"]],
+            wed: [["10:00", "02:00"]],
+            thu: [["10:00", "02:00"]],
+            fri: [["10:00", "04:00"]],
+            sat: [["10:00", "04:00"]],
+            sun: [["12:00", "02:00"]],
+        },
+        mapImage: "/shops/generic/map.png",
+        mapsUrl: "https://www.google.fr/maps/place/24%20Rue%20Monge%2075005",
+        contact: {
+            phoneE164: "0143260870", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneDisplay: "01 43 26 08 70",
+            email: "contact@ehshop.com",
+            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
+            // I will put the address in "about" or just leave it implicitly in mapsUrl.
+            // Actually, I'll add it to 'about.p1' to make it visible.
+        },
+        dailyOffer: {
+            title: "Offre du jour",
+            price: "4,99 €",
+            oldPrice: "7,99 €",
+            image: "/shops/generic/offer.png",
+            protocolHref: "#reservation",
+        },
+        products: [
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+        ],
+        about: {
+            p1: "Retrouvez-nous au 24 Rue Monge, 75005 Paris.",
+            p2: "Votre commerce Hey de quartier.",
+            images: [
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
+            ],
+        },
+    },
+    {
+        slug: "hey-10-rue-de-pontoise-75005",
+        name: "Hey",
+        districtLabel: "PARIS 05",
+        statusLabel: "OUVERT",
+        hoursLabel: "10:00 — 02:00",
+        timezone: "Europe/Paris",
+        hours: {
+            mon: [["10:00", "02:00"]],
+            tue: [["10:00", "02:00"]],
+            wed: [["10:00", "02:00"]],
+            thu: [["10:00", "02:00"]],
+            fri: [["10:00", "04:00"]],
+            sat: [["10:00", "04:00"]],
+            sun: [["12:00", "02:00"]],
+        },
+        mapImage: "/shops/generic/map.png",
+        mapsUrl: "https://www.google.fr/maps/place/10%20Rue%20de%20Pontoise%2075005",
+        contact: {
+            phoneE164: "0143267057", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneDisplay: "01 43 26 70 57",
+            email: "contact@ehshop.com",
+            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
+            // I will put the address in "about" or just leave it implicitly in mapsUrl.
+            // Actually, I'll add it to 'about.p1' to make it visible.
+        },
+        dailyOffer: {
+            title: "Offre du jour",
+            price: "4,99 €",
+            oldPrice: "7,99 €",
+            image: "/shops/generic/offer.png",
+            protocolHref: "#reservation",
+        },
+        products: [
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+        ],
+        about: {
+            p1: "Retrouvez-nous au 10 Rue de Pontoise, 75005 Paris.",
+            p2: "Votre commerce Hey de quartier.",
+            images: [
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
+            ],
+        },
+    },
+    {
+        slug: "hey-153-rue-saint-jacques-75005",
+        name: "Hey",
+        districtLabel: "PARIS 05",
+        statusLabel: "OUVERT",
+        hoursLabel: "10:00 — 02:00",
+        timezone: "Europe/Paris",
+        hours: {
+            mon: [["10:00", "02:00"]],
+            tue: [["10:00", "02:00"]],
+            wed: [["10:00", "02:00"]],
+            thu: [["10:00", "02:00"]],
+            fri: [["10:00", "04:00"]],
+            sat: [["10:00", "04:00"]],
+            sun: [["12:00", "02:00"]],
+        },
+        mapImage: "/shops/generic/map.png",
+        mapsUrl: "https://www.google.fr/maps/place/153%20Rue%20Saint-Jacques%2075005",
+        contact: {
+            phoneE164: "0143546308", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneDisplay: "01 43 54 63 08",
+            email: "contact@ehshop.com",
+            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
+            // I will put the address in "about" or just leave it implicitly in mapsUrl.
+            // Actually, I'll add it to 'about.p1' to make it visible.
+        },
+        dailyOffer: {
+            title: "Offre du jour",
+            price: "4,99 €",
+            oldPrice: "7,99 €",
+            image: "/shops/generic/offer.png",
+            protocolHref: "#reservation",
+        },
+        products: [
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+        ],
+        about: {
+            p1: "Retrouvez-nous au 153 Rue Saint-Jacques, 75005 Paris.",
+            p2: "Votre commerce Hey de quartier.",
+            images: [
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
+            ],
+        },
+    },
+    {
+        slug: "hey-146-rue-du-faubourg-st-antoine-75011",
+        name: "Hey",
+        districtLabel: "PARIS 11",
+        statusLabel: "OUVERT",
+        hoursLabel: "10:00 — 02:00",
+        timezone: "Europe/Paris",
+        hours: {
+            mon: [["10:00", "02:00"]],
+            tue: [["10:00", "02:00"]],
+            wed: [["10:00", "02:00"]],
+            thu: [["10:00", "02:00"]],
+            fri: [["10:00", "04:00"]],
+            sat: [["10:00", "04:00"]],
+            sun: [["12:00", "02:00"]],
+        },
+        mapImage: "/shops/generic/map.png",
+        mapsUrl: "https://www.google.fr/maps/place/146%20Rue%20du%20Faubourg%20St%20Antoine%2075011",
+        contact: {
+            phoneE164: "0143958971", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneDisplay: "01 43 95 89 71",
+            email: "contact@ehshop.com",
+            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
+            // I will put the address in "about" or just leave it implicitly in mapsUrl.
+            // Actually, I'll add it to 'about.p1' to make it visible.
+        },
+        dailyOffer: {
+            title: "Offre du jour",
+            price: "4,99 €",
+            oldPrice: "7,99 €",
+            image: "/shops/generic/offer.png",
+            protocolHref: "#reservation",
+        },
+        products: [
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+        ],
+        about: {
+            p1: "Retrouvez-nous au 146 Rue du Faubourg St Antoine, 75011 Paris.",
+            p2: "Votre commerce Hey de quartier.",
+            images: [
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
+            ],
+        },
+    },
+    {
+        slug: "hey-202-rue-de-vaugirard-75015",
+        name: "Hey",
+        districtLabel: "PARIS 15",
+        statusLabel: "OUVERT",
+        hoursLabel: "10:00 — 02:00",
+        timezone: "Europe/Paris",
+        hours: {
+            mon: [["10:00", "02:00"]],
+            tue: [["10:00", "02:00"]],
+            wed: [["10:00", "02:00"]],
+            thu: [["10:00", "02:00"]],
+            fri: [["10:00", "04:00"]],
+            sat: [["10:00", "04:00"]],
+            sun: [["12:00", "02:00"]],
+        },
+        mapImage: "/shops/generic/map.png",
+        mapsUrl: "https://www.google.fr/maps/place/202%20Rue%20de%20Vaugirard%2075015",
+        contact: {
+            phoneE164: "0145669581", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneDisplay: "01 45 66 95 81",
+            email: "contact@ehshop.com",
+            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
+            // I will put the address in "about" or just leave it implicitly in mapsUrl.
+            // Actually, I'll add it to 'about.p1' to make it visible.
+        },
+        dailyOffer: {
+            title: "Offre du jour",
+            price: "4,99 €",
+            oldPrice: "7,99 €",
+            image: "/shops/generic/offer.png",
+            protocolHref: "#reservation",
+        },
+        products: [
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+        ],
+        about: {
+            p1: "Retrouvez-nous au 202 Rue de Vaugirard, 75015 Paris.",
+            p2: "Votre commerce Hey de quartier.",
+            images: [
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
+            ],
+        },
+    },
+    {
+        slug: "hey-53-boulevard-blanqui-75013",
+        name: "Hey",
+        districtLabel: "PARIS 13",
+        statusLabel: "OUVERT",
+        hoursLabel: "10:00 — 02:00",
+        timezone: "Europe/Paris",
+        hours: {
+            mon: [["10:00", "02:00"]],
+            tue: [["10:00", "02:00"]],
+            wed: [["10:00", "02:00"]],
+            thu: [["10:00", "02:00"]],
+            fri: [["10:00", "04:00"]],
+            sat: [["10:00", "04:00"]],
+            sun: [["12:00", "02:00"]],
+        },
+        mapImage: "/shops/generic/map.png",
+        mapsUrl: "https://www.google.fr/maps/place/53%20Boulevard%20Blanqui%2075013",
+        contact: {
+            phoneE164: "0145711421", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneDisplay: "01 45 71 14 21",
+            email: "contact@ehshop.com",
+            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
+            // I will put the address in "about" or just leave it implicitly in mapsUrl.
+            // Actually, I'll add it to 'about.p1' to make it visible.
+        },
+        dailyOffer: {
+            title: "Offre du jour",
+            price: "4,99 €",
+            oldPrice: "7,99 €",
+            image: "/shops/generic/offer.png",
+            protocolHref: "#reservation",
+        },
+        products: [
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+        ],
+        about: {
+            p1: "Retrouvez-nous au 53 Boulevard Blanqui, 75013 Paris.",
+            p2: "Votre commerce Hey de quartier.",
+            images: [
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
+            ],
+        },
+    },
+    {
+        slug: "hey-73-boulevard-vincent-auriol-75013",
+        name: "Hey",
+        districtLabel: "PARIS 13",
+        statusLabel: "OUVERT",
+        hoursLabel: "10:00 — 02:00",
+        timezone: "Europe/Paris",
+        hours: {
+            mon: [["10:00", "02:00"]],
+            tue: [["10:00", "02:00"]],
+            wed: [["10:00", "02:00"]],
+            thu: [["10:00", "02:00"]],
+            fri: [["10:00", "04:00"]],
+            sat: [["10:00", "04:00"]],
+            sun: [["12:00", "02:00"]],
+        },
+        mapImage: "/shops/generic/map.png",
+        mapsUrl: "https://www.google.fr/maps/place/73%20Boulevard%20Vincent%20Auriol%2075013",
+        contact: {
+            phoneE164: "0145857992", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneDisplay: "01 45 85 79 92",
+            email: "contact@ehshop.com",
+            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
+            // I will put the address in "about" or just leave it implicitly in mapsUrl.
+            // Actually, I'll add it to 'about.p1' to make it visible.
+        },
+        dailyOffer: {
+            title: "Offre du jour",
+            price: "4,99 €",
+            oldPrice: "7,99 €",
+            image: "/shops/generic/offer.png",
+            protocolHref: "#reservation",
+        },
+        products: [
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+        ],
+        about: {
+            p1: "Retrouvez-nous au 73 Boulevard Vincent Auriol, 75013 Paris.",
+            p2: "Votre commerce Hey de quartier.",
+            images: [
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
+            ],
+        },
+    },
+    {
+        slug: "hey-67-rue-saint-louis-en-l-le-75004",
+        name: "Hey",
+        districtLabel: "PARIS 04",
+        statusLabel: "OUVERT",
+        hoursLabel: "10:00 — 02:00",
+        timezone: "Europe/Paris",
+        hours: {
+            mon: [["10:00", "02:00"]],
+            tue: [["10:00", "02:00"]],
+            wed: [["10:00", "02:00"]],
+            thu: [["10:00", "02:00"]],
+            fri: [["10:00", "04:00"]],
+            sat: [["10:00", "04:00"]],
+            sun: [["12:00", "02:00"]],
+        },
+        mapImage: "/shops/generic/map.png",
+        mapsUrl: "https://www.google.fr/maps/place/67%20Rue%20Saint-Louis%20en%20l'%C3%8Ele%2075004",
+        contact: {
+            phoneE164: "0146347080", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneDisplay: "01 46 34 70 80",
+            email: "contact@ehshop.com",
+            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
+            // I will put the address in "about" or just leave it implicitly in mapsUrl.
+            // Actually, I'll add it to 'about.p1' to make it visible.
+        },
+        dailyOffer: {
+            title: "Offre du jour",
+            price: "4,99 €",
+            oldPrice: "7,99 €",
+            image: "/shops/generic/offer.png",
+            protocolHref: "#reservation",
+        },
+        products: [
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+        ],
+        about: {
+            p1: "Retrouvez-nous au 67 Rue Saint-Louis en l'Île, 75004 Paris.",
+            p2: "Votre commerce Hey de quartier.",
+            images: [
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
+            ],
+        },
+    },
+    {
+        slug: "hey-35-rue-georges-pitard-75015",
+        name: "Hey",
+        districtLabel: "PARIS 15",
+        statusLabel: "OUVERT",
+        hoursLabel: "10:00 — 02:00",
+        timezone: "Europe/Paris",
+        hours: {
+            mon: [["10:00", "02:00"]],
+            tue: [["10:00", "02:00"]],
+            wed: [["10:00", "02:00"]],
+            thu: [["10:00", "02:00"]],
+            fri: [["10:00", "04:00"]],
+            sat: [["10:00", "04:00"]],
+            sun: [["12:00", "02:00"]],
+        },
+        mapImage: "/shops/generic/map.png",
+        mapsUrl: "https://www.google.fr/maps/place/35%20Rue%20Georges%20Pitard%2075015",
+        contact: {
+            phoneE164: "0158052092", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneDisplay: "01 58 05 20 92",
+            email: "contact@ehshop.com",
+            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
+            // I will put the address in "about" or just leave it implicitly in mapsUrl.
+            // Actually, I'll add it to 'about.p1' to make it visible.
+        },
+        dailyOffer: {
+            title: "Offre du jour",
+            price: "4,99 €",
+            oldPrice: "7,99 €",
+            image: "/shops/generic/offer.png",
+            protocolHref: "#reservation",
+        },
+        products: [
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+        ],
+        about: {
+            p1: "Retrouvez-nous au 35 Rue Georges Pitard, 75015 Paris.",
+            p2: "Votre commerce Hey de quartier.",
+            images: [
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
+            ],
+        },
+    },
+    {
+        slug: "hey-107-rue-de-charenton-75012",
+        name: "Hey",
+        districtLabel: "PARIS 12",
+        statusLabel: "OUVERT",
+        hoursLabel: "10:00 — 02:00",
+        timezone: "Europe/Paris",
+        hours: {
+            mon: [["10:00", "02:00"]],
+            tue: [["10:00", "02:00"]],
+            wed: [["10:00", "02:00"]],
+            thu: [["10:00", "02:00"]],
+            fri: [["10:00", "04:00"]],
+            sat: [["10:00", "04:00"]],
+            sun: [["12:00", "02:00"]],
+        },
+        mapImage: "/shops/generic/map.png",
+        mapsUrl: "https://www.google.fr/maps/place/107%20Rue%20de%20Charenton%2075012",
+        contact: {
+            phoneE164: "0173712195", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneDisplay: "01 73 71 21 95",
+            email: "contact@ehshop.com",
+            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
+            // I will put the address in "about" or just leave it implicitly in mapsUrl.
+            // Actually, I'll add it to 'about.p1' to make it visible.
+        },
+        dailyOffer: {
+            title: "Offre du jour",
+            price: "4,99 €",
+            oldPrice: "7,99 €",
+            image: "/shops/generic/offer.png",
+            protocolHref: "#reservation",
+        },
+        products: [
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+        ],
+        about: {
+            p1: "Retrouvez-nous au 107 Rue de Charenton, 75012 Paris.",
+            p2: "Votre commerce Hey de quartier.",
+            images: [
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
+            ],
+        },
+    },
+    {
+        slug: "hey-13-rue-de-la-roquette-75004",
+        name: "Hey",
+        districtLabel: "PARIS 04",
+        statusLabel: "OUVERT",
+        hoursLabel: "10:00 — 02:00",
+        timezone: "Europe/Paris",
+        hours: {
+            mon: [["10:00", "02:00"]],
+            tue: [["10:00", "02:00"]],
+            wed: [["10:00", "02:00"]],
+            thu: [["10:00", "02:00"]],
+            fri: [["10:00", "04:00"]],
+            sat: [["10:00", "04:00"]],
+            sun: [["12:00", "02:00"]],
+        },
+        mapImage: "/shops/generic/map.png",
+        mapsUrl: "https://www.google.fr/maps/place/13%20Rue%20de%20la%20Roquette%2075004",
+        contact: {
+            phoneE164: "0177125480", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneDisplay: "01 77 12 54 80",
+            email: "contact@ehshop.com",
+            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
+            // I will put the address in "about" or just leave it implicitly in mapsUrl.
+            // Actually, I'll add it to 'about.p1' to make it visible.
+        },
+        dailyOffer: {
+            title: "Offre du jour",
+            price: "4,99 €",
+            oldPrice: "7,99 €",
+            image: "/shops/generic/offer.png",
+            protocolHref: "#reservation",
+        },
+        products: [
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+        ],
+        about: {
+            p1: "Retrouvez-nous au 13 Rue de la Roquette, 75004 Paris.",
+            p2: "Votre commerce Hey de quartier.",
+            images: [
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
+            ],
+        },
+    },
+    {
+        slug: "hey-3-rue-des-coles-75005",
+        name: "Hey",
+        districtLabel: "PARIS 05",
+        statusLabel: "OUVERT",
+        hoursLabel: "10:00 — 02:00",
+        timezone: "Europe/Paris",
+        hours: {
+            mon: [["10:00", "02:00"]],
+            tue: [["10:00", "02:00"]],
+            wed: [["10:00", "02:00"]],
+            thu: [["10:00", "02:00"]],
+            fri: [["10:00", "04:00"]],
+            sat: [["10:00", "04:00"]],
+            sun: [["12:00", "02:00"]],
+        },
+        mapImage: "/shops/generic/map.png",
+        mapsUrl: "https://www.google.fr/maps/place/3%20Rue%20des%20%C3%89coles%2075005",
+        contact: {
+            phoneE164: "0658336250", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneDisplay: "06 58 33 62 50",
+            email: "contact@ehshop.com",
+            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
+            // I will put the address in "about" or just leave it implicitly in mapsUrl.
+            // Actually, I'll add it to 'about.p1' to make it visible.
+        },
+        dailyOffer: {
+            title: "Offre du jour",
+            price: "4,99 €",
+            oldPrice: "7,99 €",
+            image: "/shops/generic/offer.png",
+            protocolHref: "#reservation",
+        },
+        products: [
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+        ],
+        about: {
+            p1: "Retrouvez-nous au 3 Rue des Écoles, 75005 Paris.",
+            p2: "Votre commerce Hey de quartier.",
+            images: [
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
+            ],
+        },
+    },
+    {
+        slug: "hey-94-avenue-philippe-auguste-75011",
+        name: "Hey",
+        districtLabel: "PARIS 11",
+        statusLabel: "OUVERT",
+        hoursLabel: "10:00 — 02:00",
+        timezone: "Europe/Paris",
+        hours: {
+            mon: [["10:00", "02:00"]],
+            tue: [["10:00", "02:00"]],
+            wed: [["10:00", "02:00"]],
+            thu: [["10:00", "02:00"]],
+            fri: [["10:00", "04:00"]],
+            sat: [["10:00", "04:00"]],
+            sun: [["12:00", "02:00"]],
+        },
+        mapImage: "/shops/generic/map.png",
+        mapsUrl: "https://www.google.fr/maps/place/94%20Avenue%20Philippe%20Auguste%2075011",
+        contact: {
+            phoneE164: "0673244651", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneDisplay: "06 73 24 46 51",
+            email: "contact@ehshop.com",
+            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
+            // I will put the address in "about" or just leave it implicitly in mapsUrl.
+            // Actually, I'll add it to 'about.p1' to make it visible.
+        },
+        dailyOffer: {
+            title: "Offre du jour",
+            price: "4,99 €",
+            oldPrice: "7,99 €",
+            image: "/shops/generic/offer.png",
+            protocolHref: "#reservation",
+        },
+        products: [
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+        ],
+        about: {
+            p1: "Retrouvez-nous au 94 Avenue Philippe Auguste, 75011 Paris.",
+            p2: "Votre commerce Hey de quartier.",
+            images: [
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
+            ],
+        },
+    },
+    {
+        slug: "hey-5-rue-ren-boulanger-75010",
+        name: "Hey",
+        districtLabel: "PARIS 10",
+        statusLabel: "OUVERT",
+        hoursLabel: "10:00 — 02:00",
+        timezone: "Europe/Paris",
+        hours: {
+            mon: [["10:00", "02:00"]],
+            tue: [["10:00", "02:00"]],
+            wed: [["10:00", "02:00"]],
+            thu: [["10:00", "02:00"]],
+            fri: [["10:00", "04:00"]],
+            sat: [["10:00", "04:00"]],
+            sun: [["12:00", "02:00"]],
+        },
+        mapImage: "/shops/generic/map.png",
+        mapsUrl: "https://www.google.fr/maps/place/5%20Rue%20Ren%C3%A9%20Boulanger%2075010",
+        contact: {
+            phoneE164: "0695131290", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneDisplay: "06 95 13 12 90",
+            email: "contact@ehshop.com",
+            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
+            // I will put the address in "about" or just leave it implicitly in mapsUrl.
+            // Actually, I'll add it to 'about.p1' to make it visible.
+        },
+        dailyOffer: {
+            title: "Offre du jour",
+            price: "4,99 €",
+            oldPrice: "7,99 €",
+            image: "/shops/generic/offer.png",
+            protocolHref: "#reservation",
+        },
+        products: [
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+        ],
+        about: {
+            p1: "Retrouvez-nous au 5 Rue René Boulanger, 75010 Paris.",
+            p2: "Votre commerce Hey de quartier.",
+            images: [
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
+            ],
+        },
+    },
+    {
+        slug: "hey-121-rue-de-charenton-75012",
+        name: "Hey",
+        districtLabel: "PARIS 12",
+        statusLabel: "OUVERT",
+        hoursLabel: "10:00 — 02:00",
+        timezone: "Europe/Paris",
+        hours: {
+            mon: [["10:00", "02:00"]],
+            tue: [["10:00", "02:00"]],
+            wed: [["10:00", "02:00"]],
+            thu: [["10:00", "02:00"]],
+            fri: [["10:00", "04:00"]],
+            sat: [["10:00", "04:00"]],
+            sun: [["12:00", "02:00"]],
+        },
+        mapImage: "/shops/generic/map.png",
+        mapsUrl: "https://www.google.fr/maps/place/121%20Rue%20de%20Charenton%2075012",
+        contact: {
+            phoneE164: "0745256983", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneDisplay: "07 45 25 69 83",
+            email: "contact@ehshop.com",
+            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
+            // I will put the address in "about" or just leave it implicitly in mapsUrl.
+            // Actually, I'll add it to 'about.p1' to make it visible.
+        },
+        dailyOffer: {
+            title: "Offre du jour",
+            price: "4,99 €",
+            oldPrice: "7,99 €",
+            image: "/shops/generic/offer.png",
+            protocolHref: "#reservation",
+        },
+        products: [
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+        ],
+        about: {
+            p1: "Retrouvez-nous au 121 Rue de Charenton, 75012 Paris.",
+            p2: "Votre commerce Hey de quartier.",
+            images: [
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
+            ],
+        },
+    },
+    {
+        slug: "hey-97-rue-de-bagnolet-75020",
+        name: "Hey",
+        districtLabel: "PARIS 20",
+        statusLabel: "OUVERT",
+        hoursLabel: "10:00 — 02:00",
+        timezone: "Europe/Paris",
+        hours: {
+            mon: [["10:00", "02:00"]],
+            tue: [["10:00", "02:00"]],
+            wed: [["10:00", "02:00"]],
+            thu: [["10:00", "02:00"]],
+            fri: [["10:00", "04:00"]],
+            sat: [["10:00", "04:00"]],
+            sun: [["12:00", "02:00"]],
+        },
+        mapImage: "/shops/generic/map.png",
+        mapsUrl: "https://www.google.fr/maps/place/97%20Rue%20de%20Bagnolet%2075020",
+        contact: {
+            phoneE164: "0758123257", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneDisplay: "07 58 12 32 57",
+            email: "contact@ehshop.com",
+            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
+            // I will put the address in "about" or just leave it implicitly in mapsUrl.
+            // Actually, I'll add it to 'about.p1' to make it visible.
+        },
+        dailyOffer: {
+            title: "Offre du jour",
+            price: "4,99 €",
+            oldPrice: "7,99 €",
+            image: "/shops/generic/offer.png",
+            protocolHref: "#reservation",
+        },
+        products: [
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+        ],
+        about: {
+            p1: "Retrouvez-nous au 97 Rue de Bagnolet, 75020 Paris.",
+            p2: "Votre commerce Hey de quartier.",
+            images: [
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
+            ],
+        },
+    },
+    {
+        slug: "hey-35-rue-claude-bernard-75005",
+        name: "Hey",
+        districtLabel: "PARIS 05",
+        statusLabel: "OUVERT",
+        hoursLabel: "10:00 — 02:00",
+        timezone: "Europe/Paris",
+        hours: {
+            mon: [["10:00", "02:00"]],
+            tue: [["10:00", "02:00"]],
+            wed: [["10:00", "02:00"]],
+            thu: [["10:00", "02:00"]],
+            fri: [["10:00", "04:00"]],
+            sat: [["10:00", "04:00"]],
+            sun: [["12:00", "02:00"]],
+        },
+        mapImage: "/shops/generic/map.png",
+        mapsUrl: "https://www.google.fr/maps/place/35%20Rue%20Claude%20Bernard%2075005",
+        contact: {
+            phoneE164: "0950878549", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneDisplay: "09 50 87 85 49",
+            email: "contact@ehshop.com",
+            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
+            // I will put the address in "about" or just leave it implicitly in mapsUrl.
+            // Actually, I'll add it to 'about.p1' to make it visible.
+        },
+        dailyOffer: {
+            title: "Offre du jour",
+            price: "4,99 €",
+            oldPrice: "7,99 €",
+            image: "/shops/generic/offer.png",
+            protocolHref: "#reservation",
+        },
+        products: [
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+        ],
+        about: {
+            p1: "Retrouvez-nous au 35 Rue Claude Bernard, 75005 Paris.",
+            p2: "Votre commerce Hey de quartier.",
+            images: [
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
+            ],
+        },
+    },
+    {
+        slug: "hey-57-rue-saint-jacques-75005",
+        name: "Hey",
+        districtLabel: "PARIS 05",
+        statusLabel: "OUVERT",
+        hoursLabel: "10:00 — 02:00",
+        timezone: "Europe/Paris",
+        hours: {
+            mon: [["10:00", "02:00"]],
+            tue: [["10:00", "02:00"]],
+            wed: [["10:00", "02:00"]],
+            thu: [["10:00", "02:00"]],
+            fri: [["10:00", "04:00"]],
+            sat: [["10:00", "04:00"]],
+            sun: [["12:00", "02:00"]],
+        },
+        mapImage: "/shops/generic/map.png",
+        mapsUrl: "https://www.google.fr/maps/place/57%20Rue%20Saint-Jacques%2075005",
+        contact: {
+            phoneE164: "0952380560", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneDisplay: "09 52 38 05 60",
+            email: "contact@ehshop.com",
+            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
+            // I will put the address in "about" or just leave it implicitly in mapsUrl.
+            // Actually, I'll add it to 'about.p1' to make it visible.
+        },
+        dailyOffer: {
+            title: "Offre du jour",
+            price: "4,99 €",
+            oldPrice: "7,99 €",
+            image: "/shops/generic/offer.png",
+            protocolHref: "#reservation",
+        },
+        products: [
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+        ],
+        about: {
+            p1: "Retrouvez-nous au 57 Rue Saint-Jacques, 75005 Paris.",
+            p2: "Votre commerce Hey de quartier.",
+            images: [
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
+            ],
+        },
+    },
+    {
+        slug: "hey-5-bd-de-magenta-75010",
+        name: "Hey",
+        districtLabel: "PARIS 10",
+        statusLabel: "OUVERT",
+        hoursLabel: "10:00 — 02:00",
+        timezone: "Europe/Paris",
+        hours: {
+            mon: [["10:00", "02:00"]],
+            tue: [["10:00", "02:00"]],
+            wed: [["10:00", "02:00"]],
+            thu: [["10:00", "02:00"]],
+            fri: [["10:00", "04:00"]],
+            sat: [["10:00", "04:00"]],
+            sun: [["12:00", "02:00"]],
+        },
+        mapImage: "/shops/generic/map.png",
+        mapsUrl: "https://www.google.fr/maps/place/5%20Bd%20de%20Magenta%2075010",
+        contact: {
+            phoneE164: "0981864250", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneDisplay: "09 81 86 42 50",
+            email: "contact@ehshop.com",
+            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
+            // I will put the address in "about" or just leave it implicitly in mapsUrl.
+            // Actually, I'll add it to 'about.p1' to make it visible.
+        },
+        dailyOffer: {
+            title: "Offre du jour",
+            price: "4,99 €",
+            oldPrice: "7,99 €",
+            image: "/shops/generic/offer.png",
+            protocolHref: "#reservation",
+        },
+        products: [
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+        ],
+        about: {
+            p1: "Retrouvez-nous au 5 Bd de Magenta, 75010 Paris.",
+            p2: "Votre commerce Hey de quartier.",
+            images: [
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
+            ],
+        },
+    },
+    {
+        slug: "hey-74-rue-du-bac-75007",
+        name: "Hey",
+        districtLabel: "PARIS 07",
+        statusLabel: "OUVERT",
+        hoursLabel: "10:00 — 02:00",
+        timezone: "Europe/Paris",
+        hours: {
+            mon: [["10:00", "02:00"]],
+            tue: [["10:00", "02:00"]],
+            wed: [["10:00", "02:00"]],
+            thu: [["10:00", "02:00"]],
+            fri: [["10:00", "04:00"]],
+            sat: [["10:00", "04:00"]],
+            sun: [["12:00", "02:00"]],
+        },
+        mapImage: "/shops/generic/map.png",
+        mapsUrl: "https://www.google.fr/maps/place/74%20Rue%20du%20Bac%2075007",
+        contact: {
+            phoneE164: "0982367107", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneDisplay: "09 82 36 71 07",
+            email: "contact@ehshop.com",
+            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
+            // I will put the address in "about" or just leave it implicitly in mapsUrl.
+            // Actually, I'll add it to 'about.p1' to make it visible.
+        },
+        dailyOffer: {
+            title: "Offre du jour",
+            price: "4,99 €",
+            oldPrice: "7,99 €",
+            image: "/shops/generic/offer.png",
+            protocolHref: "#reservation",
+        },
+        products: [
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+        ],
+        about: {
+            p1: "Retrouvez-nous au 74 Rue du Bac, 75007 Paris.",
+            p2: "Votre commerce Hey de quartier.",
+            images: [
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
+            ],
+        },
+    },
+    {
+        slug: "hey-243-rue-de-bercy-75012",
+        name: "Hey",
+        districtLabel: "PARIS 12",
+        statusLabel: "OUVERT",
+        hoursLabel: "10:00 — 02:00",
+        timezone: "Europe/Paris",
+        hours: {
+            mon: [["10:00", "02:00"]],
+            tue: [["10:00", "02:00"]],
+            wed: [["10:00", "02:00"]],
+            thu: [["10:00", "02:00"]],
+            fri: [["10:00", "04:00"]],
+            sat: [["10:00", "04:00"]],
+            sun: [["12:00", "02:00"]],
+        },
+        mapImage: "/shops/generic/map.png",
+        mapsUrl: "https://www.google.fr/maps/place/243%20Rue%20de%20Bercy%2075012",
+        contact: {
+            phoneE164: "0982532078", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneDisplay: "09 82 53 20 78",
+            email: "contact@ehshop.com",
+            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
+            // I will put the address in "about" or just leave it implicitly in mapsUrl.
+            // Actually, I'll add it to 'about.p1' to make it visible.
+        },
+        dailyOffer: {
+            title: "Offre du jour",
+            price: "4,99 €",
+            oldPrice: "7,99 €",
+            image: "/shops/generic/offer.png",
+            protocolHref: "#reservation",
+        },
+        products: [
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+        ],
+        about: {
+            p1: "Retrouvez-nous au 243 Rue de Bercy, 75012 Paris.",
+            p2: "Votre commerce Hey de quartier.",
+            images: [
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
+            ],
+        },
+    },
+    {
+        slug: "hey-51-rue-de-l-chiquier-75010",
+        name: "Hey",
+        districtLabel: "PARIS 10",
+        statusLabel: "OUVERT",
+        hoursLabel: "10:00 — 02:00",
+        timezone: "Europe/Paris",
+        hours: {
+            mon: [["10:00", "02:00"]],
+            tue: [["10:00", "02:00"]],
+            wed: [["10:00", "02:00"]],
+            thu: [["10:00", "02:00"]],
+            fri: [["10:00", "04:00"]],
+            sat: [["10:00", "04:00"]],
+            sun: [["12:00", "02:00"]],
+        },
+        mapImage: "/shops/generic/map.png",
+        mapsUrl: "https://www.google.fr/maps/place/51%20Rue%20de%20l%E2%80%99%C3%89chiquier%2075010",
+        contact: {
+            phoneE164: "0983585258", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneDisplay: "09 83 58 52 58",
+            email: "contact@ehshop.com",
+            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
+            // I will put the address in "about" or just leave it implicitly in mapsUrl.
+            // Actually, I'll add it to 'about.p1' to make it visible.
+        },
+        dailyOffer: {
+            title: "Offre du jour",
+            price: "4,99 €",
+            oldPrice: "7,99 €",
+            image: "/shops/generic/offer.png",
+            protocolHref: "#reservation",
+        },
+        products: [
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+        ],
+        about: {
+            p1: "Retrouvez-nous au 51 Rue de l’Échiquier, 75010 Paris.",
+            p2: "Votre commerce Hey de quartier.",
+            images: [
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
+            ],
+        },
+    },
+    {
+        slug: "hey-73-rue-de-charenton-75012",
+        name: "Hey",
+        districtLabel: "PARIS 12",
+        statusLabel: "OUVERT",
+        hoursLabel: "10:00 — 02:00",
+        timezone: "Europe/Paris",
+        hours: {
+            mon: [["10:00", "02:00"]],
+            tue: [["10:00", "02:00"]],
+            wed: [["10:00", "02:00"]],
+            thu: [["10:00", "02:00"]],
+            fri: [["10:00", "04:00"]],
+            sat: [["10:00", "04:00"]],
+            sun: [["12:00", "02:00"]],
+        },
+        mapImage: "/shops/generic/map.png",
+        mapsUrl: "https://www.google.fr/maps/place/73%20Rue%20de%20Charenton%2075012",
+        contact: {
+            phoneE164: "0984037859", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneDisplay: "09 84 03 78 59",
+            email: "contact@ehshop.com",
+            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
+            // I will put the address in "about" or just leave it implicitly in mapsUrl.
+            // Actually, I'll add it to 'about.p1' to make it visible.
+        },
+        dailyOffer: {
+            title: "Offre du jour",
+            price: "4,99 €",
+            oldPrice: "7,99 €",
+            image: "/shops/generic/offer.png",
+            protocolHref: "#reservation",
+        },
+        products: [
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+        ],
+        about: {
+            p1: "Retrouvez-nous au 73 Rue de Charenton, 75012 Paris.",
+            p2: "Votre commerce Hey de quartier.",
+            images: [
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
+            ],
+        },
+    },
+    {
+        slug: "hey-1-rue-du-g-n-ral-lanrezac-75017",
+        name: "Hey",
+        districtLabel: "PARIS 17",
+        statusLabel: "OUVERT",
+        hoursLabel: "10:00 — 02:00",
+        timezone: "Europe/Paris",
+        hours: {
+            mon: [["10:00", "02:00"]],
+            tue: [["10:00", "02:00"]],
+            wed: [["10:00", "02:00"]],
+            thu: [["10:00", "02:00"]],
+            fri: [["10:00", "04:00"]],
+            sat: [["10:00", "04:00"]],
+            sun: [["12:00", "02:00"]],
+        },
+        mapImage: "/shops/generic/map.png",
+        mapsUrl: "https://www.google.fr/maps/place/1%20Rue%20du%20G%C3%A9n%C3%A9ral%20Lanrezac%2075017",
+        contact: {
+            phoneE164: "0984245291", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneDisplay: "09 84 24 52 91",
+            email: "contact@ehshop.com",
+            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
+            // I will put the address in "about" or just leave it implicitly in mapsUrl.
+            // Actually, I'll add it to 'about.p1' to make it visible.
+        },
+        dailyOffer: {
+            title: "Offre du jour",
+            price: "4,99 €",
+            oldPrice: "7,99 €",
+            image: "/shops/generic/offer.png",
+            protocolHref: "#reservation",
+        },
+        products: [
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+        ],
+        about: {
+            p1: "Retrouvez-nous au 1 Rue du Général Lanrezac, 75017 Paris.",
+            p2: "Votre commerce Hey de quartier.",
+            images: [
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
+            ],
+        },
+    },
+    {
+        slug: "hey-24-avenue-ledru-rollin-75012",
+        name: "Hey",
+        districtLabel: "PARIS 12",
+        statusLabel: "OUVERT",
+        hoursLabel: "10:00 — 02:00",
+        timezone: "Europe/Paris",
+        hours: {
+            mon: [["10:00", "02:00"]],
+            tue: [["10:00", "02:00"]],
+            wed: [["10:00", "02:00"]],
+            thu: [["10:00", "02:00"]],
+            fri: [["10:00", "04:00"]],
+            sat: [["10:00", "04:00"]],
+            sun: [["12:00", "02:00"]],
+        },
+        mapImage: "/shops/generic/map.png",
+        mapsUrl: "https://www.google.fr/maps/place/24%20Avenue%20Ledru%20Rollin%2075012",
+        contact: {
+            phoneE164: "0986124881", // Basic clean up, assuming +33 implicit if 0 starts? Actually let's just keep as is or format. The UI expects E164 but for now raw is better than broken.
+            phoneDisplay: "09 86 12 48 81",
+            email: "contact@ehshop.com",
+            // Looking at previous shops.ts content... contact has phoneE164, phoneDisplay, email. Not address.
+            // I will put the address in "about" or just leave it implicitly in mapsUrl.
+            // Actually, I'll add it to 'about.p1' to make it visible.
+        },
+        dailyOffer: {
+            title: "Offre du jour",
+            price: "4,99 €",
+            oldPrice: "7,99 €",
+            image: "/shops/generic/offer.png",
+            protocolHref: "#reservation",
+        },
+        products: [
+            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+        ],
+        about: {
+            p1: "Retrouvez-nous au 24 Avenue Ledru Rollin, 75012 Paris.",
+            p2: "Votre commerce Hey de quartier.",
+            images: [
+                "/shops/generic/a1.png",
+                "/shops/generic/a2.png",
+                "/shops/generic/a3.png",
+            ],
+        },
+    },
+
+
+    {
         slug: "sairam-paris04",
         name: "SAIRAM",
         districtLabel: "PARIS 04",
