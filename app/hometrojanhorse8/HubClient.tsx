@@ -17,6 +17,7 @@ export default function HubClient() {
     const [query, setQuery] = useState("");
     const [selectedDistrict, setSelectedDistrict] = useState("all");
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const [showRealPhones, setShowRealPhones] = useState(false);
 
     // Extract unique districts
     const districts = useMemo(() => {
@@ -35,9 +36,13 @@ export default function HubClient() {
 
             const matchesDistrict = selectedDistrict === "all" || shop.districtLabel === selectedDistrict;
 
-            return matchesQuery && matchesDistrict;
+            const matchesPhone = showRealPhones
+                ? shop.contact.phoneDisplay !== "06 95 84 25 69"
+                : true;
+
+            return matchesQuery && matchesDistrict && matchesPhone;
         });
-    }, [query, selectedDistrict]);
+    }, [query, selectedDistrict, showRealPhones]);
 
     const copyLink = (e: React.MouseEvent, slug: string) => {
         e.preventDefault();
@@ -125,6 +130,21 @@ export default function HubClient() {
                                 </div>
                             </div>
                         </div>
+
+                        {/* Real Phone Filter Button */}
+                        <button
+                            onClick={() => setShowRealPhones(!showRealPhones)}
+                            className={`relative px-4 py-3.5 rounded-2xl border shadow-lg transition-all flex items-center justify-center gap-2 font-medium z-10 shrink-0 ${showRealPhones
+                                    ? "bg-[#2F6B2B] text-white border-[#2F6B2B]"
+                                    : "bg-white/70 backdrop-blur-2xl border-white/80 text-gray-600 hover:bg-white/90"
+                                }`}
+                            title="Afficher uniquement les vrais numéros"
+                        >
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                {showRealPhones && <circle cx="17" cy="7" r="3" className="fill-white" />}
+                            </svg>
+                        </button>
 
                         {/* Search Input */}
                         <div className="relative w-full group">
