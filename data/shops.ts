@@ -6,6 +6,7 @@ export type Shop = {
     districtLabel: string; // "PARIS XX"
     statusLabel?: string;  // @deprecated - Calculated dynamically
     hoursLabel?: string;   // @deprecated - Calculated dynamically
+    isPartner?: boolean;   // Identifies official Heynouth partners
 
     // New fields for dynamic status
     timezone: string;
@@ -1022,6 +1023,7 @@ export const SHOPS: Shop[] = [
     {
         slug: "sairam-paris04",
         name: "Nom de commerce 021",
+        isPartner: true,
         districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
         hoursLabel: "10:00 — 02:00",

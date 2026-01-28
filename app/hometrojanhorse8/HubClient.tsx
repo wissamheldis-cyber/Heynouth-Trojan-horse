@@ -18,6 +18,7 @@ export default function HubClient() {
     const [selectedDistrict, setSelectedDistrict] = useState("all");
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [showRealPhones, setShowRealPhones] = useState(false);
+    const [showPartners, setShowPartners] = useState(false);
 
     // Extract unique districts
     const districts = useMemo(() => {
@@ -40,9 +41,13 @@ export default function HubClient() {
                 ? shop.contact.phoneDisplay !== "06 95 84 25 69"
                 : true;
 
-            return matchesQuery && matchesDistrict && matchesPhone;
+            const matchesPartner = showPartners
+                ? shop.isPartner === true
+                : true;
+
+            return matchesQuery && matchesDistrict && matchesPhone && matchesPartner;
         });
-    }, [query, selectedDistrict, showRealPhones]);
+    }, [query, selectedDistrict, showRealPhones, showPartners]);
 
     const copyLink = (e: React.MouseEvent, slug: string) => {
         e.preventDefault();
@@ -87,6 +92,25 @@ export default function HubClient() {
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-3 w-full max-w-2xl">
+                        {/* Partner Filter Button */}
+                        <button
+                            onClick={() => setShowPartners(!showPartners)}
+                            className={`relative w-12 h-[54px] rounded-2xl border shadow-lg transition-all flex items-center justify-center z-50 shrink-0 overflow-hidden ${showPartners
+                                ? "bg-[#2F6B2B] border-[#2F6B2B]"
+                                : "bg-white/70 backdrop-blur-2xl border-white/80 hover:bg-white/90"
+                                }`}
+                            title="Afficher uniquement les partenaires Heynouth"
+                        >
+                            <div className="relative w-8 h-8">
+                                <Image
+                                    src="/logo-hey.png"
+                                    alt="Hey Partners"
+                                    fill
+                                    className={`object-contain transition-all ${showPartners ? "brightness-0 invert" : ""}`}
+                                />
+                            </div>
+                        </button>
+
                         {/* District Dropdown (Custom) */}
                         <div className="relative min-w-[200px] z-50">
                             {/* Toggle Button */}
@@ -135,8 +159,8 @@ export default function HubClient() {
                         <button
                             onClick={() => setShowRealPhones(!showRealPhones)}
                             className={`relative px-4 py-3.5 rounded-2xl border shadow-lg transition-all flex items-center justify-center gap-2 font-medium z-10 shrink-0 ${showRealPhones
-                                    ? "bg-[#2F6B2B] text-white border-[#2F6B2B]"
-                                    : "bg-white/70 backdrop-blur-2xl border-white/80 text-gray-600 hover:bg-white/90"
+                                ? "bg-[#2F6B2B] text-white border-[#2F6B2B]"
+                                : "bg-white/70 backdrop-blur-2xl border-white/80 text-gray-600 hover:bg-white/90"
                                 }`}
                             title="Afficher uniquement les vrais numéros"
                         >
