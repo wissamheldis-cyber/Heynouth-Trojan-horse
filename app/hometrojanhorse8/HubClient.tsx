@@ -10,6 +10,8 @@ import { QuickIconSearch } from "@/components/icons/QuickActionIcons";
 // If lucide-react is not available, I will use text or SVGs. I saw QuickActionIcons, I'll stick to simple SVGs or text if I'm not sure about lucide.
 // Actually, I'll just use simple SVG icons inline to be safe and dependency-free for now, similar to QuickActionIcons.
 
+import QrButton from "@/components/QrButton";
+
 
 export default function HubClient() {
     const [query, setQuery] = useState("");
@@ -207,6 +209,8 @@ export default function HubClient() {
                                         <span>Ouvrir</span>
                                         <ArrowUpRightIcon className="w-4 h-4" />
                                     </Link>
+
+                                    <QrButton slug={shop.slug} name={shop.name} />
 
                                     <button
                                         onClick={(e) => copyLink(e, shop.slug)}
