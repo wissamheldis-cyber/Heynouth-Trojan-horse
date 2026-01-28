@@ -241,7 +241,7 @@ export default function ShopLanding({ shop }: { shop: Shop }) {
                                 <div className="flex items-end justify-between gap-4">
                                     <div className="min-w-0 flex-1">
                                         <div className="inline-flex rounded-full bg-brand-yellow px-3 py-1 text-[10px] font-black tracking-wide text-[#3b2a00] shadow-sm">
-                                            OFFRE DU JOUR
+                                            {(shop.dailyOffer.label || "OFFRE DU JOUR").toUpperCase()}
                                         </div>
                                         <h3 className="mt-2 text-2xl font-black leading-tight text-white line-clamp-2">
                                             {shop.dailyOffer.title}

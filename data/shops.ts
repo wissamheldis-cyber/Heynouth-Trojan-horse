@@ -21,6 +21,7 @@ export type Shop = {
     };
 
     dailyOffer: {
+        label?: string;      // ex: "OFFRE DE LA SEMAINE"
         title: string;       // "Nom du produit"
         price: string;       // "4,99 €"
         oldPrice?: string;   // "7,99 €"
