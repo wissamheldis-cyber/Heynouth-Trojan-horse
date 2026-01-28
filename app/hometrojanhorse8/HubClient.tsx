@@ -19,6 +19,7 @@ const ubuntu = Ubuntu({
 export default function HubClient() {
     const [query, setQuery] = useState("");
     const [selectedDistrict, setSelectedDistrict] = useState("all");
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     // Extract unique districts
     const districts = useMemo(() => {
@@ -84,23 +85,47 @@ export default function HubClient() {
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-3 w-full max-w-2xl">
-                        {/* District Dropdown */}
-                        <div className="relative min-w-[200px] group">
-                            {/* Glow Effect Backend */}
-                            <div className="absolute -inset-0.5 bg-gradient-to-r from-[#2F6B2B]/30 to-[#F2C94C]/30 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500" />
-
-                            <select
-                                value={selectedDistrict}
-                                onChange={(e) => setSelectedDistrict(e.target.value)}
-                                className="relative w-full appearance-none pl-5 pr-12 py-3.5 rounded-2xl bg-white/70 backdrop-blur-2xl border border-white/80 outline-none focus:border-[#2F6B2B]/50 focus:ring-4 focus:ring-[#2F6B2B]/10 shadow-lg group-hover:shadow-xl transition-all text-gray-800 font-medium cursor-pointer tracking-wide"
+                        {/* District Dropdown (Custom) */}
+                        <div className="relative min-w-[200px] z-50">
+                            {/* Toggle Button */}
+                            <button
+                                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                                onBlur={() => setTimeout(() => setIsDropdownOpen(false), 200)}
+                                className="relative w-full text-left pl-5 pr-12 py-3.5 rounded-2xl bg-white/70 backdrop-blur-2xl border border-white/80 outline-none focus:border-[#2F6B2B]/50 focus:ring-4 focus:ring-[#2F6B2B]/10 shadow-lg hover:shadow-xl transition-all text-gray-800 font-medium tracking-wide flex items-center justify-between group"
                             >
-                                <option value="all">Tout Paris</option>
-                                {districts.map(d => (
-                                    <option key={d} value={d}>{d}</option>
-                                ))}
-                            </select>
-                            <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-500 group-hover:text-[#2F6B2B] transition-colors duration-300">
-                                <svg className="w-5 h-5 drop-shadow-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" /></svg>
+                                {/* Glow Effect Backend for Button */}
+                                <div className="absolute -inset-0.5 bg-gradient-to-r from-[#2F6B2B]/30 to-[#F2C94C]/30 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500 -z-10" />
+
+                                <span className="truncate relative z-10">{selectedDistrict === "all" ? "Tout Paris" : selectedDistrict}</span>
+                                <div className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 group-hover:text-[#2F6B2B] transition-colors duration-300 z-10">
+                                    <svg className={`w-5 h-5 drop-shadow-sm transition-transform duration-300 ${isDropdownOpen ? "rotate-180" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" /></svg>
+                                </div>
+                            </button>
+
+                            {/* Custom Options List */}
+                            <div
+                                className={`absolute top-full left-0 right-0 mt-2 p-2 rounded-2xl border border-white/80 bg-white/70 backdrop-blur-2xl shadow-2xl overflow-hidden transition-all duration-300 origin-top transform ${isDropdownOpen ? "opacity-100 scale-100 translate-y-0 visible" : "opacity-0 scale-95 -translate-y-2 invisible"}`}
+                            >
+                                {/* Gradient Background for List */}
+                                <div className="absolute inset-0 bg-gradient-to-br from-[#2F6B2B]/5 to-[#F2C94C]/10 mix-blend-overlay pointer-events-none" />
+
+                                <div className="relative max-h-[300px] overflow-y-auto pr-1">
+                                    <button
+                                        onClick={() => { setSelectedDistrict("all"); setIsDropdownOpen(false); }}
+                                        className={`w-full text-left px-4 py-2.5 rounded-xl text-sm font-medium transition-colors ${selectedDistrict === "all" ? "bg-[#2F6B2B] text-white shadow-md" : "text-gray-700 hover:bg-white/80 hover:text-[#2F6B2B]"}`}
+                                    >
+                                        Tout Paris
+                                    </button>
+                                    {districts.map(d => (
+                                        <button
+                                            key={d}
+                                            onClick={() => { setSelectedDistrict(d); setIsDropdownOpen(false); }}
+                                            className={`w-full text-left px-4 py-2.5 rounded-xl text-sm font-medium transition-colors mt-1 ${selectedDistrict === d ? "bg-[#2F6B2B] text-white shadow-md" : "text-gray-700 hover:bg-white/80 hover:text-[#2F6B2B]"}`}
+                                        >
+                                            {d}
+                                        </button>
+                                    ))}
+                                </div>
                             </div>
                         </div>
 
