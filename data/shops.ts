@@ -1,11 +1,11 @@
-import { WeekHours } from "@/lib/isOpen";
+import { WeekHours } from "@/lib/shopHours";
 
 export type Shop = {
     slug: string;
     name: string;
     districtLabel: string; // "PARIS XX"
-    statusLabel: string;   // "OUVERT" (Fallback / DEPRECATED by dynamic calculation)
-    hoursLabel: string;    // "10:00 — 02:00"
+    statusLabel?: string;  // @deprecated - Calculated dynamically
+    hoursLabel?: string;   // @deprecated - Calculated dynamically
 
     // New fields for dynamic status
     timezone: string;

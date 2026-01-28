@@ -3,8 +3,10 @@
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 import type { Shop } from "@/data/shops";
-import { isShopOpen } from "@/lib/isOpen";
+import { isShopOpen, formatTodayHoursLabel } from "@/lib/shopHours";
 import { QuickIconSearch, QuickIconTimer, QuickIconPhone, QuickIconQuestion } from "@/components/icons/QuickActionIcons";
+// ...
+
 
 function telHref(phoneE164: string) {
     return `tel:${phoneE164.replace(/\s+/g, "")}`;
@@ -129,11 +131,17 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
 }
 
 export default function ShopLanding({ shop }: { shop: Shop }) {
-    const [isOpen, setIsOpen] = useState(true); // Default to open
+    const [isOpen, setIsOpen] = useState(true);
+    const [hoursLabel, setHoursLabel] = useState("");
 
     useEffect(() => {
-        setIsOpen(isShopOpen(shop.hours, shop.timezone));
-        const interval = setInterval(() => setIsOpen(isShopOpen(shop.hours, shop.timezone)), 60000);
+        const updateStatus = () => {
+            setIsOpen(isShopOpen(shop.hours, shop.timezone));
+            setHoursLabel(formatTodayHoursLabel(shop.hours, shop.timezone));
+        };
+
+        updateStatus();
+        const interval = setInterval(updateStatus, 60000);
         return () => clearInterval(interval);
     }, [shop]);
 
@@ -196,7 +204,7 @@ export default function ShopLanding({ shop }: { shop: Shop }) {
                                     </div>
                                 </div>
                                 <div className="rounded-full bg-white/80 px-3 py-1 text-[11px] font-black text-brand-ink shadow-soft backdrop-blur-md">
-                                    {shop.hoursLabel}
+                                    {hoursLabel || "Chargement..."}
                                 </div>
                             </div>
                         </div>
