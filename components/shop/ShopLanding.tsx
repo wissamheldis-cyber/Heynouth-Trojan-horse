@@ -7,6 +7,7 @@ import { isShopOpen, formatTodayHoursLabel } from "@/lib/shopHours";
 import { QuickIconSearch, QuickIconTimer, QuickIconPhone, QuickIconQuestion } from "@/components/icons/QuickActionIcons";
 import SmsSubscribeModal from "./SmsSubscribeModal";
 import NouthJourney from "@/components/NouthJourney";
+import ReviewsCarousel from "@/components/shop/ReviewsCarousel";
 // ...
 
 
@@ -155,14 +156,18 @@ export default function ShopLanding({ shop }: { shop: Shop }) {
 
             // Wait 4 seconds then show offer
             setTimeout(() => {
-                setJourney({
-                    visible: true,
-                    variant: 'launch_offer',
-                    onComplete: () => {
-                        setJourney(prev => ({ ...prev, visible: false }));
-                        // Here we could track that offer was seen/accepted
-                    }
-                });
+                const dismissedUntil = localStorage.getItem('nouth_offer_dismissed_until');
+                const isDismissed = dismissedUntil && parseInt(dismissedUntil) > Date.now();
+                if (!isDismissed) {
+                    setJourney({
+                        visible: true,
+                        variant: 'launch_offer',
+                        onComplete: () => {
+                            setJourney(prev => ({ ...prev, visible: false }));
+                            // Here we could track that offer was seen/accepted
+                        }
+                    });
+                }
             }, 2000); // 2 seconds delay
         } else {
             // For offer or other variants, just close
@@ -247,6 +252,13 @@ export default function ShopLanding({ shop }: { shop: Shop }) {
 
                         {/* Store header */}
                         <div className="pb-2 pt-6 text-center">
+                            <div className="flex justify-center mb-2">
+                                {[1, 2, 3, 4, 5].map((star) => (
+                                    <svg key={star} className={`w-5 h-5 ${star <= (shop.rating || 5) ? 'text-yellow-400' : 'text-gray-300'}`} fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                ))}
+                            </div>
                             <h1 className="text-3xl font-black tracking-tight">{shop.name}</h1>
                             <div className="mt-3 inline-flex rounded-full bg-brand-yellow px-4 py-1 text-[11px] font-extrabold text-[#3b2a00] shadow-yellow">
                                 {shop.districtLabel}
@@ -515,6 +527,9 @@ export default function ShopLanding({ shop }: { shop: Shop }) {
                         </div>
                     </div>
 
+                    {/* --- REVIEWS SECTION --- */}
+                    {shop.reviews && <ReviewsCarousel reviews={shop.reviews} mapsUrl={shop.mapsUrl} />}
+
                     {/* Footer */}
                     <footer className="bg-brand-green px-6 py-10 text-center text-white">
                         <a className="font-extrabold underline underline-offset-4 opacity-95" href={`/${shop.slug}/mentions-legales`}>
@@ -533,6 +548,11 @@ export default function ShopLanding({ shop }: { shop: Shop }) {
                 customTitle={journey.variant === 'merchant' ? `Bienvenue chez ${shop.name} !` : undefined}
                 customText={journey.variant === 'merchant' ? "Découvre les produits du moment et les offres exclusives de ton commerçant." : undefined}
                 onContinue={handleJourneyComplete}
+                onDismissForever={() => {
+                    const nextShowTime = Date.now() + 60000; // 1 minute from now
+                    localStorage.setItem('nouth_offer_dismissed_until', nextShowTime.toString());
+                    setJourney(prev => ({ ...prev, visible: false }));
+                }}
             />
         </main>
     );

@@ -175,7 +175,10 @@ export default function ProConceptPage() {
 
                         // Trigger Launch Offer after 2s
                         const hasSeenOffer = sessionStorage.getItem('nouth_pro_offer');
-                        if (!hasSeenOffer) {
+                        const dismissedUntil = localStorage.getItem('nouth_offer_dismissed_until');
+                        const isDismissed = dismissedUntil && parseInt(dismissedUntil) > Date.now();
+
+                        if (!hasSeenOffer && !isDismissed) {
                             setTimeout(() => {
                                 setJourney({
                                     visible: true,
@@ -1083,8 +1086,13 @@ export default function ProConceptPage() {
                 {/* --- NOUTH JOURNEY INTERSTITIAL --- */}
                 <NouthJourney
                     isVisible={journey.visible}
-                    variant={journey.variant}
+                    variant={journey.variant as any}
                     onContinue={() => journey.onComplete?.()}
+                    onDismissForever={() => {
+                        const nextShowTime = Date.now() + 60000; // 1 minute from now
+                        localStorage.setItem('nouth_offer_dismissed_until', nextShowTime.toString());
+                        setJourney(prev => ({ ...prev, visible: false }));
+                    }}
                 />
 
             </main >

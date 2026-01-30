@@ -11,6 +11,7 @@ interface NouthJourneyProps {
     variant: NouthVariant;
     customText?: string;
     customTitle?: string;
+    onDismissForever?: () => void;
 }
 
 const VARIANTS = {
@@ -86,7 +87,7 @@ const VARIANTS = {
     }
 };
 
-export default function NouthJourney({ isVisible, onContinue, variant, customText, customTitle }: NouthJourneyProps) {
+export default function NouthJourney({ isVisible, onContinue, variant, customText, customTitle, onDismissForever }: NouthJourneyProps) {
     const [show, setShow] = useState(false);
 
     useEffect(() => {
@@ -156,9 +157,19 @@ export default function NouthJourney({ isVisible, onContinue, variant, customTex
                             <button onClick={() => window.open('https://buy.stripe.com/fZubIU51g6j61hBbGI3sI0d', '_blank')} className="w-full bg-gradient-to-r from-orange-600 to-orange-500 text-white font-bold py-3 rounded-xl shadow-lg shadow-orange-500/20 hover:scale-[1.02] active:scale-95 transition-all mt-2">
                                 J'en profite
                             </button>
-                            <button onClick={onContinue} className="w-full text-xs font-bold text-gray-400 hover:text-white mt-1">
+
+                            <button onClick={onContinue} className="w-full text-xs font-bold text-gray-400 hover:text-white mt-3">
                                 Non merci, je préfère payer plus tard
                             </button>
+
+                            {onDismissForever && (
+                                <button
+                                    onClick={onDismissForever}
+                                    className="w-full text-xs font-bold text-white/40 border border-white/20 hover:bg-white/10 hover:text-white transition-all py-3 rounded-xl mt-3"
+                                >
+                                    Ne plus afficher
+                                </button>
+                            )}
                         </div>
                     ) : (
                         <>
