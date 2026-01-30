@@ -434,7 +434,7 @@ export default function ProConceptPage() {
                                     {/* Fake content for preview */}
                                     <div className="absolute inset-0 bg-[#F4F2EC]">
                                         <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/50 to-transparent z-10" />
-                                        <div className="h-full w-full bg-[url('/images/shop-placeholder.jpg')] bg-cover bg-center group-hover:scale-105 transition-transform duration-700" />
+                                        <div className="h-full w-full bg-[url('/images/sairam_page_preview.png')] bg-cover bg-center group-hover:scale-105 transition-transform duration-700" />
                                     </div>
                                     <div className="absolute inset-0 flex items-center justify-center bg-black/40 backdrop-blur-[2px] group-hover:backdrop-blur-none transition-all">
                                         <Link href="/sairam-paris-04" className="text-sm font-bold bg-black/60 px-4 py-2 rounded-full border border-white/20 shadow-sm text-white hover:bg-black/80 transition-colors z-20">
