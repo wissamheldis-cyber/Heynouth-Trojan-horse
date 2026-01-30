@@ -54,6 +54,9 @@ const Icons = {
     UserGroup: ({ className }: { className?: string }) => (
         <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
     ),
+    Calendar: ({ className }: { className?: string }) => (
+        <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+    ),
 };
 
 
@@ -82,23 +85,37 @@ export default function ProConceptPage() {
     return (
         <div className="relative min-h-[100dvh] w-full bg-[#050505] font-sans flex items-center justify-center overflow-hidden">
 
-            {/* --- BACKGROUND SHELL (Desktop: Dark with Gold Glow) --- */}
+            {/* --- BACKGROUND SHELL (Desktop Level) --- */}
             <div className="absolute inset-0 z-0 pointer-events-none">
                 {/* Main Dark Radial */}
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-gray-900 via-[#050505] to-black" />
 
-                {/* Goldy Glow */}
+                {/* Desktop Glows */}
                 <div className="absolute top-[20%] left-[50%] -translate-x-1/2 w-[80vw] h-[60vh] bg-orange-500/10 rounded-full blur-[120px] mix-blend-screen" />
                 <div className="absolute bottom-[-10%] right-[20%] w-[40vw] h-[40vw] bg-yellow-600/10 rounded-full blur-[100px] mix-blend-screen" />
 
+                {/* Global Noise */}
                 <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 brightness-150 contrast-150 mix-blend-overlay" />
             </div>
 
-            {/* --- INTEMPOREL WRAPPER (The Phone Frame - Dark Chrome Gradient) --- */}
-            <main className="relative z-10 w-full max-w-[430px] h-[100dvh] sm:h-[90vh] sm:max-h-[900px] sm:rounded-[40px] bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white shadow-2xl overflow-hidden border border-white/10 ring-1 ring-white/5 flex flex-col">
+            {/* --- INTEMPOREL WRAPPER (The Phone Frame) --- */}
+            <main className="relative z-10 w-full max-w-[430px] h-[100dvh] sm:h-[90vh] sm:max-h-[900px] sm:rounded-[40px] shadow-2xl overflow-hidden border border-white/10 ring-1 ring-white/5 flex flex-col">
+
+                {/* --- PHONE INTERNAL BACKGROUND (Matches Desktop) --- */}
+                <div className="absolute inset-0 z-0 bg-[#050505]">
+                    {/* Internal Radial */}
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-gray-900 via-[#050505] to-black" />
+
+                    {/* Internal Glows (Scaled down for phone) */}
+                    <div className="absolute top-[-10%] left-[-20%] w-[120%] h-[50%] bg-orange-500/10 rounded-full blur-[80px] mix-blend-screen animate-pulse-slow" />
+                    <div className="absolute bottom-[-10%] right-[-20%] w-[100%] h-[50%] bg-yellow-600/10 rounded-full blur-[80px] mix-blend-screen" />
+
+                    {/* Internal Noise */}
+                    <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 brightness-150 contrast-150 mix-blend-overlay" />
+                </div>
 
                 {/* --- PRO CONTENT (Scrollable Area) --- */}
-                <div className="flex-1 overflow-y-auto no-scrollbar scroll-smooth pb-24">
+                <div className="relative z-10 flex-1 overflow-y-auto no-scrollbar scroll-smooth pb-24">
 
                     {/* Header (Sticky) */}
                     <header className="sticky top-0 z-50 bg-[#121212]/80 backdrop-blur-xl border-b border-white/5 px-6 pt-12 pb-4 flex items-center justify-between shadow-sm">
@@ -120,9 +137,10 @@ export default function ProConceptPage() {
                         <div className="px-6 mt-6 space-y-8">
 
                             {/* Friendly Greeting */}
-                            <div className="bg-gradient-to-br from-white/10 to-transparent p-6 rounded-3xl border border-white/5 shadow-inner">
-                                <h2 className="text-xl font-bold mb-2 text-white">Bonjour l'équipe Sairam</h2>
-                                <p className="text-sm text-gray-400 leading-relaxed">
+                            <div className="bg-gradient-to-br from-white/10 to-transparent p-6 rounded-3xl border border-white/5 shadow-inner relative overflow-hidden group">
+                                <div className="absolute top-0 right-0 w-32 h-32 bg-orange-500/10 blur-[50px] rounded-full group-hover:bg-orange-500/20 transition-colors" />
+                                <h2 className="text-xl font-bold mb-2 text-white relative z-10">Bonjour l'équipe Sairam</h2>
+                                <p className="text-sm text-gray-400 leading-relaxed relative z-10">
                                     C'est une belle journée pour développer votre activité ! Voici un aperçu de ce qui se passe chez vous aujourd'hui.
                                 </p>
                             </div>
@@ -132,7 +150,7 @@ export default function ProConceptPage() {
                                 <h2 className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">Performances (24h)</h2>
                                 <div className="grid grid-cols-2 gap-3">
                                     {/* KPI 1 */}
-                                    <div className="bg-[#1A1A1A]/80 border border-white/5 rounded-2xl p-4 flex flex-col justify-between h-32 hover:bg-white/10 transition-colors cursor-pointer group shadow-sm">
+                                    <div className="bg-[#1A1A1A]/60 backdrop-blur-md border border-white/5 rounded-2xl p-4 flex flex-col justify-between h-32 hover:bg-white/10 transition-colors cursor-pointer group shadow-lg">
                                         <div className="h-8 w-8 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform">
                                             <Icons.Eye className="w-4 h-4" />
                                         </div>
@@ -142,7 +160,7 @@ export default function ProConceptPage() {
                                         </div>
                                     </div>
                                     {/* KPI 2 */}
-                                    <div className="bg-[#1A1A1A]/80 border border-white/5 rounded-2xl p-4 flex flex-col justify-between h-32 hover:bg-white/10 transition-colors cursor-pointer group shadow-sm">
+                                    <div className="bg-[#1A1A1A]/60 backdrop-blur-md border border-white/5 rounded-2xl p-4 flex flex-col justify-between h-32 hover:bg-white/10 transition-colors cursor-pointer group shadow-lg">
                                         <div className="h-8 w-8 rounded-full bg-green-500/20 flex items-center justify-center text-green-500 group-hover:scale-110 transition-transform">
                                             <Icons.Check className="w-4 h-4" />
                                         </div>
@@ -159,11 +177,11 @@ export default function ProConceptPage() {
                                 <h2 className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">Actions Rapides</h2>
 
                                 {/* Publish Offer Button */}
-                                <button className="w-full relative overflow-hidden group rounded-3xl bg-brand-green p-1 transition-all active:scale-[0.98] shadow-lg shadow-brand-green/10">
-                                    <div className="absolute inset-0 bg-gradient-to-r from-transparent to-white/20 opacity-0 group-hover:opacity-100 transition-opacity" />
-                                    <div className="bg-[#1A1A1A] rounded-[22px] p-5 border border-brand-green/30 flex items-center justify-between group-hover:bg-[#222] transition-colors">
+                                <button className="w-full relative overflow-hidden group rounded-3xl bg-orange-600/90 p-[1px] transition-all active:scale-[0.98] shadow-lg shadow-orange-500/20">
+                                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity animate-shimmer" />
+                                    <div className="bg-[#151515] rounded-[23px] p-5 border border-transparent flex items-center justify-between group-hover:bg-[#1a1a1a] transition-colors relative z-10 h-full">
                                         <div className="flex items-center gap-4">
-                                            <div className="h-12 w-12 rounded-full bg-brand-green/20 flex items-center justify-center text-brand-green">
+                                            <div className="h-12 w-12 rounded-full bg-orange-500/20 flex items-center justify-center text-orange-500 shadow-[0_0_15px_rgba(249,115,22,0.3)]">
                                                 <Icons.Plus className="w-6 h-6" />
                                             </div>
                                             <div className="text-left">
@@ -171,18 +189,18 @@ export default function ProConceptPage() {
                                                 <p className="text-xs text-gray-400">Booster votre visibilité</p>
                                             </div>
                                         </div>
-                                        <Icons.ChevronRight className="w-6 h-6 text-gray-500 group-hover:text-white transition-colors" />
+                                        <Icons.ChevronRight className="w-6 h-6 text-gray-600 group-hover:text-white transition-colors" />
                                     </div>
                                 </button>
 
                                 {/* Other Actions */}
                                 <div className="grid grid-cols-2 gap-3 mt-3">
-                                    <button className="bg-[#1A1A1A]/80 border border-white/5 rounded-2xl p-4 flex flex-col items-center justify-center gap-2 hover:bg-white/10 transition-colors group shadow-sm">
-                                        <Icons.Clock className="w-6 h-6 text-gray-400 group-hover:scale-110 transition-transform group-hover:text-white" />
+                                    <button className="bg-[#1A1A1A]/60 backdrop-blur-sm border border-white/5 rounded-2xl p-4 flex flex-col items-center justify-center gap-2 hover:bg-white/10 transition-colors group shadow-sm">
+                                        <Icons.Clock className="w-6 h-6 text-gray-400 group-hover:scale-110 transition-transform group-hover:text-orange-400" />
                                         <span className="text-[11px] font-bold text-gray-500 group-hover:text-gray-300">Horaires</span>
                                     </button>
-                                    <button className="bg-[#1A1A1A]/80 border border-white/5 rounded-2xl p-4 flex flex-col items-center justify-center gap-2 hover:bg-white/10 transition-colors group shadow-sm">
-                                        <Icons.Logout className="w-6 h-6 text-gray-400 group-hover:scale-110 transition-transform group-hover:text-white" />
+                                    <button className="bg-[#1A1A1A]/60 backdrop-blur-sm border border-white/5 rounded-2xl p-4 flex flex-col items-center justify-center gap-2 hover:bg-white/10 transition-colors group shadow-sm">
+                                        <Icons.Logout className="w-6 h-6 text-gray-400 group-hover:scale-110 transition-transform group-hover:text-red-400" />
                                         <span className="text-[11px] font-bold text-gray-500 group-hover:text-gray-300">Fermeture Ex.</span>
                                     </button>
                                 </div>
@@ -194,14 +212,14 @@ export default function ProConceptPage() {
                                     <h2 className="text-xs font-bold text-gray-500 uppercase tracking-widest">Aperçu Client</h2>
                                     <span className="text-[10px] bg-white/10 px-2 py-1 rounded text-white font-mono font-bold">live</span>
                                 </div>
-                                <div className="relative h-48 w-full rounded-3xl overflow-hidden border border-white/10 opacity-80 mix-blend-luminosity hover:mix-blend-normal transition-all group cursor-pointer shadow-lg">
+                                <div className="relative h-48 w-full rounded-3xl overflow-hidden border border-white/10 opacity-90 transition-all group cursor-pointer shadow-2xl">
                                     {/* Fake content for preview */}
                                     <div className="absolute inset-0 bg-[#F4F2EC]">
                                         <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/50 to-transparent z-10" />
-                                        <div className="h-full w-full bg-[url('/images/shop-placeholder.jpg')] bg-cover bg-center" />
+                                        <div className="h-full w-full bg-[url('/images/shop-placeholder.jpg')] bg-cover bg-center group-hover:scale-105 transition-transform duration-700" />
                                     </div>
-                                    <div className="absolute inset-0 flex items-center justify-center bg-black/50 backdrop-blur-sm group-hover:backdrop-blur-none transition-all">
-                                        <span className="text-sm font-bold bg-black/60 px-4 py-2 rounded-full border border-white/20 shadow-sm text-white">Voir ma page</span>
+                                    <div className="absolute inset-0 flex items-center justify-center bg-black/40 backdrop-blur-[2px] group-hover:backdrop-blur-none transition-all">
+                                        <span className="text-sm font-bold bg-black/60 px-4 py-2 rounded-full border border-white/20 shadow-sm text-white hover:bg-black/80 transition-colors">Voir ma page</span>
                                     </div>
                                 </div>
                             </section>
@@ -223,7 +241,7 @@ export default function ProConceptPage() {
                                         key={filter}
                                         onClick={() => setClientFilter(filter)}
                                         className={`flex-1 px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap transition-all ${clientFilter === filter
-                                                ? 'bg-brand-green text-white shadow-md'
+                                                ? 'bg-orange-600 text-white shadow-lg shadow-orange-500/20'
                                                 : 'text-gray-500 hover:text-white'
                                             }`}
                                     >
@@ -237,9 +255,9 @@ export default function ProConceptPage() {
                             {/* Clients List */}
                             <div className="space-y-4">
                                 {filteredClients.map((client) => (
-                                    <div key={client.id} className="bg-[#1A1A1A]/60 border border-white/5 p-4 rounded-2xl flex items-center justify-between hover:bg-white/10 transition-colors shadow-sm">
+                                    <div key={client.id} className="bg-[#1A1A1A]/70 backdrop-blur-sm border border-white/5 p-4 rounded-2xl flex items-center justify-between hover:bg-white/10 transition-colors shadow-sm">
                                         <div className="flex items-center gap-4">
-                                            <div className="h-10 w-10 rounded-full bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center text-gray-300 font-bold border border-white/10 shadow-inner">
+                                            <div className="h-10 w-10 rounded-full bg-gradient-to-br from-gray-800 to-black flex items-center justify-center text-gray-400 font-bold border border-white/10 shadow-inner">
                                                 {/* Initials or User Icon */}
                                                 {client.name.charAt(0)}
                                             </div>
@@ -317,10 +335,10 @@ export default function ProConceptPage() {
                 </div>
 
                 {/* Bottom Nav (Sticky) */}
-                <div className="w-full bg-[#1A1A1A]/90 backdrop-blur-xl border-t border-white/5 pt-3 pb-6 px-8 flex justify-between items-end z-50">
+                <div className="relative z-50 w-full bg-[#121212]/90 backdrop-blur-xl border-t border-white/5 pt-3 pb-6 px-8 flex justify-between items-end">
                     <button
                         onClick={() => setCurrentTab('dashboard')}
-                        className={`flex flex-col items-center gap-1 transition-colors ${currentTab === 'dashboard' ? 'text-brand-green' : 'text-gray-600 hover:text-gray-400'}`}
+                        className={`flex flex-col items-center gap-1 transition-colors ${currentTab === 'dashboard' ? 'text-orange-500' : 'text-gray-600 hover:text-gray-400'}`}
                     >
                         <Icons.Dashboard className="w-6 h-6" />
                         <span className="text-[10px] font-bold">Dashboard</span>
@@ -328,7 +346,7 @@ export default function ProConceptPage() {
 
                     <button
                         onClick={() => setCurrentTab('clients')}
-                        className={`flex flex-col items-center gap-1 transition-colors ${currentTab === 'clients' ? 'text-brand-green' : 'text-gray-600 hover:text-gray-400'}`}
+                        className={`flex flex-col items-center gap-1 transition-colors ${currentTab === 'clients' ? 'text-orange-500' : 'text-gray-600 hover:text-gray-400'}`}
                     >
                         <Icons.Users className="w-6 h-6" />
                         <span className="text-[10px] font-medium">Clients</span>
@@ -336,19 +354,12 @@ export default function ProConceptPage() {
 
                     <button
                         onClick={() => setCurrentTab('settings')}
-                        className={`flex flex-col items-center gap-1 transition-colors ${currentTab === 'settings' ? 'text-brand-green' : 'text-gray-600 hover:text-gray-400'}`}
+                        className={`flex flex-col items-center gap-1 transition-colors ${currentTab === 'settings' ? 'text-orange-500' : 'text-gray-600 hover:text-gray-400'}`}
                     >
                         <Icons.Settings className="w-6 h-6" />
                         <span className="text-[10px] font-medium">Réglages</span>
                     </button>
                 </div>
-
-                {/* Floating indicator for "Concept" */}
-                {/* <div className="fixed top-24 right-4 z-50 pointer-events-none">
-                    <div className="bg-white/10 backdrop-blur text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest opacity-30">
-                        Concept Pro
-                    </div>
-                </div> */}
             </main>
         </div>
     );
