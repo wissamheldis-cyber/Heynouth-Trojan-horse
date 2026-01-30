@@ -13,7 +13,11 @@ export default function AppConceptPage() {
     const [selectedHubDistrict, setSelectedHubDistrict] = useState("all");
 
     // Nouth Journey State
-    const [journey, setJourney] = useState<{ visible: boolean; variant: 'welcome' | 'hub' | 'pro' | 'merchant'; onComplete?: () => void }>({
+    const [journey, setJourney] = useState<{
+        visible: boolean;
+        variant: 'welcome' | 'hub' | 'pro' | 'merchant' | 'launch_offer_app';
+        onComplete?: () => void;
+    }>({
         visible: false,
         variant: 'welcome'
     });
@@ -29,6 +33,21 @@ export default function AppConceptPage() {
                     onComplete: () => {
                         setJourney(prev => ({ ...prev, visible: false }));
                         sessionStorage.setItem('nouth_app_welcome', 'true');
+
+                        // Trigger Launch Offer after 2s
+                        const hasSeenOffer = sessionStorage.getItem('nouth_app_offer');
+                        if (!hasSeenOffer) {
+                            setTimeout(() => {
+                                setJourney({
+                                    visible: true,
+                                    variant: 'launch_offer_app',
+                                    onComplete: () => {
+                                        setJourney(prev => ({ ...prev, visible: false }));
+                                        sessionStorage.setItem('nouth_app_offer', 'true');
+                                    }
+                                });
+                            }, 2000);
+                        }
                     }
                 });
             }, 500);

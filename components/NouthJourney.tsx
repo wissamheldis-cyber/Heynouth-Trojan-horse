@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-type NouthVariant = 'welcome' | 'hub' | 'pro' | 'merchant' | 'clients' | 'stats' | 'settings' | 'custom';
+type NouthVariant = 'welcome' | 'hub' | 'pro' | 'merchant' | 'clients' | 'stats' | 'settings' | 'custom' | 'launch_offer' | 'launch_offer_pro' | 'launch_offer_app';
 
 interface NouthJourneyProps {
     isVisible: boolean;
@@ -53,6 +53,36 @@ const VARIANTS = {
         image: "/images/nouth-welcome.png",
         title: "Heynouth",
         text: "...",
+    },
+    launch_offer: {
+        image: "/images/nouth-confiant.png",
+        title: "Offre de Lancement",
+        text: "Profitez-en maintenant !",
+        bullets: [
+            "2 mises à jour / semaine",
+            "Toutes les futures sorties incluses",
+            "Support prioritaire"
+        ]
+    },
+    launch_offer_pro: {
+        image: "/images/nouth-confiant.png",
+        title: "Boostez votre Gestion",
+        text: "Passez au niveau supérieur avec Heynouth Pro.",
+        bullets: [
+            "Tableau de bord complet",
+            "Gestion client illimitée",
+            "Statistiques détaillées"
+        ]
+    },
+    launch_offer_app: {
+        image: "/images/nouth-confiant.png",
+        title: "Visibilité Maximale",
+        text: "Attirez plus de clients avec votre présence sur l'App.",
+        bullets: [
+            "Mise en avant sur le Hub",
+            "Profil vérifié & photos HD",
+            "Lien direct vers vos offres"
+        ]
     }
 };
 
@@ -98,19 +128,52 @@ export default function NouthJourney({ isVisible, onContinue, variant, customTex
 
                 {/* Glass Card */}
                 <div className="bg-white/10 border border-white/20 shadow-2xl backdrop-blur-md rounded-3xl p-6 w-full relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent pointer-events-none" />
+                    {/* Shimmer Effect */}
+                    <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent animate-shimmer" />
 
-                    <h2 className="text-2xl font-black text-white mb-2 relative z-10">{title}</h2>
-                    <p className="text-sm font-medium text-gray-200 mb-6 leading-relaxed relative z-10">
-                        {text}
-                    </p>
+                    <h2 className={`text-2xl font-black text-white mb-2 relative z-10 ${variant.includes('launch_offer') ? 'text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500' : ''}`}>
+                        {title}
+                    </h2>
 
-                    <button
-                        onClick={onContinue}
-                        className="w-full bg-white text-black font-bold py-3.5 rounded-xl shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all relative z-10"
-                    >
-                        Continuer
-                    </button>
+                    {variant.includes('launch_offer') ? (
+                        <div className="text-left relative z-10 space-y-4 my-4">
+                            <div className="flex items-end gap-2 justify-center border-b border-white/10 pb-4">
+                                <span className="text-4xl font-black text-white">50€</span>
+                                <span className="text-sm font-bold text-gray-400 mb-1">/ an</span>
+                            </div>
+
+                            <ul className="space-y-2">
+                                {(content as any).bullets?.map((bullet: string, i: number) => (
+                                    <li key={i} className="flex items-start gap-2 text-sm text-gray-200">
+                                        <div className="mt-0.5 h-4 w-4 rounded-full bg-green-500/20 flex items-center justify-center shrink-0">
+                                            <div className="h-1.5 w-1.5 rounded-full bg-green-500" />
+                                        </div>
+                                        <span className="font-bold">{bullet}</span>
+                                    </li>
+                                ))}
+                            </ul>
+
+                            <button onClick={() => window.open('https://buy.stripe.com/fZubIU51g6j61hBbGI3sI0d', '_blank')} className="w-full bg-gradient-to-r from-orange-600 to-orange-500 text-white font-bold py-3 rounded-xl shadow-lg shadow-orange-500/20 hover:scale-[1.02] active:scale-95 transition-all mt-2">
+                                J'en profite
+                            </button>
+                            <button onClick={onContinue} className="w-full text-xs font-bold text-gray-400 hover:text-white mt-1">
+                                Non merci, je préfère payer plus tard
+                            </button>
+                        </div>
+                    ) : (
+                        <>
+                            <p className="text-sm font-medium text-gray-200 mb-6 leading-relaxed relative z-10">
+                                {text}
+                            </p>
+
+                            <button
+                                onClick={onContinue}
+                                className="w-full bg-white text-black font-bold py-3.5 rounded-xl shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all relative z-10"
+                            >
+                                Continuer
+                            </button>
+                        </>
+                    )}
                 </div>
 
             </div>

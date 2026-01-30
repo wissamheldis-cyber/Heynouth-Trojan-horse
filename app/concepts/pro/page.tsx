@@ -156,7 +156,7 @@ export default function ProConceptPage() {
     const [shopStatus, setShopStatus] = useState({ isOpen: true, nextOpening: "08:00" });
 
     // Nouth Journey State
-    const [journey, setJourney] = useState<{ visible: boolean; variant: 'welcome' | 'hub' | 'pro' | 'merchant' | 'clients' | 'stats' | 'settings'; onComplete?: () => void }>({
+    const [journey, setJourney] = useState<{ visible: boolean; variant: 'welcome' | 'hub' | 'pro' | 'merchant' | 'clients' | 'stats' | 'settings' | 'launch_offer_pro'; onComplete?: () => void }>({
         visible: false,
         variant: 'pro'
     });
@@ -172,6 +172,21 @@ export default function ProConceptPage() {
                     onComplete: () => {
                         setJourney(prev => ({ ...prev, visible: false }));
                         sessionStorage.setItem('nouth_pro_welcome', 'true');
+
+                        // Trigger Launch Offer after 2s
+                        const hasSeenOffer = sessionStorage.getItem('nouth_pro_offer');
+                        if (!hasSeenOffer) {
+                            setTimeout(() => {
+                                setJourney({
+                                    visible: true,
+                                    variant: 'launch_offer_pro',
+                                    onComplete: () => {
+                                        setJourney(prev => ({ ...prev, visible: false }));
+                                        sessionStorage.setItem('nouth_pro_offer', 'true');
+                                    }
+                                });
+                            }, 2000);
+                        }
                     }
                 });
             }, 500);

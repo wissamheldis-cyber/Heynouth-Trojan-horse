@@ -137,22 +137,38 @@ export default function ShopLanding({ shop }: { shop: Shop }) {
     const [isSmsModalOpen, setIsSmsModalOpen] = useState(false);
     const [hoursLabel, setHoursLabel] = useState("");
 
-    // Nouth Journey
-    const [journey, setJourney] = useState<{ visible: boolean; variant: 'welcome' | 'hub' | 'pro' | 'merchant' | 'custom'; onComplete?: () => void }>({
-        visible: false,
-        variant: 'custom'
+    // Nouth Journey State management
+    const [journey, setJourney] = useState<{
+        visible: boolean;
+        variant: 'merchant' | 'launch_offer';
+        onComplete?: () => void;
+    }>({
+        visible: true,
+        variant: 'merchant' // Start with merchant welcome
     });
 
-    useEffect(() => {
-        // Initial Shop Journey
-        setTimeout(() => {
-            setJourney({
-                visible: true,
-                variant: 'custom',
-                onComplete: () => setJourney(prev => ({ ...prev, visible: false }))
-            });
-        }, 500);
-    }, []);
+    // Handle journey completion sequence
+    const handleJourneyComplete = () => {
+        if (journey.variant === 'merchant') {
+            // After merchant welcome, close it
+            setJourney(prev => ({ ...prev, visible: false }));
+
+            // Wait 4 seconds then show offer
+            setTimeout(() => {
+                setJourney({
+                    visible: true,
+                    variant: 'launch_offer',
+                    onComplete: () => {
+                        setJourney(prev => ({ ...prev, visible: false }));
+                        // Here we could track that offer was seen/accepted
+                    }
+                });
+            }, 2000); // 2 seconds delay
+        } else {
+            // For offer or other variants, just close
+            journey.onComplete?.();
+        }
+    };
 
     useEffect(() => {
         const updateStatus = () => {
@@ -513,10 +529,10 @@ export default function ShopLanding({ shop }: { shop: Shop }) {
             {/* --- NOUTH JOURNEY INTERSTITIAL --- */}
             <NouthJourney
                 isVisible={journey.visible}
-                variant={'merchant'}
-                customTitle={`Bienvenue chez ${shop.name} !`}
-                customText="Découvre les produits du moment et les offres exclusives de ton commerçant."
-                onContinue={() => journey.onComplete?.()}
+                variant={journey.variant as any} // Cast as any to avoid type complexity with older props
+                customTitle={journey.variant === 'merchant' ? `Bienvenue chez ${shop.name} !` : undefined}
+                customText={journey.variant === 'merchant' ? "Découvre les produits du moment et les offres exclusives de ton commerçant." : undefined}
+                onContinue={handleJourneyComplete}
             />
         </main>
     );
