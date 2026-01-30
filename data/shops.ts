@@ -47,55 +47,6 @@ export type Shop = {
 
 export const SHOPS: Shop[] = [
     {
-        slug: "sairam-paris-04",
-        name: "Restaurant Sairam",
-        districtLabel: "PARIS 04",
-        statusLabel: "OUVERT",
-        hoursLabel: "11:00 — 23:00",
-
-        timezone: "Europe/Paris",
-        hours: {
-            mon: [["11:00", "23:00"]],
-            tue: [["11:00", "23:00"]],
-            wed: [["11:00", "23:00"]],
-            thu: [["11:00", "23:00"]],
-            fri: [["11:00", "23:30"]],
-            sat: [["11:00", "23:30"]],
-            sun: [["11:00", "23:00"]],
-        },
-
-        mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://goo.gl/maps/generic",
-
-        contact: {
-            phoneE164: "+33145678910",
-            phoneDisplay: "01 45 67 89 10",
-            address: "42 Rue de Rivoli, 75004 Paris",
-        },
-        dailyOffer: {
-            label: "OFFRE DU JOUR",
-            title: "Menu Dégustation Indien",
-            price: "15,90 €",
-            oldPrice: "19,90 €",
-            image: "/shops/generic/offer.png", // Keeping generic for now as requested
-            protocolHref: "#reservation",
-        },
-        products: [
-            { id: "p1", title: "Butter Chicken", price: "12,90 €", image: "/shops/generic/p1.png" },
-            { id: "p2", title: "Naan Fromage", price: "3,50 €", image: "/shops/generic/p2.png" },
-            { id: "p3", title: "Lassi Mangue", price: "4,00 €", image: "/shops/generic/p3.png" },
-        ],
-        about: {
-            p1: "Restaurant indien authentique au cœur du Marais. Épices savoureuses et ambiance chaleureuse.",
-            p2: "Venez découvrir nos spécialités faites maison dans un cadre traditionnel.",
-            images: [
-                "/shops/generic/a1.png",
-                "/shops/generic/a2.png",
-                "/shops/generic/a3.png",
-            ],
-        },
-    },
-    {
         slug: "heynouth2-paris01",
         name: "Nom de commerce 002",
         districtLabel: "PARIS 01",

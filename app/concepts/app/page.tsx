@@ -95,10 +95,11 @@ export default function AppConceptPage() {
                             <div className="mt-6 pl-6 overflow-x-auto no-scrollbar flex gap-3 pr-6">
                                 {[
                                     { label: "Tout", icon: "🔥", active: true },
-                                    { label: "Resto", icon: "🥗", active: false },
+                                    { label: "Alimentation", icon: "🥗", active: false },
                                     { label: "Épicerie", icon: "🛒", active: false },
-                                    { label: "Soins", icon: "💅", active: false },
+                                    { label: "Beauté", icon: "💅", active: false },
                                     { label: "Mode", icon: "🧢", active: false },
+                                    { label: "Services", icon: "⚙️", active: false },
                                 ].map((cat, i) => (
                                     <button
                                         key={i}

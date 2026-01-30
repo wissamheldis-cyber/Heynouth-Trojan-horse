@@ -254,7 +254,7 @@ export default function ProConceptPage() {
                     <div className="px-6 pt-6 pb-2">
                         <div className="py-4 flex justify-center relative group">
                             {/* Orange Glow Effect - Backlight */}
-                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-orange-500 blur-[35px] opacity-60 group-hover:opacity-100 transition-opacity" />
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-orange-500 blur-[50px] opacity-80 group-hover:opacity-100 transition-opacity" />
 
                             <div className="relative h-12 w-12 z-10">
                                 <Image src="/logo-hey.png" alt="Logo" fill className="object-contain brightness-0 filter" />
@@ -272,7 +272,7 @@ export default function ProConceptPage() {
                                 </span>
                             </div>
                             <div className="w-[1px] h-3 bg-white/10"></div>
-                            <h1 className="text-sm font-bold tracking-tight text-white">Sairam - Paris 04</h1>
+                            <h1 className="text-sm font-bold tracking-tight text-white">SAIRAM</h1>
                         </div>
                     </header>
 
@@ -296,7 +296,7 @@ export default function ProConceptPage() {
                                 <div className="absolute top-6 right-6 w-16 h-16 bg-white/10 rounded-full blur-xl z-10" />
 
                                 <div className="relative z-10 pr-20">
-                                    <h2 className="text-xl font-bold mb-2 text-white">Bonjour Sairam !</h2>
+                                    <h2 className="text-xl font-bold mb-2 text-white">Bonjour SAIRAM !</h2>
                                     <p className="text-sm text-gray-400 leading-relaxed font-medium">
                                         Je suis Nouth, ton assistant. Tout est calme pour le moment.
                                     </p>
@@ -437,7 +437,7 @@ export default function ProConceptPage() {
                                         <div className="h-full w-full bg-[url('/shops/sairam-paris-04/map.png')] bg-cover bg-center group-hover:scale-105 transition-transform duration-700" />
                                     </div>
                                     <div className="absolute inset-0 flex items-center justify-center bg-black/40 backdrop-blur-[2px] group-hover:backdrop-blur-none transition-all">
-                                        <Link href="/sairam-paris-04" className="text-sm font-bold bg-black/60 px-4 py-2 rounded-full border border-white/20 shadow-sm text-white hover:bg-black/80 transition-colors z-20">
+                                        <Link href="/sairam-paris04" className="text-sm font-bold bg-black/60 px-4 py-2 rounded-full border border-white/20 shadow-sm text-white hover:bg-black/80 transition-colors z-20">
                                             Voir ma page
                                         </Link>
                                     </div>
@@ -841,7 +841,7 @@ export default function ProConceptPage() {
                                         <div className="space-y-4">
                                             <div>
                                                 <label className="text-xs font-bold text-gray-500 uppercase">Nom du commerce</label>
-                                                <input type="text" defaultValue="Sairam - Paris 04" className="w-full mt-1 bg-black/40 border border-white/10 rounded-xl px-3 py-3 text-white text-sm font-bold focus:outline-none focus:border-orange-500" />
+                                                <input type="text" defaultValue="SAIRAM" className="w-full mt-1 bg-black/40 border border-white/10 rounded-xl px-3 py-3 text-white text-sm font-bold focus:outline-none focus:border-orange-500" />
                                             </div>
                                             <div>
                                                 <label className="text-xs font-bold text-gray-500 uppercase">Adresse Postale</label>
