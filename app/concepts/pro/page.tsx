@@ -57,6 +57,9 @@ const Icons = {
     Calendar: ({ className }: { className?: string }) => (
         <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
     ),
+    Chat: ({ className }: { className?: string }) => (
+        <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
+    ),
 };
 
 
@@ -87,30 +90,20 @@ export default function ProConceptPage() {
 
             {/* --- BACKGROUND SHELL (Desktop Level) --- */}
             <div className="absolute inset-0 z-0 pointer-events-none">
-                {/* Main Dark Radial */}
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-gray-900 via-[#050505] to-black" />
-
-                {/* Desktop Glows */}
                 <div className="absolute top-[20%] left-[50%] -translate-x-1/2 w-[80vw] h-[60vh] bg-orange-500/10 rounded-full blur-[120px] mix-blend-screen" />
                 <div className="absolute bottom-[-10%] right-[20%] w-[40vw] h-[40vw] bg-yellow-600/10 rounded-full blur-[100px] mix-blend-screen" />
-
-                {/* Global Noise */}
                 <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 brightness-150 contrast-150 mix-blend-overlay" />
             </div>
 
             {/* --- INTEMPOREL WRAPPER (The Phone Frame) --- */}
             <main className="relative z-10 w-full max-w-[430px] h-[100dvh] sm:h-[90vh] sm:max-h-[900px] sm:rounded-[40px] shadow-2xl overflow-hidden border border-white/10 ring-1 ring-white/5 flex flex-col">
 
-                {/* --- PHONE INTERNAL BACKGROUND (Matches Desktop) --- */}
+                {/* --- PHONE INTERNAL BACKGROUND --- */}
                 <div className="absolute inset-0 z-0 bg-[#050505]">
-                    {/* Internal Radial */}
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-gray-900 via-[#050505] to-black" />
-
-                    {/* Internal Glows (Scaled down for phone) */}
                     <div className="absolute top-[-10%] left-[-20%] w-[120%] h-[50%] bg-orange-500/10 rounded-full blur-[80px] mix-blend-screen animate-pulse-slow" />
                     <div className="absolute bottom-[-10%] right-[-20%] w-[100%] h-[50%] bg-yellow-600/10 rounded-full blur-[80px] mix-blend-screen" />
-
-                    {/* Internal Noise */}
                     <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 brightness-150 contrast-150 mix-blend-overlay" />
                 </div>
 
@@ -121,14 +114,10 @@ export default function ProConceptPage() {
                     <header className="sticky top-0 z-50 bg-[#121212]/80 backdrop-blur-xl border-b border-white/5 px-6 pt-12 pb-4 flex items-center justify-between shadow-sm">
                         <div>
                             <div className="flex items-center gap-2 mb-1">
-                                {/* Pulsing Dot */}
                                 <div className="h-2 w-2 rounded-full bg-green-500 shadow-[0_0_10px_rgba(34,197,94,0.6)] animate-pulse" />
                                 <span className="text-[10px] font-bold text-green-500 uppercase tracking-widest">En ligne</span>
                             </div>
                             <h1 className="text-xl font-bold tracking-tight text-gray-100">Sairam - Paris 04</h1>
-                        </div>
-                        <div className="h-10 w-10 rounded-xl bg-white/5 flex items-center justify-center border border-white/10 text-gray-400">
-                            <Icons.Shop className="w-5 h-5" />
                         </div>
                     </header>
 
@@ -136,13 +125,34 @@ export default function ProConceptPage() {
                     {currentTab === 'dashboard' && (
                         <div className="px-6 mt-6 space-y-8">
 
-                            {/* Friendly Greeting */}
+                            {/* Friendly Greeting with Nouth Avatar */}
                             <div className="bg-gradient-to-br from-white/10 to-transparent p-6 rounded-3xl border border-white/5 shadow-inner relative overflow-hidden group">
-                                <div className="absolute top-0 right-0 w-32 h-32 bg-orange-500/10 blur-[50px] rounded-full group-hover:bg-orange-500/20 transition-colors" />
-                                <h2 className="text-xl font-bold mb-2 text-white relative z-10">Bonjour l'équipe Sairam</h2>
-                                <p className="text-sm text-gray-400 leading-relaxed relative z-10">
-                                    C'est une belle journée pour développer votre activité ! Voici un aperçu de ce qui se passe chez vous aujourd'hui.
-                                </p>
+
+                                {/* Nouth Avatar (Absolute Top Right) */}
+                                <div className="absolute top-1 right-2 w-24 h-24 pointer-events-none opacity-90">
+                                    <Image
+                                        src="/images/nouth-avatar.png"
+                                        alt="Nouth Assistant"
+                                        width={100}
+                                        height={100}
+                                        className="object-contain"
+                                    />
+                                </div>
+
+                                <div className="relative z-10 pr-16">
+                                    <h2 className="text-xl font-bold mb-2 text-white">Bonjour Sairam !</h2>
+                                    <p className="text-sm text-gray-400 leading-relaxed font-medium">
+                                        Je suis Nouth, ton assistant. Tout est calme pour le moment.
+                                    </p>
+                                </div>
+
+                                {/* WhatsApp Nouth Action (Mini) */}
+                                <div className="mt-4 relative z-10">
+                                    <button className="flex items-center gap-2 bg-[#25D366]/20 hover:bg-[#25D366]/30 border border-[#25D366]/30 px-3 py-1.5 rounded-full transition-colors cursor-pointer w-fit">
+                                        <Icons.Chat className="w-3 h-3 text-[#25D366]" />
+                                        <span className="text-[10px] font-bold text-[#25D366]">Parler à Nouth sur WhatsApp</span>
+                                    </button>
+                                </div>
                             </div>
 
                             {/* KPI Section */}
@@ -172,12 +182,22 @@ export default function ProConceptPage() {
                                 </div>
                             </section>
 
-                            {/* Actions Section */}
-                            <section>
+                            {/* Actions Section with Nouth Pointing */}
+                            <section className="relative">
                                 <h2 className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">Actions Rapides</h2>
 
+                                {/* Nouth Pointing (Absolute Left) - Overlapping nicely */}
+                                <div className="absolute -top-12 -left-8 w-28 h-40 pointer-events-none z-20">
+                                    <Image
+                                        src="/images/nouth-pointing.png"
+                                        alt="Nouth Pointing"
+                                        fill
+                                        className="object-contain transform rotate-[-5deg]"
+                                    />
+                                </div>
+
                                 {/* Publish Offer Button */}
-                                <button className="w-full relative overflow-hidden group rounded-3xl bg-orange-600/90 p-[1px] transition-all active:scale-[0.98] shadow-lg shadow-orange-500/20">
+                                <button className="relative w-full overflow-hidden group rounded-3xl bg-orange-600/90 p-[1px] transition-all active:scale-[0.98] shadow-lg shadow-orange-500/20 z-10 ml-6 w-[calc(100%-1.5rem)]">
                                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity animate-shimmer" />
                                     <div className="bg-[#151515] rounded-[23px] p-5 border border-transparent flex items-center justify-between group-hover:bg-[#1a1a1a] transition-colors relative z-10 h-full">
                                         <div className="flex items-center gap-4">
