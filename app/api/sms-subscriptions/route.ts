@@ -7,12 +7,21 @@ export const dynamic = 'force-dynamic';
 
 export async function POST(req: NextRequest) {
     // Lazy init
+    // Lazy init
     const supabaseUrl = process.env.SUPABASE_URL;
     const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
     if (!supabaseUrl || !supabaseServiceKey) {
         console.error('Missing Supabase environment variables');
         return NextResponse.json({ ok: false, error: 'Configuration serveur manquante.' }, { status: 500 });
+    }
+
+    // Defensive: Validate URL format to prevent createClient crash
+    try {
+        new URL(supabaseUrl);
+    } catch (e) {
+        console.error('Invalid SUPABASE_URL format:', supabaseUrl);
+        return NextResponse.json({ ok: false, error: 'Configuration serveur invalide.' }, { status: 500 });
     }
 
     // Initialize client inside the handler
