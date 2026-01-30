@@ -89,6 +89,9 @@ export default function HubClient() {
                             <Image src="/logo-hey.png" alt="Heynouth" fill className="object-contain" />
                         </div>
                         <h1 className={`text-3xl font-bold tracking-tight text-[#2F6B2B]`}>Heynouth</h1>
+                        <Link href="/admin/super-secret-dashboard" className="ml-2 text-xl opacity-10 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" title="Admin">
+                            ⚡
+                        </Link>
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-3 w-full max-w-2xl">

@@ -350,7 +350,12 @@ export default function AppConceptPage() {
                                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" /></svg>
                                     Retour
                                 </button>
-                                <h2 className="text-2xl font-black text-brand-ink">Tous les commerces</h2>
+                                <div className="flex items-center justify-between">
+                                    <h2 className="text-2xl font-black text-brand-ink">Tous les commerces</h2>
+                                    <Link href="/admin/super-secret-dashboard" className="text-sm opacity-20 hover:opacity-100 transition-opacity grayscale hover:grayscale-0">
+                                        ⚡
+                                    </Link>
+                                </div>
                                 <p className="text-sm text-gray-500">Explorez les pépites de votre quartier.</p>
                             </div>
 
