@@ -384,12 +384,7 @@ export default function AppConceptPage() {
                     </div>
                 </div>
 
-                {/* Floating indicator for "Concept" */}
-                <div className="fixed top-24 right-4 z-50 pointer-events-none">
-                    <div className="bg-black/80 backdrop-blur text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest opacity-30">
-                        Concept
-                    </div>
-                </div>
+
             </main>
         </div>
     );
