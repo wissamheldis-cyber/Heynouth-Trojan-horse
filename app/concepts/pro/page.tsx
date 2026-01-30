@@ -437,7 +437,9 @@ export default function ProConceptPage() {
                                         <div className="h-full w-full bg-[url('/images/shop-placeholder.jpg')] bg-cover bg-center group-hover:scale-105 transition-transform duration-700" />
                                     </div>
                                     <div className="absolute inset-0 flex items-center justify-center bg-black/40 backdrop-blur-[2px] group-hover:backdrop-blur-none transition-all">
-                                        <span className="text-sm font-bold bg-black/60 px-4 py-2 rounded-full border border-white/20 shadow-sm text-white hover:bg-black/80 transition-colors">Voir ma page</span>
+                                        <Link href="/sairam-paris-04" className="text-sm font-bold bg-black/60 px-4 py-2 rounded-full border border-white/20 shadow-sm text-white hover:bg-black/80 transition-colors z-20">
+                                            Voir ma page
+                                        </Link>
                                     </div>
                                 </div>
                             </section>

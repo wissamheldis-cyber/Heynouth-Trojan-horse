@@ -32,38 +32,40 @@ export default function AppConceptPage() {
 
 
     return (
-        <div className="relative min-h-[100dvh] w-full bg-[#f0f0f0] font-sans flex items-center justify-center overflow-hidden">
+        <div className="relative min-h-[100dvh] w-full bg-[#FDFBF7] font-sans flex items-center justify-center overflow-hidden">
 
-            {/* --- BACKGROUND SHELL (Same as Shop Landing) --- */}
+            {/* --- BACKGROUND SHELL (Warm Light) --- */}
             <div className="absolute inset-0 z-0 pointer-events-none">
-                <div className="absolute top-[-10%] left-[-10%] w-[60vw] h-[60vw] bg-[#22c55e]/20 rounded-full blur-[100px] opacity-60 mix-blend-multiply" />
-                <div className="absolute bottom-[-10%] right-[-10%] w-[60vw] h-[60vw] bg-[#fbbf24]/20 rounded-full blur-[100px] opacity-60 mix-blend-multiply" />
-                <div className="absolute inset-0 bg-white/40 backdrop-blur-[1px]" />
+                <div className="absolute top-[-10%] left-[-10%] w-[70vw] h-[70vw] bg-[#fbbf24]/20 rounded-full blur-[120px] opacity-50 mix-blend-multiply" />
+                <div className="absolute bottom-[-10%] right-[-10%] w-[70vw] h-[70vw] bg-[#f97316]/10 rounded-full blur-[120px] opacity-40 mix-blend-multiply" />
+                <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-30 mix-blend-soft-light" />
             </div>
 
-            {/* --- INTEMPOREL WRAPPER (The Phone Frame) --- */}
-            <main className="relative z-10 w-full max-w-[430px] h-[100dvh] sm:h-[90vh] sm:max-h-[900px] sm:rounded-[40px] bg-[#FAFAFA] shadow-2xl overflow-hidden border sm:border-white/50 flex flex-col">
+            {/* --- INTEMPOREL WRAPPER (Phone Frame) --- */}
+            <main className="relative z-10 w-full max-w-[430px] h-[100dvh] sm:h-[90vh] sm:max-h-[900px] sm:rounded-[40px] bg-[#FDFBF7]/50 shadow-2xl overflow-hidden border sm:border-white/40 ring-1 ring-black/5 flex flex-col backdrop-blur-3xl">
 
                 {/* --- APP CONTENT (Scrollable Area) --- */}
                 <div className="flex-1 overflow-y-auto no-scrollbar scroll-smooth pb-24">
 
 
-                    {/* Logo Header */}
-                    <div className="flex justify-center pt-8 pb-2">
-                        <div className="relative h-12 w-12">
-                            <Image src="/logo-hey.png" alt="Logo" fill className="object-contain" />
+                    {/* Logo Header (Floating with Glow) */}
+                    <div className="flex justify-center pt-8 pb-4 relative group">
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-orange-400/20 blur-[40px] rounded-full opacity-60 group-hover:opacity-80 transition-opacity" />
+                        <div className="relative h-14 w-14 z-10">
+                            <Image src="/logo-hey.png" alt="Logo" fill className="object-contain drop-shadow-sm" />
                         </div>
                     </div>
 
-                    {/* Header (Always Visible) */}
-                    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-black/5 px-6 pt-4 pb-4">
-                        <div className="flex items-center justify-between">
-                            <div>
-                                <p className="text-sm font-medium text-gray-500">Bonjour,</p>
-                                <h1 className="text-2xl font-black text-brand-green">{userName} 👋</h1>
+                    {/* Header (Floating Glass Capsule) */}
+                    <header className="sticky top-4 z-50 flex justify-center pointer-events-none px-6">
+                        <div className="bg-white/60 backdrop-blur-xl border border-white/60 shadow-lg shadow-black/5 rounded-full px-5 py-2 flex items-center justify-between w-full pointer-events-auto ring-1 ring-black/5">
+                            <div className="flex items-center gap-2">
+                                <div className="leading-tight">
+                                    <p className="text-[10px] font-bold text-gray-400 uppercase tracking-wide">Bonjour</p>
+                                    <h1 className="text-lg font-black text-gray-800">{userName} <span className="text-xl">👋</span></h1>
+                                </div>
                             </div>
-                            <div className="relative h-10 w-10 overflow-hidden rounded-full border border-black/10">
-                                {/* Placeholder Avatar */}
+                            <div className="relative h-9 w-9 overflow-hidden rounded-full border border-white shadow-sm ring-1 ring-gray-100">
                                 <Image
                                     src="/images/julie-pixar.png"
                                     alt="Julie Avatar"
@@ -80,72 +82,75 @@ export default function AppConceptPage() {
                     {currentTab === "home" && (
                         <>
                             {/* Section: Map */}
+                            {/* Section: Map */}
                             <div className="px-6 mt-6">
-                                <div className="relative h-32 w-full rounded-3xl overflow-hidden shadow-sm border border-black/5 group cursor-pointer bg-gray-200">
+                                <div className="relative h-32 w-full rounded-3xl overflow-hidden shadow-lg shadow-orange-900/5 border border-white/60 group cursor-pointer ring-1 ring-black/5">
                                     <div className="absolute inset-0 bg-[url('/images/paris-map-pixar.png')] bg-cover bg-center group-hover:scale-105 transition-transform duration-700" />
-                                    <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-gray-900/10 to-transparent" />
-
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
                                 </div>
                             </div>
 
-                            <div className="px-6 space-y-8 mt-6">
+                            <div className="px-6 space-y-8 mt-8">
                                 {/* Section: Mes Commerces */}
-                                <section>
-                                    <div className="flex items-center justify-between mb-4">
-                                        <h2 className="text-lg font-black tracking-tight">Mes Commerces</h2>
+                                <section className="bg-white/40 backdrop-blur-md rounded-[32px] p-5 shadow-sm border border-white/60">
+                                    <div className="flex items-center justify-between mb-4 px-1">
+                                        <h2 className="text-lg font-black tracking-tight text-gray-800">Mes Commerces</h2>
                                         <button
                                             onClick={() => setCurrentTab('hub')}
-                                            className="text-xs font-bold text-brand-green bg-brand-green/10 px-3 py-1 rounded-full"
+                                            className="text-[10px] font-bold text-brand-green bg-brand-green/10 px-3 py-1.5 rounded-full hover:bg-brand-green/20 transition-colors"
                                         >
                                             Voir tout
                                         </button>
                                     </div>
-                                    <div className="flex gap-4 overflow-x-auto pb-4 -mx-6 px-6 no-scrollbar snap-x snap-mandatory">
+                                    <div className="flex gap-4 overflow-x-auto pb-2 -mx-5 px-5 no-scrollbar snap-x snap-mandatory">
                                         {favoriteShops.map((shop) => (
-                                            <div key={shop.slug} className="snap-start shrink-0 w-[140px] flex flex-col gap-2">
-                                                <div className="relative h-[140px] w-full overflow-hidden rounded-3xl shadow-sm border border-black/5">
+                                            <Link href={`/${shop.slug}`} key={shop.slug} className="snap-start shrink-0 w-[120px] flex flex-col gap-2 group">
+                                                <div className="relative h-[120px] w-full overflow-hidden rounded-2xl shadow-sm border border-white/50 group-hover:shadow-md transition-all">
                                                     <Image src={shop.mapImage} alt={shop.name} fill className="object-cover" />
                                                     {shop.isPartner && (
-                                                        <div className="absolute top-2 right-2 h-6 w-6 rounded-full bg-brand-yellow flex items-center justify-center shadow-lg">
-                                                            <Image src="/logo-hey.png" alt="P" width={12} height={12} className="object-contain inverted" />
+                                                        <div className="absolute top-2 right-2 h-5 w-5 rounded-full bg-brand-yellow flex items-center justify-center shadow-md">
+                                                            <Image src="/logo-hey.png" alt="P" width={10} height={10} className="object-contain inverted" />
                                                         </div>
                                                     )}
                                                 </div>
-                                                <div>
-                                                    <h3 className="font-bold text-sm leading-tight truncate">{shop.name}</h3>
-                                                    <p className="text-[10px] text-gray-400 font-medium">{shop.districtLabel}</p>
+                                                <div className="text-center">
+                                                    <h3 className="font-bold text-xs leading-tight truncate text-gray-800">{shop.name}</h3>
+                                                    <p className="text-[9px] text-gray-400 font-bold uppercase tracking-wide mt-0.5">{shop.districtLabel}</p>
                                                 </div>
-                                            </div>
+                                            </Link>
                                         ))}
                                         <div className="snap-start shrink-0 w-[80px] flex flex-col gap-2 items-center justify-center">
-                                            <button className="h-[60px] w-[60px] rounded-full border-2 border-dashed border-gray-300 flex items-center justify-center text-gray-300 hover:border-brand-green hover:text-brand-green transition-colors">
-                                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4" /></svg>
+                                            <button className="h-[60px] w-[60px] rounded-full border-2 border-dashed border-gray-300 flex items-center justify-center text-gray-300 hover:border-brand-green hover:text-brand-green transition-colors bg-white/50">
+                                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 4v16m8-8H4" /></svg>
                                             </button>
-                                            <span className="text-[10px] font-medium text-gray-400">Ajouter</span>
+                                            <span className="text-[10px] font-bold text-gray-400">Ajouter</span>
                                         </div>
                                     </div>
                                 </section>
 
                                 {/* Teaser Offres */}
                                 <section>
-                                    <div className="flex items-center justify-between mb-4">
-                                        <h2 className="text-lg font-black tracking-tight">Offres en cours</h2>
-                                        <button onClick={() => setCurrentTab('offers')} className="text-xs font-bold text-brand-green bg-brand-green/10 px-3 py-1 rounded-full">Voir tout</button>
+                                    <div className="flex items-center justify-between mb-4 px-1">
+                                        <h2 className="text-lg font-black tracking-tight text-gray-800">Offres du moment</h2>
+                                        <button onClick={() => setCurrentTab('offers')} className="text-[10px] font-bold text-brand-green bg-brand-green/10 px-3 py-1.5 rounded-full hover:bg-brand-green/20 transition-colors">Voir tout</button>
                                     </div>
-                                    <div className="group relative overflow-hidden rounded-3xl bg-white p-1 shadow-card transition-transform active:scale-[0.98]">
-                                        <div className="flex gap-4 p-3">
-                                            <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-2xl bg-gray-100">
+                                    <div className="group relative overflow-hidden rounded-[28px] bg-white/60 p-2 shadow-sm border border-white/60 transition-transform active:scale-[0.98]">
+                                        <div className="flex gap-4 p-2">
+                                            <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-2xl bg-gray-100 shadow-inner">
                                                 <Image src={favoriteShops[0].products[0].image} alt="Offer" fill className="object-cover" />
                                             </div>
-                                            <div className="flex flex-col justify-center">
-                                                <div className="inline-flex items-center gap-1.5 rounded-full bg-brand-green/10 px-2 py-0.5 text-[10px] font-bold text-brand-green w-fit mb-1">
+                                            <div className="flex flex-col justify-center py-1">
+                                                <div className="inline-flex items-center gap-1.5 rounded-full bg-brand-green/10 px-2 py-0.5 text-[9px] font-black text-brand-green w-fit mb-1.5 uppercase tracking-wide">
                                                     <div className="h-1.5 w-1.5 rounded-full bg-brand-green animate-pulse" />
-                                                    DISPO
+                                                    Dispo 4h
                                                 </div>
-                                                <h3 className="text-base font-black leading-tight text-brand-ink">
+                                                <h3 className="text-lg font-black leading-tight text-gray-800 mb-1">
                                                     {favoriteShops[0].dailyOffer?.title || "Panier surprise"}
                                                 </h3>
-                                                <p className="text-xs font-medium text-gray-500">{favoriteShops[0].name}</p>
+                                                <p className="text-xs font-bold text-gray-400 flex items-center gap-1">
+                                                    <span className="w-4 h-4 rounded-full bg-gray-200 block" />
+                                                    {favoriteShops[0].name}
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -344,41 +349,39 @@ export default function AppConceptPage() {
 
                 </div>
 
-                {/* Bottom Nav (Fixed at bottom of container) */}
-                <div className="w-full bg-white border-t border-black/5 pt-3 pb-6 px-6 flex justify-between items-end z-50">
-                    <button
-                        onClick={() => setCurrentTab('home')}
-                        className={`flex flex-col items-center gap-1 transition-colors ${currentTab === 'home' || currentTab === 'hub' ? 'text-brand-green' : 'text-gray-300 hover:text-gray-400'}`}
-                    >
-                        <svg className="w-6 h-6" fill={(currentTab === 'home' || currentTab === 'hub') ? "currentColor" : "none"} stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={(currentTab === 'home' || currentTab === 'hub') ? "0" : "2"} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                            {(currentTab === 'home' || currentTab === 'hub') && <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" fill="currentColor" />}
-                        </svg>
-                        <span className="text-[10px] font-bold">Accueil</span>
-                    </button>
+                {/* Bottom Nav (Floating Glass) */}
+                <div className="absolute bottom-6 left-6 right-6 z-50">
+                    <div className="bg-white/80 backdrop-blur-xl border border-white/60 shadow-2xl shadow-orange-900/5 rounded-3xl py-3 px-6 flex justify-between items-center ring-1 ring-black/5">
+                        <button
+                            onClick={() => setCurrentTab('home')}
+                            className={`flex flex-col items-center gap-1 transition-all ${currentTab === 'home' || currentTab === 'hub' ? 'text-brand-green scale-105' : 'text-gray-400 hover:text-gray-500'}`}
+                        >
+                            <svg className="w-6 h-6" fill={(currentTab === 'home' || currentTab === 'hub') ? "currentColor" : "none"} stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={(currentTab === 'home' || currentTab === 'hub') ? "0" : "2"} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                                {(currentTab === 'home' || currentTab === 'hub') && <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" fill="currentColor" />}
+                            </svg>
+                        </button>
 
-                    <button
-                        onClick={() => setCurrentTab('offers')}
-                        className={`flex flex-col items-center gap-1 transition-colors ${currentTab === 'offers' ? 'text-brand-green' : 'text-gray-300 hover:text-gray-400'}`}
-                    >
-                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" /></svg>
-                        <span className="text-[10px] font-medium">Offres</span>
-                    </button>
+                        <button
+                            onClick={() => setCurrentTab('offers')}
+                            className={`flex flex-col items-center gap-1 transition-all ${currentTab === 'offers' ? 'text-brand-green scale-105' : 'text-gray-400 hover:text-gray-500'}`}
+                        >
+                            <svg className="w-6 h-6" fill={currentTab === 'offers' ? "currentColor" : "none"} stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" /></svg>
+                        </button>
 
-                    <button
-                        onClick={() => setCurrentTab('cart')}
-                        className={`flex flex-col items-center gap-1 transition-colors ${currentTab === 'cart' ? 'text-brand-green' : 'text-gray-300 hover:text-gray-400'}`}
-                    >
-                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
-                        <span className="text-[10px] font-medium">Panier</span>
-                    </button>
+                        <button
+                            onClick={() => setCurrentTab('cart')}
+                            className={`flex flex-col items-center gap-1 transition-all ${currentTab === 'cart' ? 'text-brand-green scale-105' : 'text-gray-400 hover:text-gray-500'}`}
+                        >
+                            <svg className="w-6 h-6" fill={currentTab === 'cart' ? "currentColor" : "none"} stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                        </button>
 
-                    <button
-                        onClick={() => setCurrentTab('profile')}
-                        className={`flex flex-col items-center gap-1 transition-colors ${currentTab === 'profile' ? 'text-brand-green' : 'text-gray-300 hover:text-gray-400'}`}
-                    >
-                        <svg className="w-6 h-6" fill={currentTab === 'profile' ? "currentColor" : "none"} stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
-                        <span className="text-[10px] font-medium">Profil</span>
-                    </button>
+                        <button
+                            onClick={() => setCurrentTab('profile')}
+                            className={`flex flex-col items-center gap-1 transition-all ${currentTab === 'profile' ? 'text-brand-green scale-105' : 'text-gray-400 hover:text-gray-500'}`}
+                        >
+                            <svg className="w-6 h-6" fill={currentTab === 'profile' ? "currentColor" : "none"} stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
+                        </button>
+                    </div>
                 </div>
 
                 {/* Floating indicator for "Concept" */}

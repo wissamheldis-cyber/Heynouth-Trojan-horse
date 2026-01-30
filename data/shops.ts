@@ -47,47 +47,47 @@ export type Shop = {
 
 export const SHOPS: Shop[] = [
     {
-        slug: "heynouth1-paris01",
-        name: "Nom de commerce 001",
-        districtLabel: "PARIS 01",
+        slug: "sairam-paris-04",
+        name: "Restaurant Sairam",
+        districtLabel: "PARIS 04",
         statusLabel: "OUVERT",
-        hoursLabel: "10:00 — 02:00",
+        hoursLabel: "11:00 — 23:00",
 
         timezone: "Europe/Paris",
         hours: {
-            mon: [["10:00", "02:00"]],
-            tue: [["10:00", "02:00"]],
-            wed: [["10:00", "02:00"]],
-            thu: [["10:00", "02:00"]],
-            fri: [["10:00", "04:00"]],
-            sat: [["10:00", "04:00"]],
-            sun: [["12:00", "02:00"]],
+            mon: [["11:00", "23:00"]],
+            tue: [["11:00", "23:00"]],
+            wed: [["11:00", "23:00"]],
+            thu: [["11:00", "23:00"]],
+            fri: [["11:00", "23:30"]],
+            sat: [["11:00", "23:30"]],
+            sun: [["11:00", "23:00"]],
         },
 
         mapImage: "/shops/generic/map.png",
-        mapsUrl: "https://www.google.fr/maps/place/Bill's+Burger+Chatelet/@48.8597703,2.3461398,19z/data=!4m9!1m2!10m1!1e1!3m5!1s0x47e66f001250df6d:0x4cbbed7619ea4303!8m2!3d48.8599556!4d2.3467894!16s%2Fg%2F11w2mk38ps?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoASAFQAw%3D%3D",
+        mapsUrl: "https://goo.gl/maps/generic",
 
         contact: {
-            phoneE164: "+33695842569",
-            phoneDisplay: "06 95 84 25 69",
-            address: "8 shou édition, 75000",
+            phoneE164: "+33145678910",
+            phoneDisplay: "01 45 67 89 10",
+            address: "42 Rue de Rivoli, 75004 Paris",
         },
         dailyOffer: {
             label: "OFFRE DU JOUR",
-            title: "Nom du produit",
-            price: "4,99 €",
-            oldPrice: "7,99 €",
-            image: "/shops/generic/offer.png",
+            title: "Menu Dégustation Indien",
+            price: "15,90 €",
+            oldPrice: "19,90 €",
+            image: "/shops/generic/offer.png", // Keeping generic for now as requested
             protocolHref: "#reservation",
         },
         products: [
-            { id: "p1", title: "Nom du produit", price: "7,99 €", image: "/shops/generic/p1.png" },
-            { id: "p2", title: "Snack box", price: "5,50 €", image: "/shops/generic/p2.png" },
-            { id: "p3", title: "Panier frais", price: "12,00 €", image: "/shops/generic/p3.png" },
+            { id: "p1", title: "Butter Chicken", price: "12,90 €", image: "/shops/generic/p1.png" },
+            { id: "p2", title: "Naan Fromage", price: "3,50 €", image: "/shops/generic/p2.png" },
+            { id: "p3", title: "Lassi Mangue", price: "4,00 €", image: "/shops/generic/p3.png" },
         ],
         about: {
-            p1: "Bienvenue chez Heynouth, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien.",
-            p2: "Notre principe est simple : du service humain et du temps gagné.",
+            p1: "Restaurant indien authentique au cœur du Marais. Épices savoureuses et ambiance chaleureuse.",
+            p2: "Venez découvrir nos spécialités faites maison dans un cadre traditionnel.",
             images: [
                 "/shops/generic/a1.png",
                 "/shops/generic/a2.png",
