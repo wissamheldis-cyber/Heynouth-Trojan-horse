@@ -2,20 +2,22 @@ import { createClient } from '@supabase/supabase-js';
 import { NextRequest, NextResponse } from 'next/server';
 import { parsePhoneNumber } from 'libphonenumber-js';
 
-// Initialize Supabase client with Service Role Key for server-side operations
-// CRITICAL: This key must NEVER be exposed to the client.
-// Initialize Supabase client
-// We lazy initialize or check for presence to avoid build-time errors if env vars are missing
-const supabaseUrl = process.env.SUPABASE_URL || 'https://example.com';
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || 'example-key';
-
-// Ensure we don't crash during build if keys are missing
-// Real validation happens in POST
-const supabase = createClient(supabaseUrl, supabaseServiceKey);
-
+// Initialize Supabase lazily to prevent build-time crashes
 export const dynamic = 'force-dynamic';
 
 export async function POST(req: NextRequest) {
+    // Lazy init
+    const supabaseUrl = process.env.SUPABASE_URL;
+    const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+
+    if (!supabaseUrl || !supabaseServiceKey) {
+        console.error('Missing Supabase environment variables');
+        return NextResponse.json({ ok: false, error: 'Configuration serveur manquante.' }, { status: 500 });
+    }
+
+    // Initialize client inside the handler
+    const supabase = createClient(supabaseUrl, supabaseServiceKey);
+
     try {
         const body = await req.json();
         const { shopSlug, phoneRaw, optInMarketing, optInUpdates } = body;
