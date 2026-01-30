@@ -143,7 +143,7 @@ export default function ProConceptPage() {
     const [clientFilter, setClientFilter] = useState<"24h" | "1w" | "1m" | "all">("all");
 
     // Modal State
-    const [activeModal, setActiveModal] = useState<"none" | "new_offer" | "hours" | "closure">("none");
+    const [activeModal, setActiveModal] = useState<"none" | "new_offer" | "hours" | "closure" | "settings_shop" | "settings_sub" | "settings_notif" | "settings_team" | "settings_sec">("none");
 
     // Form States
     const [offerDetails, setOfferDetails] = useState({
@@ -163,8 +163,20 @@ export default function ProConceptPage() {
     };
 
     // Generic Action Handler for Settings
-    const handleGenericAction = (actionName: string) => {
-        showToast(`${actionName} - Bientôt disponible`, 'success');
+    const handleGenericAction = (actionLabel: string) => {
+        const map: Record<string, "settings_shop" | "settings_sub" | "settings_notif" | "settings_team" | "settings_sec"> = {
+            'Etablissement': 'settings_shop',
+            'Abonnement': 'settings_sub',
+            'Notifications': 'settings_notif',
+            'Equipe': 'settings_team',
+            'Sécurité': 'settings_sec'
+        };
+        const key = map[actionLabel];
+        if (key) {
+            setActiveModal(key);
+        } else {
+            showToast(`${actionLabel} - Bientôt disponible`, 'warning');
+        }
     }
 
     // Handlers
@@ -238,17 +250,29 @@ export default function ProConceptPage() {
                 {/* --- PRO CONTENT (Scrollable Area) --- */}
                 <div className="relative z-10 flex-1 overflow-y-auto no-scrollbar scroll-smooth pb-24">
 
-                    {/* Header (Sticky) */}
-                    <header className="sticky top-0 z-50 bg-[#121212]/80 backdrop-blur-xl border-b border-white/5 px-6 pt-12 pb-4 flex items-center justify-between shadow-sm">
-                        <div>
-                            <div className="flex items-center gap-2 mb-1">
-                                {/* Dynamic Online Status */}
+                    {/* Logo Header PRO (Black + Orange Glow) */}
+                    <div className="px-6 pt-6 pb-2">
+                        <div className="py-4 flex justify-center relative group">
+                            {/* Orange Glow Effect - Backlight */}
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-orange-500 blur-[35px] opacity-60 group-hover:opacity-100 transition-opacity" />
+
+                            <div className="relative h-12 w-12 z-10">
+                                <Image src="/logo-hey.png" alt="Logo" fill className="object-contain brightness-0 filter" />
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Header (Sticky Floating Capsule) */}
+                    <header className="sticky top-4 z-50 px-6 flex justify-center pointer-events-none">
+                        <div className="bg-[#151515]/80 backdrop-blur-xl border border-white/10 rounded-full px-6 py-2 shadow-2xl flex items-center gap-4 pointer-events-auto ring-1 ring-white/5">
+                            <div className="flex items-center gap-2">
                                 <div className={`h-2 w-2 rounded-full shadow-[0_0_10px_rgba(34,197,94,0.6)] ${shopStatus.isOpen ? 'bg-green-500 animate-pulse' : 'bg-red-500'}`} />
-                                <span className={`text-[10px] font-bold uppercase tracking-widest ${shopStatus.isOpen ? 'text-green-500' : 'text-red-500'}`}>
+                                <span className={`text-[9px] font-black uppercase tracking-widest ${shopStatus.isOpen ? 'text-green-500' : 'text-red-500'}`}>
                                     {shopStatus.isOpen ? 'En ligne' : 'Fermé'}
                                 </span>
                             </div>
-                            <h1 className="text-xl font-bold tracking-tight text-gray-100">Sairam - Paris 04</h1>
+                            <div className="w-[1px] h-3 bg-white/10"></div>
+                            <h1 className="text-sm font-bold tracking-tight text-white">Sairam - Paris 04</h1>
                         </div>
                     </header>
 
@@ -803,6 +827,138 @@ export default function ProConceptPage() {
                                 </>
                             )}
 
+                            {/* SETTINGS: SHOP */}
+                            {activeModal === "settings_shop" && (
+                                <>
+                                    <div className="flex items-center justify-between">
+                                        <h3 className="text-xl font-bold text-white">Etablissement</h3>
+                                        <button onClick={closeModal} className="p-2 bg-white/5 rounded-full hover:bg-white/10"><Icons.Close className="w-5 h-5 text-gray-400" /></button>
+                                    </div>
+                                    <div className="space-y-4">
+                                        <div>
+                                            <label className="text-xs font-bold text-gray-500 uppercase">Nom du commerce</label>
+                                            <input type="text" defaultValue="Sairam - Paris 04" className="w-full mt-1 bg-black/40 border border-white/10 rounded-xl px-3 py-3 text-white text-sm font-bold focus:outline-none focus:border-orange-500" />
+                                        </div>
+                                        <div>
+                                            <label className="text-xs font-bold text-gray-500 uppercase">Adresse Postale</label>
+                                            <input type="text" defaultValue="12 Rue des Rosiers, 75004 Paris" className="w-full mt-1 bg-black/40 border border-white/10 rounded-xl px-3 py-3 text-white text-sm font-bold focus:outline-none focus:border-orange-500" />
+                                        </div>
+                                        <div>
+                                            <label className="text-xs font-bold text-gray-500 uppercase">Description courte</label>
+                                            <textarea defaultValue="Le meilleur de la street food indienne au cœur du marais." className="w-full mt-1 bg-black/40 border border-white/10 rounded-xl px-3 py-3 text-white text-sm font-bold focus:outline-none focus:border-orange-500 min-h-[80px]" />
+                                        </div>
+                                    </div>
+                                    <button onClick={() => { closeModal(); showToast('Infos mises à jour !', 'success') }} className="w-full bg-orange-600 text-white font-bold py-4 rounded-2xl shadow-lg active:scale-95 transition-transform">Enregistrer</button>
+                                </>
+                            )}
+
+                            {/* SETTINGS: SUBSCRIPTION */}
+                            {activeModal === "settings_sub" && (
+                                <>
+                                    <div className="flex items-center justify-between">
+                                        <h3 className="text-xl font-bold text-white">Abonnement</h3>
+                                        <button onClick={closeModal} className="p-2 bg-white/5 rounded-full hover:bg-white/10"><Icons.Close className="w-5 h-5 text-gray-400" /></button>
+                                    </div>
+                                    <div className="bg-gradient-to-br from-orange-600 to-orange-800 rounded-2xl p-6 text-white text-center shadow-lg relative overflow-hidden">
+                                        <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2"></div>
+                                        <div className="relative z-10">
+                                            <h4 className="text-sm font-bold opacity-80 uppercase tracking-widest">Plan Actuel</h4>
+                                            <div className="text-3xl font-black mt-2">Heynouth PRO</div>
+                                            <div className="text-sm font-medium mt-1 opacity-90">Renouvellement le 01/03/2026</div>
+                                        </div>
+                                    </div>
+                                    <div className="space-y-2">
+                                        <div className="flex justify-between items-center p-4 bg-white/5 rounded-xl border border-white/5">
+                                            <span className="text-sm font-bold text-gray-300">Prochaine facture</span>
+                                            <span className="text-sm font-bold text-white">29.00 €</span>
+                                        </div>
+                                        <button className="w-full py-3 bg-white/5 rounded-xl text-sm font-bold text-gray-300 hover:bg-white/10 transition-colors">Télécharger les factures</button>
+                                    </div>
+                                </>
+                            )}
+
+                            {/* SETTINGS: NOTIFICATIONS */}
+                            {activeModal === "settings_notif" && (
+                                <>
+                                    <div className="flex items-center justify-between">
+                                        <h3 className="text-xl font-bold text-white">Notifications</h3>
+                                        <button onClick={closeModal} className="p-2 bg-white/5 rounded-full hover:bg-white/10"><Icons.Close className="w-5 h-5 text-gray-400" /></button>
+                                    </div>
+                                    <div className="space-y-3">
+                                        {[
+                                            { label: 'Alertes SMS (Commandes)', active: true },
+                                            { label: 'Emails Récapitulatifs', active: true },
+                                            { label: 'Nouveautés Heynouth', active: false },
+                                            { label: 'Sons de notification', active: true },
+                                        ].map((notif, i) => (
+                                            <div key={i} className="flex items-center justify-between p-4 bg-white/5 rounded-xl border border-white/5">
+                                                <span className="text-sm font-bold text-gray-200">{notif.label}</span>
+                                                <div className={`w-12 h-6 rounded-full p-1 transition-colors ${notif.active ? 'bg-green-500' : 'bg-gray-700'}`}>
+                                                    <div className={`w-4 h-4 rounded-full bg-white shadow-sm transition-transform ${notif.active ? 'translate-x-6' : 'translate-x-0'}`} />
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </>
+                            )}
+
+                            {/* SETTINGS: TEAM */}
+                            {activeModal === "settings_team" && (
+                                <>
+                                    <div className="flex items-center justify-between">
+                                        <h3 className="text-xl font-bold text-white">Mon Equipe</h3>
+                                        <button onClick={closeModal} className="p-2 bg-white/5 rounded-full hover:bg-white/10"><Icons.Close className="w-5 h-5 text-gray-400" /></button>
+                                    </div>
+                                    <div className="space-y-3">
+                                        {[
+                                            { name: 'Sairam Admin', role: 'Propriétaire', avatar: 'hue-rotate-0' },
+                                            { name: 'Nouth Assistant', role: 'IA', avatar: 'hue-rotate-180' },
+                                            { name: 'Chef Cuisine', role: 'Staff', avatar: 'grayscale' },
+                                        ].map((member, i) => (
+                                            <div key={i} className="flex items-center gap-4 p-3 bg-white/5 rounded-xl border border-white/5">
+                                                <div className="relative w-10 h-10 rounded-full overflow-hidden bg-gray-800">
+                                                    <Image src="/images/nouth-avatar.png" alt="Avatar" fill className={`object-cover ${member.avatar}`} />
+                                                </div>
+                                                <div className="flex-1">
+                                                    <div className="text-sm font-bold text-white">{member.name}</div>
+                                                    <div className="text-xs font-medium text-gray-500">{member.role}</div>
+                                                </div>
+                                                {member.role !== 'Propriétaire' && <button className="text-red-500 font-bold text-xs">Retirer</button>}
+                                            </div>
+                                        ))}
+                                        <button className="w-full py-4 border border-dashed border-white/20 rounded-xl text-sm font-bold text-gray-400 hover:text-white hover:border-white/40 transition-colors">+ Ajouter un membre</button>
+                                    </div>
+                                </>
+                            )}
+
+                            {/* SETTINGS: SECURITY */}
+                            {activeModal === "settings_sec" && (
+                                <>
+                                    <div className="flex items-center justify-between">
+                                        <h3 className="text-xl font-bold text-white">Sécurité</h3>
+                                        <button onClick={closeModal} className="p-2 bg-white/5 rounded-full hover:bg-white/10"><Icons.Close className="w-5 h-5 text-gray-400" /></button>
+                                    </div>
+                                    <div className="space-y-4">
+                                        <div>
+                                            <label className="text-xs font-bold text-gray-500 uppercase">Ancien mot de passe</label>
+                                            <input type="password" placeholder="••••••••" className="w-full mt-1 bg-black/40 border border-white/10 rounded-xl px-3 py-3 text-white text-sm font-bold focus:outline-none focus:border-orange-500" />
+                                        </div>
+                                        <div>
+                                            <label className="text-xs font-bold text-gray-500 uppercase">Nouveau mot de passe</label>
+                                            <input type="password" placeholder="••••••••" className="w-full mt-1 bg-black/40 border border-white/10 rounded-xl px-3 py-3 text-white text-sm font-bold focus:outline-none focus:border-orange-500" />
+                                        </div>
+                                        <div className="flex items-center justify-between p-4 bg-orange-500/10 rounded-xl border border-orange-500/20">
+                                            <div>
+                                                <div className="text-sm font-bold text-orange-500">Double Authentification</div>
+                                                <div className="text-[10px] text-gray-400">Recommandé pour votre sécurité</div>
+                                            </div>
+                                            <div className="w-10 h-5 bg-orange-500 rounded-full p-0.5"><div className="w-4 h-4 bg-white rounded-full translate-x-5 shadow-sm"></div></div>
+                                        </div>
+                                    </div>
+                                    <button onClick={() => { closeModal(); showToast('Sécurité mise à jour', 'success') }} className="w-full bg-white text-black font-bold py-4 rounded-2xl shadow-lg active:scale-95 transition-transform">Mettre à jour</button>
+                                </>
+                            )}
+
                             {/* CLOSURE MODAL */}
                             {activeModal === "closure" && (
                                 <>
@@ -837,16 +993,18 @@ export default function ProConceptPage() {
                 )}
 
                 {/* --- TOAST NOTIFICATION --- */}
-                {toast.visible && (
-                    <div className="absolute top-20 left-1/2 -translate-x-1/2 z-[110] animate-bounce-in w-full flex justify-center pointer-events-none">
-                        <div className={`mx-4 px-6 py-3 rounded-full shadow-2xl flex items-center gap-3 border font-bold text-sm backdrop-blur-xl ${toast.type === 'success' ? 'bg-green-500/90 text-white border-green-400/50' : 'bg-red-500/90 text-white border-red-400/50'}`}>
-                            {toast.type === 'success' ? <Icons.Check className="w-5 h-5" /> : <Icons.Lock className="w-5 h-5" />}
-                            <span>{toast.message}</span>
+                {
+                    toast.visible && (
+                        <div className="absolute top-20 left-1/2 -translate-x-1/2 z-[110] animate-bounce-in w-full flex justify-center pointer-events-none">
+                            <div className={`mx-4 px-6 py-3 rounded-full shadow-2xl flex items-center gap-3 border font-bold text-sm backdrop-blur-xl ${toast.type === 'success' ? 'bg-green-500/90 text-white border-green-400/50' : 'bg-red-500/90 text-white border-red-400/50'}`}>
+                                {toast.type === 'success' ? <Icons.Check className="w-5 h-5" /> : <Icons.Lock className="w-5 h-5" />}
+                                <span>{toast.message}</span>
+                            </div>
                         </div>
-                    </div>
-                )}
+                    )
+                }
 
-            </main>
-        </div>
+            </main >
+        </div >
     );
 }

@@ -47,8 +47,16 @@ export default function AppConceptPage() {
                 {/* --- APP CONTENT (Scrollable Area) --- */}
                 <div className="flex-1 overflow-y-auto no-scrollbar scroll-smooth pb-24">
 
+
+                    {/* Logo Header */}
+                    <div className="flex justify-center pt-8 pb-2">
+                        <div className="relative h-12 w-12">
+                            <Image src="/logo-hey.png" alt="Logo" fill className="object-contain" />
+                        </div>
+                    </div>
+
                     {/* Header (Always Visible) */}
-                    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-black/5 px-6 pt-12 pb-4">
+                    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-black/5 px-6 pt-4 pb-4">
                         <div className="flex items-center justify-between">
                             <div>
                                 <p className="text-sm font-medium text-gray-500">Bonjour,</p>
