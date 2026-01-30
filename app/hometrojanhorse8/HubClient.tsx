@@ -92,49 +92,53 @@ export default function HubClient() {
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-3 w-full max-w-2xl">
-                        {/* Partner Filter Button */}
-                        <button
-                            onClick={() => setShowPartners(!showPartners)}
-                            className={`relative w-12 h-[54px] rounded-2xl border shadow-lg transition-all flex items-center justify-center z-50 shrink-0 overflow-hidden ${showPartners
-                                ? "bg-[#2F6B2B] border-[#2F6B2B]"
-                                : "bg-white/70 backdrop-blur-2xl border-white/80 hover:bg-white/90"
-                                }`}
-                            title="Afficher uniquement les partenaires Heynouth"
-                        >
-                            <div className="relative w-8 h-8">
-                                <Image
-                                    src="/logo-hey.png"
-                                    alt="Hey Partners"
-                                    fill
-                                    className={`object-contain transition-all ${showPartners ? "brightness-0 invert" : ""}`}
-                                />
-                            </div>
-                        </button>
 
-                        {/* Concept App Button (Green) */}
-                        <Link
-                            href="/concepts/app"
-                            className="relative w-12 h-[54px] rounded-2xl border border-[#2F6B2B] bg-[#2F6B2B] shadow-lg transition-all flex items-center justify-center z-50 shrink-0 hover:opacity-90 active:scale-95"
-                            title="Concept Heynouth APP"
-                        >
-                            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
-                        </Link>
+                        {/* Access Buttons Group (Horizontal on all screens) */}
+                        <div className="flex gap-2">
+                            {/* Partner Filter Button */}
+                            <button
+                                onClick={() => setShowPartners(!showPartners)}
+                                className={`relative w-12 h-[54px] rounded-2xl border shadow-lg transition-all flex items-center justify-center z-50 shrink-0 overflow-hidden ${showPartners
+                                    ? "bg-[#2F6B2B] border-[#2F6B2B]"
+                                    : "bg-white/70 backdrop-blur-2xl border-white/80 hover:bg-white/90"
+                                    }`}
+                                title="Afficher uniquement les partenaires Heynouth"
+                            >
+                                <div className="relative w-8 h-8">
+                                    <Image
+                                        src="/logo-hey.png"
+                                        alt="Hey Partners"
+                                        fill
+                                        className={`object-contain transition-all ${showPartners ? "brightness-0 invert" : ""}`}
+                                    />
+                                </div>
+                            </button>
 
-                        {/* Concept Pro Button (White/Black) */}
-                        <Link
-                            href="/concepts/pro"
-                            className="relative w-12 h-[54px] rounded-2xl border border-white/80 bg-white shadow-lg transition-all flex items-center justify-center z-50 shrink-0 hover:bg-gray-50 active:scale-95"
-                            title="Concept Heynouth PRO"
-                        >
-                            <div className="relative w-8 h-8">
-                                <Image
-                                    src="/logo-hey.png"
-                                    alt="PRO"
-                                    fill
-                                    className="object-contain brightness-0"
-                                />
-                            </div>
-                        </Link>
+                            {/* Concept App Button (Green) */}
+                            <Link
+                                href="/concepts/app"
+                                className="relative w-12 h-[54px] rounded-2xl border border-[#2F6B2B] bg-[#2F6B2B] shadow-lg transition-all flex items-center justify-center z-50 shrink-0 hover:opacity-90 active:scale-95"
+                                title="Concept Heynouth APP"
+                            >
+                                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
+                            </Link>
+
+                            {/* Concept Pro Button (White/Black) */}
+                            <Link
+                                href="/concepts/pro"
+                                className="relative w-12 h-[54px] rounded-2xl border border-white/80 bg-white shadow-lg transition-all flex items-center justify-center z-50 shrink-0 hover:bg-gray-50 active:scale-95"
+                                title="Concept Heynouth PRO"
+                            >
+                                <div className="relative w-8 h-8">
+                                    <Image
+                                        src="/logo-hey.png"
+                                        alt="PRO"
+                                        fill
+                                        className="object-contain brightness-0"
+                                    />
+                                </div>
+                            </Link>
+                        </div>
 
                         {/* District Dropdown (Custom) */}
                         <div className="relative min-w-[200px] z-50">
