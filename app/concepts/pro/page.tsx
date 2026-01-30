@@ -566,21 +566,20 @@ export default function ProConceptPage() {
                             {/* 2. CONVERSION FUNNEL */}
                             <section>
                                 <h2 className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">Entonnoir de Conversion</h2>
-                                <div className="space-y-2">
+                                <div className="space-y-3">
                                     {/* Views */}
                                     <div className="bg-[#1A1A1A]/60 p-4 rounded-2xl border border-white/5 flex items-center justify-between relative overflow-hidden">
                                         <div className="flex items-center gap-3 relative z-10">
-                                            <div className="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400"><Icons.Eye className="w-4 h-4" /></div>
+                                            <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400"><Icons.Eye className="w-5 h-5" /></div>
                                             <span className="text-sm font-bold text-gray-300">Vues Totales</span>
                                         </div>
                                         <span className="text-xl font-black text-white relative z-10">1,240</span>
                                         <div className="absolute inset-y-0 left-0 bg-blue-500/5 w-full"></div>
                                     </div>
                                     {/* Scans */}
-                                    <div className="ml-4 bg-[#1A1A1A]/60 p-4 rounded-2xl border border-white/5 flex items-center justify-between relative overflow-hidden">
-                                        <div className="absolute left-[-16px] top-1/2 -translate-y-1/2 w-4 h-[2px] bg-white/10"></div>
+                                    <div className="bg-[#1A1A1A]/60 p-4 rounded-2xl border border-white/5 flex items-center justify-between relative overflow-hidden">
                                         <div className="flex items-center gap-3 relative z-10">
-                                            <div className="w-8 h-8 rounded-full bg-orange-500/20 flex items-center justify-center text-orange-500"><Icons.Scan className="w-4 h-4" /></div>
+                                            <div className="w-10 h-10 rounded-full bg-orange-500/20 flex items-center justify-center text-orange-500"><Icons.Scan className="w-5 h-5" /></div>
                                             <span className="text-sm font-bold text-gray-300">Scans (QR)</span>
                                         </div>
                                         <div className="text-right relative z-10">
@@ -590,17 +589,16 @@ export default function ProConceptPage() {
                                         <div className="absolute inset-y-0 left-0 bg-orange-500/5 w-[30%]"></div>
                                     </div>
                                     {/* Sales */}
-                                    <div className="ml-8 bg-[#1A1A1A]/60 p-4 rounded-2xl border border-white/5 flex items-center justify-between relative overflow-hidden shadow-[0_0_15px_rgba(34,197,94,0.1)]">
-                                        <div className="absolute left-[-16px] top-1/2 -translate-y-1/2 w-4 h-[2px] bg-white/10"></div>
+                                    <div className="bg-[#1A1A1A]/60 p-4 rounded-2xl border border-white/5 flex items-center justify-between relative overflow-hidden shadow-[0_0_15px_rgba(34,197,94,0.1)]">
                                         <div className="flex items-center gap-3 relative z-10">
-                                            <div className="w-8 h-8 rounded-full bg-green-500/20 flex items-center justify-center text-green-500"><Icons.ShoppingBag className="w-4 h-4" /></div>
+                                            <div className="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center text-green-500"><Icons.ShoppingBag className="w-5 h-5" /></div>
                                             <span className="text-sm font-bold text-white">Achats (Commandes)</span>
                                         </div>
                                         <div className="text-right relative z-10">
                                             <span className="text-xl font-black text-green-400 block">85</span>
-                                            <span className="text-[10px] text-green-600 font-bold">22% conv.</span>
+                                            <span className="text-[10px] text-green-500/60 font-bold">22% conv.</span>
                                         </div>
-                                        <div className="absolute inset-y-0 left-0 bg-green-500/5 w-[22%]"></div>
+                                        <div className="absolute inset-y-0 left-0 bg-green-500/10 w-[22%]"></div>
                                     </div>
                                 </div>
                             </section>
@@ -622,52 +620,55 @@ export default function ProConceptPage() {
                                         </div>
                                     ))}
                                 </div>
-                            </section>
-                        </div>
-                    )}
+                            </section >
+                        </div >
+                    )
+                    }
 
 
                     {/* 4. SETTINGS TAB */}
-                    {currentTab === 'settings' && (
-                        <div className="px-6 mt-6 pb-6">
-                            <div className="mb-6">
-                                <h2 className="text-xl font-bold mb-1 text-white">Réglages</h2>
-                                <p className="text-sm text-gray-400">Gérez votre compte et vos préférences.</p>
-                            </div>
+                    {
+                        currentTab === 'settings' && (
+                            <div className="px-6 mt-6 pb-6">
+                                <div className="mb-6">
+                                    <h2 className="text-xl font-bold mb-1 text-white">Réglages</h2>
+                                    <p className="text-sm text-gray-400">Gérez votre compte et vos préférences.</p>
+                                </div>
 
-                            <div className="space-y-2">
-                                {[
-                                    { icon: Icons.Shop, label: 'Etablissement', sub: 'Infos, Adresse, Photos' },
-                                    { icon: Icons.Card, label: 'Abonnement', sub: 'Pro (Actif)' },
-                                    { icon: Icons.Bell, label: 'Notifications', sub: 'SMS, Email, Push' },
-                                    { icon: Icons.UserGroup, label: 'Equipe', sub: 'Gérer les accès' },
-                                    { icon: Icons.Lock, label: 'Sécurité', sub: 'Mot de passe, 2FA' },
-                                ].map((item) => (
-                                    <button key={item.label} onClick={() => handleGenericAction(item.label)} className="w-full bg-[#1A1A1A]/80 px-4 py-4 rounded-2xl flex items-center justify-between border border-white/5 hover:bg-white/10 transition-colors group shadow-sm active:scale-98">
-                                        <div className="flex items-center gap-4">
-                                            <div className="h-10 w-10 rounded-xl bg-black/40 flex items-center justify-center text-gray-400 group-hover:text-white transition-colors border border-white/5">
-                                                <item.icon className="w-5 h-5" />
+                                <div className="space-y-2">
+                                    {[
+                                        { icon: Icons.Shop, label: 'Etablissement', sub: 'Infos, Adresse, Photos' },
+                                        { icon: Icons.Card, label: 'Abonnement', sub: 'Pro (Actif)' },
+                                        { icon: Icons.Bell, label: 'Notifications', sub: 'SMS, Email, Push' },
+                                        { icon: Icons.UserGroup, label: 'Equipe', sub: 'Gérer les accès' },
+                                        { icon: Icons.Lock, label: 'Sécurité', sub: 'Mot de passe, 2FA' },
+                                    ].map((item) => (
+                                        <button key={item.label} onClick={() => handleGenericAction(item.label)} className="w-full bg-[#1A1A1A]/80 px-4 py-4 rounded-2xl flex items-center justify-between border border-white/5 hover:bg-white/10 transition-colors group shadow-sm active:scale-98">
+                                            <div className="flex items-center gap-4">
+                                                <div className="h-10 w-10 rounded-xl bg-black/40 flex items-center justify-center text-gray-400 group-hover:text-white transition-colors border border-white/5">
+                                                    <item.icon className="w-5 h-5" />
+                                                </div>
+                                                <div className="text-left">
+                                                    <span className="font-bold text-sm block text-gray-200">{item.label}</span>
+                                                    <span className="text-[10px] text-gray-500">{item.sub}</span>
+                                                </div>
                                             </div>
-                                            <div className="text-left">
-                                                <span className="font-bold text-sm block text-gray-200">{item.label}</span>
-                                                <span className="text-[10px] text-gray-500">{item.sub}</span>
-                                            </div>
-                                        </div>
-                                        <Icons.ChevronRight className="w-5 h-5 text-gray-600 group-hover:text-white transition-colors" />
+                                            <Icons.ChevronRight className="w-5 h-5 text-gray-600 group-hover:text-white transition-colors" />
+                                        </button>
+                                    ))}
+
+                                    <button onClick={() => showToast("Vous avez été déconnecté.", "warning")} className="w-full mt-8 bg-red-500/10 border border-red-500/20 text-red-500 font-bold text-sm py-4 rounded-2xl hover:bg-red-500/20 transition-colors flex items-center justify-center gap-2 active:scale-95">
+                                        <Icons.Logout className="w-4 h-4" />
+                                        Déconnexion
                                     </button>
-                                ))}
-
-                                <button onClick={() => showToast("Vous avez été déconnecté.", "warning")} className="w-full mt-8 bg-red-500/10 border border-red-500/20 text-red-500 font-bold text-sm py-4 rounded-2xl hover:bg-red-500/20 transition-colors flex items-center justify-center gap-2 active:scale-95">
-                                    <Icons.Logout className="w-4 h-4" />
-                                    Déconnexion
-                                </button>
+                                </div>
                             </div>
-                        </div>
-                    )}
-                </div>
+                        )
+                    }
+                </div >
 
                 {/* --- BOTTOM NAVIGATION (Restored) --- */}
-                <div className="relative z-20 bg-[#121212]/90 backdrop-blur-xl border-t border-white/5 px-6 py-4 flex items-center justify-between shrink-0 mb-safe active:mb-0">
+                < div className="relative z-20 bg-[#121212]/90 backdrop-blur-xl border-t border-white/5 px-6 py-4 flex items-center justify-between shrink-0 mb-safe active:mb-0" >
                     <button
                         onClick={() => setCurrentTab('dashboard')}
                         className={`flex flex-col items-center gap-1 transition-colors ${currentTab === 'dashboard' ? 'text-orange-500' : 'text-gray-500 hover:text-gray-300'}`}
@@ -696,303 +697,305 @@ export default function ProConceptPage() {
                         <Icons.Settings className={`w-6 h-6 ${currentTab === 'settings' ? 'fill-current' : ''}`} />
                         <span className="text-[10px] font-bold">Réglages</span>
                     </button>
-                </div>
+                </div >
 
                 {/* --- MODALS (Blurred Backdrop) --- */}
-                {activeModal !== "none" && (
-                    <div className="absolute inset-0 z-[100] flex items-end sm:items-center justify-center pointer-events-auto">
-                        {/* Backdrop Blur */}
-                        <div
-                            onClick={closeModal}
-                            className="absolute inset-0 bg-black/60 backdrop-blur-md transition-opacity animate-fade-in"
-                        />
+                {
+                    activeModal !== "none" && (
+                        <div className="absolute inset-0 z-[100] flex items-end sm:items-center justify-center pointer-events-auto">
+                            {/* Backdrop Blur */}
+                            <div
+                                onClick={closeModal}
+                                className="absolute inset-0 bg-black/60 backdrop-blur-md transition-opacity animate-fade-in"
+                            />
 
-                        {/* Modal Content */}
-                        <div className="relative z-10 bg-[#151515] w-full max-h-[80%] rounded-t-[30px] sm:rounded-[30px] border-t sm:border border-white/10 shadow-2xl p-6 flex flex-col gap-6 animate-slide-up sm:m-6">
+                            {/* Modal Content */}
+                            <div className="relative z-10 bg-[#151515] w-full max-h-[80%] rounded-t-[30px] sm:rounded-[30px] border-t sm:border border-white/10 shadow-2xl p-6 flex flex-col gap-6 animate-slide-up sm:m-6">
 
-                            {/* NEW OFFER MODAL */}
-                            {activeModal === "new_offer" && (
-                                <>
-                                    <div className="flex items-center justify-between">
-                                        <h3 className="text-xl font-bold text-white">Nouvelle Offre</h3>
-                                        <button onClick={closeModal} className="p-2 bg-white/5 rounded-full hover:bg-white/10"><Icons.Close className="w-5 h-5 text-gray-400" /></button>
-                                    </div>
+                                {/* NEW OFFER MODAL */}
+                                {activeModal === "new_offer" && (
+                                    <>
+                                        <div className="flex items-center justify-between">
+                                            <h3 className="text-xl font-bold text-white">Nouvelle Offre</h3>
+                                            <button onClick={closeModal} className="p-2 bg-white/5 rounded-full hover:bg-white/10"><Icons.Close className="w-5 h-5 text-gray-400" /></button>
+                                        </div>
 
-                                    <div className="space-y-4 overflow-y-auto">
-                                        {/* Product Selection */}
-                                        <div>
-                                            <label className="text-xs font-bold text-gray-500 uppercase">Produit</label>
-                                            <div className="mt-2 flex gap-3 overflow-x-auto no-scrollbar pb-2">
-                                                {["Menu Midi +", "Pizza 4 From.", "Tacos XL"].map((prod) => (
+                                        <div className="space-y-4 overflow-y-auto">
+                                            {/* Product Selection */}
+                                            <div>
+                                                <label className="text-xs font-bold text-gray-500 uppercase">Produit</label>
+                                                <div className="mt-2 flex gap-3 overflow-x-auto no-scrollbar pb-2">
+                                                    {["Menu Midi +", "Pizza 4 From.", "Tacos XL"].map((prod) => (
+                                                        <button
+                                                            key={prod}
+                                                            onClick={() => setOfferDetails({ ...offerDetails, selectedProduct: prod })}
+                                                            className={`shrink-0 px-4 py-2 rounded-xl text-sm font-bold border transition-colors ${offerDetails.selectedProduct === prod
+                                                                ? 'bg-orange-500/20 border-orange-500 text-orange-500'
+                                                                : 'bg-white/5 border-white/10 text-gray-400 hover:text-white'
+                                                                }`}
+                                                        >
+                                                            {prod}
+                                                        </button>
+                                                    ))}
+                                                    <button className="shrink-0 bg-white/5 border border-white/10 text-gray-400 px-4 py-2 rounded-xl text-sm font-bold hover:text-white">+ Créer</button>
+                                                </div>
+                                            </div>
+
+                                            {/* Inputs */}
+                                            <div className="grid grid-cols-2 gap-4">
+                                                <div>
+                                                    <label className="text-xs font-bold text-gray-500 uppercase">Nom</label>
+                                                    <input
+                                                        type="text"
+                                                        value={offerDetails.name}
+                                                        onChange={(e) => setOfferDetails({ ...offerDetails, name: e.target.value })}
+                                                        className="w-full mt-1 bg-black/40 border border-white/10 rounded-xl px-3 py-3 text-white text-sm font-bold focus:outline-none focus:border-orange-500"
+                                                    />
+                                                </div>
+                                                <div>
+                                                    <label className="text-xs font-bold text-gray-500 uppercase">Prix (€)</label>
+                                                    <input
+                                                        type="text"
+                                                        value={offerDetails.price}
+                                                        onChange={(e) => setOfferDetails({ ...offerDetails, price: e.target.value })}
+                                                        className="w-full mt-1 bg-black/40 border border-white/10 rounded-xl px-3 py-3 text-white text-sm font-bold focus:outline-none focus:border-orange-500"
+                                                    />
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <label className="text-xs font-bold text-gray-500 uppercase">Heure de fin</label>
+                                                <input
+                                                    type="time"
+                                                    value={offerDetails.time}
+                                                    onChange={(e) => setOfferDetails({ ...offerDetails, time: e.target.value })}
+                                                    className="w-full mt-1 bg-black/40 border border-white/10 rounded-xl px-3 py-3 text-white text-sm font-bold focus:outline-none focus:border-orange-500"
+                                                />
+                                            </div>
+                                        </div>
+
+                                        <button onClick={handlePublishOffer} className="w-full bg-orange-600 text-white font-bold py-4 rounded-2xl shadow-lg shadow-orange-600/20 active:scale-95 transition-transform">
+                                            Publier l'Offre
+                                        </button>
+                                    </>
+                                )}
+
+                                {/* HOURS MODAL */}
+                                {activeModal === "hours" && (
+                                    <>
+                                        <div className="flex items-center justify-between">
+                                            <h3 className="text-xl font-bold text-white">Gérer les Horaires</h3>
+                                            <button onClick={closeModal} className="p-2 bg-white/5 rounded-full hover:bg-white/10"><Icons.Close className="w-5 h-5 text-gray-400" /></button>
+                                        </div>
+
+                                        <div className="space-y-4">
+                                            <div className="bg-white/5 p-4 rounded-2xl flex items-center justify-between">
+                                                <span className="text-gray-200 font-bold">Statut Actuel</span>
+                                                <span className={`px-3 py-1 rounded-full text-xs font-bold ${shopStatus.isOpen ? 'bg-green-500/20 text-green-500' : 'bg-red-500/20 text-red-500'}`}>
+                                                    {shopStatus.isOpen ? 'OUVERT' : 'FERMÉ'}
+                                                </span>
+                                            </div>
+
+                                            <div>
+                                                <label className="text-xs font-bold text-gray-500 uppercase">Ouverture Exceptionnelle</label>
+                                                <div className="grid grid-cols-2 gap-4 mt-2">
                                                     <button
-                                                        key={prod}
-                                                        onClick={() => setOfferDetails({ ...offerDetails, selectedProduct: prod })}
-                                                        className={`shrink-0 px-4 py-2 rounded-xl text-sm font-bold border transition-colors ${offerDetails.selectedProduct === prod
-                                                            ? 'bg-orange-500/20 border-orange-500 text-orange-500'
-                                                            : 'bg-white/5 border-white/10 text-gray-400 hover:text-white'
-                                                            }`}
+                                                        onClick={() => setShopStatus({ ...shopStatus, isOpen: true })}
+                                                        className={`py-3 rounded-xl font-bold text-sm border transition-colors ${shopStatus.isOpen ? 'bg-green-600 border-green-600 text-white' : 'bg-transparent border-white/10 text-gray-500 hover:text-white'}`}
                                                     >
-                                                        {prod}
+                                                        Ouvrir
                                                     </button>
-                                                ))}
-                                                <button className="shrink-0 bg-white/5 border border-white/10 text-gray-400 px-4 py-2 rounded-xl text-sm font-bold hover:text-white">+ Créer</button>
+                                                    <button
+                                                        onClick={() => setShopStatus({ ...shopStatus, isOpen: false })}
+                                                        className={`py-3 rounded-xl font-bold text-sm border transition-colors ${!shopStatus.isOpen ? 'bg-red-600 border-red-600 text-white' : 'bg-transparent border-white/10 text-gray-500 hover:text-white'}`}
+                                                    >
+                                                        Fermer
+                                                    </button>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        {/* Inputs */}
-                                        <div className="grid grid-cols-2 gap-4">
                                             <div>
-                                                <label className="text-xs font-bold text-gray-500 uppercase">Nom</label>
+                                                <label className="text-xs font-bold text-gray-500 uppercase">Prochaine Ouverture</label>
                                                 <input
-                                                    type="text"
-                                                    value={offerDetails.name}
-                                                    onChange={(e) => setOfferDetails({ ...offerDetails, name: e.target.value })}
-                                                    className="w-full mt-1 bg-black/40 border border-white/10 rounded-xl px-3 py-3 text-white text-sm font-bold focus:outline-none focus:border-orange-500"
-                                                />
-                                            </div>
-                                            <div>
-                                                <label className="text-xs font-bold text-gray-500 uppercase">Prix (€)</label>
-                                                <input
-                                                    type="text"
-                                                    value={offerDetails.price}
-                                                    onChange={(e) => setOfferDetails({ ...offerDetails, price: e.target.value })}
-                                                    className="w-full mt-1 bg-black/40 border border-white/10 rounded-xl px-3 py-3 text-white text-sm font-bold focus:outline-none focus:border-orange-500"
+                                                    type="time"
+                                                    value={shopStatus.nextOpening}
+                                                    onChange={(e) => setShopStatus({ ...shopStatus, nextOpening: e.target.value })}
+                                                    className="w-full mt-1 bg-black/40 border border-white/10 rounded-xl px-3 py-3 text-white text-sm font-bold focus:outline-none focus:border-brand-green"
                                                 />
                                             </div>
                                         </div>
 
-                                        <div>
-                                            <label className="text-xs font-bold text-gray-500 uppercase">Heure de fin</label>
-                                            <input
-                                                type="time"
-                                                value={offerDetails.time}
-                                                onChange={(e) => setOfferDetails({ ...offerDetails, time: e.target.value })}
-                                                className="w-full mt-1 bg-black/40 border border-white/10 rounded-xl px-3 py-3 text-white text-sm font-bold focus:outline-none focus:border-orange-500"
-                                            />
-                                        </div>
-                                    </div>
+                                        <button onClick={handleSaveHours} className="w-full bg-white text-black font-bold py-4 rounded-2xl shadow-lg active:scale-95 transition-transform">
+                                            Enregistrer
+                                        </button>
+                                    </>
+                                )}
 
-                                    <button onClick={handlePublishOffer} className="w-full bg-orange-600 text-white font-bold py-4 rounded-2xl shadow-lg shadow-orange-600/20 active:scale-95 transition-transform">
-                                        Publier l'Offre
-                                    </button>
-                                </>
-                            )}
-
-                            {/* HOURS MODAL */}
-                            {activeModal === "hours" && (
-                                <>
-                                    <div className="flex items-center justify-between">
-                                        <h3 className="text-xl font-bold text-white">Gérer les Horaires</h3>
-                                        <button onClick={closeModal} className="p-2 bg-white/5 rounded-full hover:bg-white/10"><Icons.Close className="w-5 h-5 text-gray-400" /></button>
-                                    </div>
-
-                                    <div className="space-y-4">
-                                        <div className="bg-white/5 p-4 rounded-2xl flex items-center justify-between">
-                                            <span className="text-gray-200 font-bold">Statut Actuel</span>
-                                            <span className={`px-3 py-1 rounded-full text-xs font-bold ${shopStatus.isOpen ? 'bg-green-500/20 text-green-500' : 'bg-red-500/20 text-red-500'}`}>
-                                                {shopStatus.isOpen ? 'OUVERT' : 'FERMÉ'}
-                                            </span>
+                                {/* SETTINGS: SHOP */}
+                                {activeModal === "settings_shop" && (
+                                    <>
+                                        <div className="flex items-center justify-between">
+                                            <h3 className="text-xl font-bold text-white">Etablissement</h3>
+                                            <button onClick={closeModal} className="p-2 bg-white/5 rounded-full hover:bg-white/10"><Icons.Close className="w-5 h-5 text-gray-400" /></button>
                                         </div>
-
-                                        <div>
-                                            <label className="text-xs font-bold text-gray-500 uppercase">Ouverture Exceptionnelle</label>
-                                            <div className="grid grid-cols-2 gap-4 mt-2">
-                                                <button
-                                                    onClick={() => setShopStatus({ ...shopStatus, isOpen: true })}
-                                                    className={`py-3 rounded-xl font-bold text-sm border transition-colors ${shopStatus.isOpen ? 'bg-green-600 border-green-600 text-white' : 'bg-transparent border-white/10 text-gray-500 hover:text-white'}`}
-                                                >
-                                                    Ouvrir
-                                                </button>
-                                                <button
-                                                    onClick={() => setShopStatus({ ...shopStatus, isOpen: false })}
-                                                    className={`py-3 rounded-xl font-bold text-sm border transition-colors ${!shopStatus.isOpen ? 'bg-red-600 border-red-600 text-white' : 'bg-transparent border-white/10 text-gray-500 hover:text-white'}`}
-                                                >
-                                                    Fermer
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <label className="text-xs font-bold text-gray-500 uppercase">Prochaine Ouverture</label>
-                                            <input
-                                                type="time"
-                                                value={shopStatus.nextOpening}
-                                                onChange={(e) => setShopStatus({ ...shopStatus, nextOpening: e.target.value })}
-                                                className="w-full mt-1 bg-black/40 border border-white/10 rounded-xl px-3 py-3 text-white text-sm font-bold focus:outline-none focus:border-brand-green"
-                                            />
-                                        </div>
-                                    </div>
-
-                                    <button onClick={handleSaveHours} className="w-full bg-white text-black font-bold py-4 rounded-2xl shadow-lg active:scale-95 transition-transform">
-                                        Enregistrer
-                                    </button>
-                                </>
-                            )}
-
-                            {/* SETTINGS: SHOP */}
-                            {activeModal === "settings_shop" && (
-                                <>
-                                    <div className="flex items-center justify-between">
-                                        <h3 className="text-xl font-bold text-white">Etablissement</h3>
-                                        <button onClick={closeModal} className="p-2 bg-white/5 rounded-full hover:bg-white/10"><Icons.Close className="w-5 h-5 text-gray-400" /></button>
-                                    </div>
-                                    <div className="space-y-4">
-                                        <div>
-                                            <label className="text-xs font-bold text-gray-500 uppercase">Nom du commerce</label>
-                                            <input type="text" defaultValue="Sairam - Paris 04" className="w-full mt-1 bg-black/40 border border-white/10 rounded-xl px-3 py-3 text-white text-sm font-bold focus:outline-none focus:border-orange-500" />
-                                        </div>
-                                        <div>
-                                            <label className="text-xs font-bold text-gray-500 uppercase">Adresse Postale</label>
-                                            <input type="text" defaultValue="12 Rue des Rosiers, 75004 Paris" className="w-full mt-1 bg-black/40 border border-white/10 rounded-xl px-3 py-3 text-white text-sm font-bold focus:outline-none focus:border-orange-500" />
-                                        </div>
-                                        <div>
-                                            <label className="text-xs font-bold text-gray-500 uppercase">Description courte</label>
-                                            <textarea defaultValue="Le meilleur de la street food indienne au cœur du marais." className="w-full mt-1 bg-black/40 border border-white/10 rounded-xl px-3 py-3 text-white text-sm font-bold focus:outline-none focus:border-orange-500 min-h-[80px]" />
-                                        </div>
-                                    </div>
-                                    <button onClick={() => { closeModal(); showToast('Infos mises à jour !', 'success') }} className="w-full bg-orange-600 text-white font-bold py-4 rounded-2xl shadow-lg active:scale-95 transition-transform">Enregistrer</button>
-                                </>
-                            )}
-
-                            {/* SETTINGS: SUBSCRIPTION */}
-                            {activeModal === "settings_sub" && (
-                                <>
-                                    <div className="flex items-center justify-between">
-                                        <h3 className="text-xl font-bold text-white">Abonnement</h3>
-                                        <button onClick={closeModal} className="p-2 bg-white/5 rounded-full hover:bg-white/10"><Icons.Close className="w-5 h-5 text-gray-400" /></button>
-                                    </div>
-                                    <div className="bg-gradient-to-br from-orange-600 to-orange-800 rounded-2xl p-6 text-white text-center shadow-lg relative overflow-hidden">
-                                        <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2"></div>
-                                        <div className="relative z-10">
-                                            <h4 className="text-sm font-bold opacity-80 uppercase tracking-widest">Plan Actuel</h4>
-                                            <div className="text-3xl font-black mt-2">Heynouth PRO</div>
-                                            <div className="text-sm font-medium mt-1 opacity-90">Renouvellement le 01/03/2026</div>
-                                        </div>
-                                    </div>
-                                    <div className="space-y-2">
-                                        <div className="flex justify-between items-center p-4 bg-white/5 rounded-xl border border-white/5">
-                                            <span className="text-sm font-bold text-gray-300">Prochaine facture</span>
-                                            <span className="text-sm font-bold text-white">29.00 €</span>
-                                        </div>
-                                        <button className="w-full py-3 bg-white/5 rounded-xl text-sm font-bold text-gray-300 hover:bg-white/10 transition-colors">Télécharger les factures</button>
-                                    </div>
-                                </>
-                            )}
-
-                            {/* SETTINGS: NOTIFICATIONS */}
-                            {activeModal === "settings_notif" && (
-                                <>
-                                    <div className="flex items-center justify-between">
-                                        <h3 className="text-xl font-bold text-white">Notifications</h3>
-                                        <button onClick={closeModal} className="p-2 bg-white/5 rounded-full hover:bg-white/10"><Icons.Close className="w-5 h-5 text-gray-400" /></button>
-                                    </div>
-                                    <div className="space-y-3">
-                                        {[
-                                            { label: 'Alertes SMS (Commandes)', active: true },
-                                            { label: 'Emails Récapitulatifs', active: true },
-                                            { label: 'Nouveautés Heynouth', active: false },
-                                            { label: 'Sons de notification', active: true },
-                                        ].map((notif, i) => (
-                                            <div key={i} className="flex items-center justify-between p-4 bg-white/5 rounded-xl border border-white/5">
-                                                <span className="text-sm font-bold text-gray-200">{notif.label}</span>
-                                                <div className={`w-12 h-6 rounded-full p-1 transition-colors ${notif.active ? 'bg-green-500' : 'bg-gray-700'}`}>
-                                                    <div className={`w-4 h-4 rounded-full bg-white shadow-sm transition-transform ${notif.active ? 'translate-x-6' : 'translate-x-0'}`} />
-                                                </div>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </>
-                            )}
-
-                            {/* SETTINGS: TEAM */}
-                            {activeModal === "settings_team" && (
-                                <>
-                                    <div className="flex items-center justify-between">
-                                        <h3 className="text-xl font-bold text-white">Mon Equipe</h3>
-                                        <button onClick={closeModal} className="p-2 bg-white/5 rounded-full hover:bg-white/10"><Icons.Close className="w-5 h-5 text-gray-400" /></button>
-                                    </div>
-                                    <div className="space-y-3">
-                                        {[
-                                            { name: 'Sairam Admin', role: 'Propriétaire', avatar: 'hue-rotate-0' },
-                                            { name: 'Nouth Assistant', role: 'IA', avatar: 'hue-rotate-180' },
-                                            { name: 'Chef Cuisine', role: 'Staff', avatar: 'grayscale' },
-                                        ].map((member, i) => (
-                                            <div key={i} className="flex items-center gap-4 p-3 bg-white/5 rounded-xl border border-white/5">
-                                                <div className="relative w-10 h-10 rounded-full overflow-hidden bg-gray-800">
-                                                    <Image src="/images/nouth-avatar.png" alt="Avatar" fill className={`object-cover ${member.avatar}`} />
-                                                </div>
-                                                <div className="flex-1">
-                                                    <div className="text-sm font-bold text-white">{member.name}</div>
-                                                    <div className="text-xs font-medium text-gray-500">{member.role}</div>
-                                                </div>
-                                                {member.role !== 'Propriétaire' && <button className="text-red-500 font-bold text-xs">Retirer</button>}
-                                            </div>
-                                        ))}
-                                        <button className="w-full py-4 border border-dashed border-white/20 rounded-xl text-sm font-bold text-gray-400 hover:text-white hover:border-white/40 transition-colors">+ Ajouter un membre</button>
-                                    </div>
-                                </>
-                            )}
-
-                            {/* SETTINGS: SECURITY */}
-                            {activeModal === "settings_sec" && (
-                                <>
-                                    <div className="flex items-center justify-between">
-                                        <h3 className="text-xl font-bold text-white">Sécurité</h3>
-                                        <button onClick={closeModal} className="p-2 bg-white/5 rounded-full hover:bg-white/10"><Icons.Close className="w-5 h-5 text-gray-400" /></button>
-                                    </div>
-                                    <div className="space-y-4">
-                                        <div>
-                                            <label className="text-xs font-bold text-gray-500 uppercase">Ancien mot de passe</label>
-                                            <input type="password" placeholder="••••••••" className="w-full mt-1 bg-black/40 border border-white/10 rounded-xl px-3 py-3 text-white text-sm font-bold focus:outline-none focus:border-orange-500" />
-                                        </div>
-                                        <div>
-                                            <label className="text-xs font-bold text-gray-500 uppercase">Nouveau mot de passe</label>
-                                            <input type="password" placeholder="••••••••" className="w-full mt-1 bg-black/40 border border-white/10 rounded-xl px-3 py-3 text-white text-sm font-bold focus:outline-none focus:border-orange-500" />
-                                        </div>
-                                        <div className="flex items-center justify-between p-4 bg-orange-500/10 rounded-xl border border-orange-500/20">
+                                        <div className="space-y-4">
                                             <div>
-                                                <div className="text-sm font-bold text-orange-500">Double Authentification</div>
-                                                <div className="text-[10px] text-gray-400">Recommandé pour votre sécurité</div>
+                                                <label className="text-xs font-bold text-gray-500 uppercase">Nom du commerce</label>
+                                                <input type="text" defaultValue="Sairam - Paris 04" className="w-full mt-1 bg-black/40 border border-white/10 rounded-xl px-3 py-3 text-white text-sm font-bold focus:outline-none focus:border-orange-500" />
                                             </div>
-                                            <div className="w-10 h-5 bg-orange-500 rounded-full p-0.5"><div className="w-4 h-4 bg-white rounded-full translate-x-5 shadow-sm"></div></div>
+                                            <div>
+                                                <label className="text-xs font-bold text-gray-500 uppercase">Adresse Postale</label>
+                                                <input type="text" defaultValue="12 Rue des Rosiers, 75004 Paris" className="w-full mt-1 bg-black/40 border border-white/10 rounded-xl px-3 py-3 text-white text-sm font-bold focus:outline-none focus:border-orange-500" />
+                                            </div>
+                                            <div>
+                                                <label className="text-xs font-bold text-gray-500 uppercase">Description courte</label>
+                                                <textarea defaultValue="Le meilleur de la street food indienne au cœur du marais." className="w-full mt-1 bg-black/40 border border-white/10 rounded-xl px-3 py-3 text-white text-sm font-bold focus:outline-none focus:border-orange-500 min-h-[80px]" />
+                                            </div>
                                         </div>
-                                    </div>
-                                    <button onClick={() => { closeModal(); showToast('Sécurité mise à jour', 'success') }} className="w-full bg-white text-black font-bold py-4 rounded-2xl shadow-lg active:scale-95 transition-transform">Mettre à jour</button>
-                                </>
-                            )}
+                                        <button onClick={() => { closeModal(); showToast('Infos mises à jour !', 'success') }} className="w-full bg-orange-600 text-white font-bold py-4 rounded-2xl shadow-lg active:scale-95 transition-transform">Enregistrer</button>
+                                    </>
+                                )}
 
-                            {/* CLOSURE MODAL */}
-                            {activeModal === "closure" && (
-                                <>
-                                    <div className="flex items-center justify-between">
-                                        <h3 className="text-xl font-bold text-white">Fermeture Exceptionnelle</h3>
-                                        <button onClick={closeModal} className="p-2 bg-white/5 rounded-full hover:bg-white/10"><Icons.Close className="w-5 h-5 text-gray-400" /></button>
-                                    </div>
+                                {/* SETTINGS: SUBSCRIPTION */}
+                                {activeModal === "settings_sub" && (
+                                    <>
+                                        <div className="flex items-center justify-between">
+                                            <h3 className="text-xl font-bold text-white">Abonnement</h3>
+                                            <button onClick={closeModal} className="p-2 bg-white/5 rounded-full hover:bg-white/10"><Icons.Close className="w-5 h-5 text-gray-400" /></button>
+                                        </div>
+                                        <div className="bg-gradient-to-br from-orange-600 to-orange-800 rounded-2xl p-6 text-white text-center shadow-lg relative overflow-hidden">
+                                            <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2"></div>
+                                            <div className="relative z-10">
+                                                <h4 className="text-sm font-bold opacity-80 uppercase tracking-widest">Plan Actuel</h4>
+                                                <div className="text-3xl font-black mt-2">Heynouth PRO</div>
+                                                <div className="text-sm font-medium mt-1 opacity-90">Renouvellement le 01/03/2026</div>
+                                            </div>
+                                        </div>
+                                        <div className="space-y-2">
+                                            <div className="flex justify-between items-center p-4 bg-white/5 rounded-xl border border-white/5">
+                                                <span className="text-sm font-bold text-gray-300">Prochaine facture</span>
+                                                <span className="text-sm font-bold text-white">29.00 €</span>
+                                            </div>
+                                            <button className="w-full py-3 bg-white/5 rounded-xl text-sm font-bold text-gray-300 hover:bg-white/10 transition-colors">Télécharger les factures</button>
+                                        </div>
+                                    </>
+                                )}
 
-                                    <p className="text-sm text-gray-400">
-                                        Confirmez la fermeture immédiate de votre établissement. Vos clients seront notifiés.
-                                    </p>
+                                {/* SETTINGS: NOTIFICATIONS */}
+                                {activeModal === "settings_notif" && (
+                                    <>
+                                        <div className="flex items-center justify-between">
+                                            <h3 className="text-xl font-bold text-white">Notifications</h3>
+                                            <button onClick={closeModal} className="p-2 bg-white/5 rounded-full hover:bg-white/10"><Icons.Close className="w-5 h-5 text-gray-400" /></button>
+                                        </div>
+                                        <div className="space-y-3">
+                                            {[
+                                                { label: 'Alertes SMS (Commandes)', active: true },
+                                                { label: 'Emails Récapitulatifs', active: true },
+                                                { label: 'Nouveautés Heynouth', active: false },
+                                                { label: 'Sons de notification', active: true },
+                                            ].map((notif, i) => (
+                                                <div key={i} className="flex items-center justify-between p-4 bg-white/5 rounded-xl border border-white/5">
+                                                    <span className="text-sm font-bold text-gray-200">{notif.label}</span>
+                                                    <div className={`w-12 h-6 rounded-full p-1 transition-colors ${notif.active ? 'bg-green-500' : 'bg-gray-700'}`}>
+                                                        <div className={`w-4 h-4 rounded-full bg-white shadow-sm transition-transform ${notif.active ? 'translate-x-6' : 'translate-x-0'}`} />
+                                                    </div>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </>
+                                )}
 
-                                    <div className="space-y-3">
-                                        <button className="w-full bg-white/5 border border-white/10 text-white font-bold py-3 rounded-2xl hover:bg-white/10 flex items-center justify-between px-4 active:bg-white/20">
-                                            <span>Fermer pour 1h</span>
-                                            <Icons.ChevronRight className="w-4 h-4 text-gray-500" />
+                                {/* SETTINGS: TEAM */}
+                                {activeModal === "settings_team" && (
+                                    <>
+                                        <div className="flex items-center justify-between">
+                                            <h3 className="text-xl font-bold text-white">Mon Equipe</h3>
+                                            <button onClick={closeModal} className="p-2 bg-white/5 rounded-full hover:bg-white/10"><Icons.Close className="w-5 h-5 text-gray-400" /></button>
+                                        </div>
+                                        <div className="space-y-3">
+                                            {[
+                                                { name: 'Sairam Admin', role: 'Propriétaire', avatar: 'hue-rotate-0' },
+                                                { name: 'Nouth Assistant', role: 'IA', avatar: 'hue-rotate-180' },
+                                                { name: 'Chef Cuisine', role: 'Staff', avatar: 'grayscale' },
+                                            ].map((member, i) => (
+                                                <div key={i} className="flex items-center gap-4 p-3 bg-white/5 rounded-xl border border-white/5">
+                                                    <div className="relative w-10 h-10 rounded-full overflow-hidden bg-gray-800">
+                                                        <Image src="/images/nouth-avatar.png" alt="Avatar" fill className={`object-cover ${member.avatar}`} />
+                                                    </div>
+                                                    <div className="flex-1">
+                                                        <div className="text-sm font-bold text-white">{member.name}</div>
+                                                        <div className="text-xs font-medium text-gray-500">{member.role}</div>
+                                                    </div>
+                                                    {member.role !== 'Propriétaire' && <button className="text-red-500 font-bold text-xs">Retirer</button>}
+                                                </div>
+                                            ))}
+                                            <button className="w-full py-4 border border-dashed border-white/20 rounded-xl text-sm font-bold text-gray-400 hover:text-white hover:border-white/40 transition-colors">+ Ajouter un membre</button>
+                                        </div>
+                                    </>
+                                )}
+
+                                {/* SETTINGS: SECURITY */}
+                                {activeModal === "settings_sec" && (
+                                    <>
+                                        <div className="flex items-center justify-between">
+                                            <h3 className="text-xl font-bold text-white">Sécurité</h3>
+                                            <button onClick={closeModal} className="p-2 bg-white/5 rounded-full hover:bg-white/10"><Icons.Close className="w-5 h-5 text-gray-400" /></button>
+                                        </div>
+                                        <div className="space-y-4">
+                                            <div>
+                                                <label className="text-xs font-bold text-gray-500 uppercase">Ancien mot de passe</label>
+                                                <input type="password" placeholder="••••••••" className="w-full mt-1 bg-black/40 border border-white/10 rounded-xl px-3 py-3 text-white text-sm font-bold focus:outline-none focus:border-orange-500" />
+                                            </div>
+                                            <div>
+                                                <label className="text-xs font-bold text-gray-500 uppercase">Nouveau mot de passe</label>
+                                                <input type="password" placeholder="••••••••" className="w-full mt-1 bg-black/40 border border-white/10 rounded-xl px-3 py-3 text-white text-sm font-bold focus:outline-none focus:border-orange-500" />
+                                            </div>
+                                            <div className="flex items-center justify-between p-4 bg-orange-500/10 rounded-xl border border-orange-500/20">
+                                                <div>
+                                                    <div className="text-sm font-bold text-orange-500">Double Authentification</div>
+                                                    <div className="text-[10px] text-gray-400">Recommandé pour votre sécurité</div>
+                                                </div>
+                                                <div className="w-10 h-5 bg-orange-500 rounded-full p-0.5"><div className="w-4 h-4 bg-white rounded-full translate-x-5 shadow-sm"></div></div>
+                                            </div>
+                                        </div>
+                                        <button onClick={() => { closeModal(); showToast('Sécurité mise à jour', 'success') }} className="w-full bg-white text-black font-bold py-4 rounded-2xl shadow-lg active:scale-95 transition-transform">Mettre à jour</button>
+                                    </>
+                                )}
+
+                                {/* CLOSURE MODAL */}
+                                {activeModal === "closure" && (
+                                    <>
+                                        <div className="flex items-center justify-between">
+                                            <h3 className="text-xl font-bold text-white">Fermeture Exceptionnelle</h3>
+                                            <button onClick={closeModal} className="p-2 bg-white/5 rounded-full hover:bg-white/10"><Icons.Close className="w-5 h-5 text-gray-400" /></button>
+                                        </div>
+
+                                        <p className="text-sm text-gray-400">
+                                            Confirmez la fermeture immédiate de votre établissement. Vos clients seront notifiés.
+                                        </p>
+
+                                        <div className="space-y-3">
+                                            <button className="w-full bg-white/5 border border-white/10 text-white font-bold py-3 rounded-2xl hover:bg-white/10 flex items-center justify-between px-4 active:bg-white/20">
+                                                <span>Fermer pour 1h</span>
+                                                <Icons.ChevronRight className="w-4 h-4 text-gray-500" />
+                                            </button>
+                                            <button className="w-full bg-white/5 border border-white/10 text-white font-bold py-3 rounded-2xl hover:bg-white/10 flex items-center justify-between px-4 active:bg-white/20">
+                                                <span>Fermer jusqu'à demain</span>
+                                                <Icons.ChevronRight className="w-4 h-4 text-gray-500" />
+                                            </button>
+                                        </div>
+
+                                        <button onClick={handleConfirmClosure} className="w-full bg-red-600 text-white font-bold py-4 rounded-2xl shadow-lg shadow-red-600/20 active:scale-95 transition-transform mt-2">
+                                            Confirmer la Fermeture
                                         </button>
-                                        <button className="w-full bg-white/5 border border-white/10 text-white font-bold py-3 rounded-2xl hover:bg-white/10 flex items-center justify-between px-4 active:bg-white/20">
-                                            <span>Fermer jusqu'à demain</span>
-                                            <Icons.ChevronRight className="w-4 h-4 text-gray-500" />
-                                        </button>
-                                    </div>
+                                    </>
+                                )}
 
-                                    <button onClick={handleConfirmClosure} className="w-full bg-red-600 text-white font-bold py-4 rounded-2xl shadow-lg shadow-red-600/20 active:scale-95 transition-transform mt-2">
-                                        Confirmer la Fermeture
-                                    </button>
-                                </>
-                            )}
-
+                            </div>
                         </div>
-                    </div>
-                )}
+                    )
+                }
 
                 {/* --- TOAST NOTIFICATION --- */}
                 {
