@@ -126,7 +126,7 @@ export default function HubClient() {
                             className="relative w-12 h-[54px] rounded-2xl border border-white/80 bg-white shadow-lg transition-all flex items-center justify-center z-50 shrink-0 hover:bg-gray-50 active:scale-95"
                             title="Concept Heynouth PRO"
                         >
-                            <div className="relative w-6 h-6">
+                            <div className="relative w-8 h-8">
                                 <Image
                                     src="/logo-hey.png"
                                     alt="PRO"

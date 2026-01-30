@@ -14,6 +14,7 @@ export default function AppConceptPage() {
     // Mock user
     const userName = "Julie";
     const favoriteShops = SHOPS.slice(0, 3); // Take first 3 as favorites
+    const discoveryShops = SHOPS.slice(10, 16); // Take next 6 for discovery
 
     // Derived data for Hub view
     const districts = useMemo(() => {
@@ -90,6 +91,28 @@ export default function AppConceptPage() {
                                 </div>
                             </div>
 
+                            {/* Section: Categories (Pills) */}
+                            <div className="mt-6 pl-6 overflow-x-auto no-scrollbar flex gap-3 pr-6">
+                                {[
+                                    { label: "Tout", icon: "🔥", active: true },
+                                    { label: "Resto", icon: "🥗", active: false },
+                                    { label: "Épicerie", icon: "🛒", active: false },
+                                    { label: "Soins", icon: "💅", active: false },
+                                    { label: "Mode", icon: "🧢", active: false },
+                                ].map((cat, i) => (
+                                    <button
+                                        key={i}
+                                        className={`flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold whitespace-nowrap transition-all active:scale-95 ${cat.active
+                                            ? "bg-gray-900 text-white shadow-lg shadow-gray-900/20"
+                                            : "bg-white/60 border border-white/60 text-gray-600 hover:bg-white"
+                                            }`}
+                                    >
+                                        <span className="text-sm">{cat.icon}</span>
+                                        {cat.label}
+                                    </button>
+                                ))}
+                            </div>
+
                             <div className="px-6 space-y-8 mt-8">
                                 {/* Section: Mes Commerces */}
                                 <section className="bg-white/40 backdrop-blur-md rounded-[32px] p-5 shadow-sm border border-white/60">
@@ -125,6 +148,28 @@ export default function AppConceptPage() {
                                             </button>
                                             <span className="text-[10px] font-bold text-gray-400">Ajouter</span>
                                         </div>
+                                    </div>
+                                </section>
+
+                                {/* Section: Découvertes (New in neighborhood) */}
+                                <section>
+                                    <div className="flex items-center justify-between mb-4 px-1">
+                                        <h2 className="text-lg font-black tracking-tight text-gray-800">Découvertes</h2>
+                                        <button className="text-[10px] font-bold text-gray-400 hover:text-brand-green transition-colors">Explorer</button>
+                                    </div>
+                                    <div className="flex gap-4 overflow-x-auto pb-2 -mx-5 px-5 no-scrollbar snap-x snap-mandatory">
+                                        {discoveryShops.map((shop) => (
+                                            <Link href={`/${shop.slug}`} key={shop.slug} className="snap-start shrink-0 w-[140px] flex flex-col gap-3 group">
+                                                <div className="relative h-[160px] w-full overflow-hidden rounded-[20px] shadow-sm border border-white/50 group-hover:shadow-md transition-all">
+                                                    <Image src={shop.mapImage} alt={shop.name} fill className="object-cover" />
+                                                    <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/60 to-transparent" />
+                                                    <div className="absolute bottom-3 left-3 right-3 text-white">
+                                                        <p className="text-[9px] font-bold uppercase opacity-80 mb-0.5">{shop.districtLabel}</p>
+                                                        <h3 className="font-bold text-xs leading-tight truncate">{shop.name}</h3>
+                                                    </div>
+                                                </div>
+                                            </Link>
+                                        ))}
                                     </div>
                                 </section>
 
