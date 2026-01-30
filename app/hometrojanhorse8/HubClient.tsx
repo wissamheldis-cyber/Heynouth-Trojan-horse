@@ -89,9 +89,6 @@ export default function HubClient() {
                             <Image src="/logo-hey.png" alt="Heynouth" fill className="object-contain" />
                         </div>
                         <h1 className={`text-3xl font-bold tracking-tight text-[#2F6B2B]`}>Heynouth</h1>
-                        <Link href="/admin/super-secret-dashboard" className="ml-2 text-xl opacity-10 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" title="Admin">
-                            ⚡
-                        </Link>
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-3 w-full max-w-2xl">
@@ -126,18 +123,36 @@ export default function HubClient() {
                                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
                             </Link>
 
-                            {/* Concept Pro Button (White/Black) */}
+                            {/* Concept Pro Button (Black with Chrome Logo) */}
                             <Link
                                 href="/concepts/pro"
-                                className="relative w-12 h-[54px] rounded-2xl border border-white/80 bg-white shadow-lg transition-all flex items-center justify-center z-50 shrink-0 hover:bg-gray-50 active:scale-95"
+                                className="relative w-12 h-[54px] rounded-2xl border border-gray-800 bg-black shadow-lg transition-all flex items-center justify-center z-50 shrink-0 hover:scale-105 active:scale-95 group overflow-hidden"
                                 title="Concept Heynouth PRO"
                             >
-                                <div className="relative w-8 h-8">
+                                {/* Glow Effect */}
+                                <div className="absolute inset-0 bg-orange-500/0 group-hover:bg-orange-500/20 transition-colors" />
+                                <div className="relative w-8 h-8 z-10">
                                     <Image
                                         src="/logo-hey.png"
                                         alt="PRO"
                                         fill
-                                        className="object-contain brightness-0"
+                                        className="object-contain brightness-0 invert"
+                                    />
+                                </div>
+                            </Link>
+
+                            {/* Admin Dashboard Button (Visible) */}
+                            <Link
+                                href="/admin/super-secret-dashboard"
+                                className="relative w-12 h-[54px] rounded-2xl border border-gray-200 bg-white shadow-lg transition-all flex items-center justify-center z-50 shrink-0 hover:scale-105 active:scale-95 overflow-hidden"
+                                title="SHOU Edition Admin"
+                            >
+                                <div className="relative w-10 h-10">
+                                    <Image
+                                        src="/images/nouth-avatar.png"
+                                        alt="Nouth"
+                                        fill
+                                        className="object-cover rounded-full"
                                     />
                                 </div>
                             </Link>

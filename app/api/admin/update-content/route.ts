@@ -13,7 +13,7 @@ export async function POST(request: Request) {
     }
 
     try {
-        const { shop } = await request.json();
+        const { shop, originalSlug } = await request.json();
         if (!shop || !shop.slug) return NextResponse.json({ error: "Invalid Data" }, { status: 400 });
 
         // 1. Get current file (SHA is required to update)
@@ -37,14 +37,15 @@ export async function POST(request: Request) {
         const shops = JSON.parse(currentContent);
 
         // 2. Modify the JSON
-        const index = shops.findIndex((s: any) => s.slug === shop.slug);
+        // Use originalSlug to find the item if we are renaming it
+        const targetSlug = originalSlug || shop.slug;
+        const index = shops.findIndex((s: any) => s.slug === targetSlug);
+
         if (index === -1) {
             return NextResponse.json({ error: "Shop not found in current data" }, { status: 404 });
         }
 
-        // Update the shop (Merge to keep fields we didn't edit in UI safe, though here we replaced the object in UI state mostly)
-        // For safety, let's only update specific allowed fields or merge strictly.
-        // The UI sent the whole object, let's trust simple replacement for now as the UI uses the same source of truth.
+        // Update the shop
         shops[index] = { ...shops[index], ...shop };
 
         // 3. Commit back to GitHub

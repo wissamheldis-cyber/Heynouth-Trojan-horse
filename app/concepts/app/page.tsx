@@ -24,8 +24,9 @@ export default function AppConceptPage() {
 
     // Initial Welcome Journey (One per session)
     useEffect(() => {
-        const hasSeen = sessionStorage.getItem('nouth_app_welcome');
-        if (!hasSeen) {
+        // const hasSeen = sessionStorage.getItem('nouth_app_welcome');
+        // Force show for demo/debug purpose
+        if (true) {
             setTimeout(() => {
                 setJourney({
                     visible: true,

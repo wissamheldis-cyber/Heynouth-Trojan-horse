@@ -4,8 +4,10 @@ import { notFound } from "next/navigation";
 // Only specific codes work (Basic URL security)
 const ALLOWED_SECRETS = ["super-secret-dashboard", "admin-access-75011", "heynouth-master"];
 
-export default function AdminPage({ params }: { params: { secret: string } }) {
-    if (!ALLOWED_SECRETS.includes(params.secret)) {
+export default async function AdminPage({ params }: { params: Promise<{ secret: string }> }) {
+    const { secret } = await params;
+
+    if (!ALLOWED_SECRETS.includes(secret)) {
         notFound(); // 404 if the URL is not exactly right
     }
 

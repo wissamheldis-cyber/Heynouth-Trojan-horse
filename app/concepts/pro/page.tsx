@@ -163,8 +163,9 @@ export default function ProConceptPage() {
 
     // Initial Pro Journey (One per session)
     useEffect(() => {
-        const hasSeen = sessionStorage.getItem('nouth_pro_welcome');
-        if (!hasSeen) {
+        // const hasSeen = sessionStorage.getItem('nouth_pro_welcome');
+        // Force show for demo/debug purpose
+        if (true) {
             setTimeout(() => {
                 setJourney({
                     visible: true,
@@ -331,7 +332,7 @@ export default function ProConceptPage() {
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-orange-500 blur-[50px] opacity-80 group-hover:opacity-100 transition-opacity" />
 
                             <div className="relative h-12 w-12 z-10">
-                                <Image src="/logo-hey.png" alt="Logo" fill className="object-contain brightness-0 filter" />
+                                <Image src="/logo-hey.png" alt="Logo" fill className="object-contain brightness-0 invert drop-shadow-lg" />
                             </div>
                         </div>
                     </div>
