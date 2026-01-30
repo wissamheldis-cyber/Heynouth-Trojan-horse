@@ -80,34 +80,37 @@ export default function ProConceptPage() {
     }, [clientFilter, clients]);
 
     return (
-        <div className="relative min-h-[100dvh] w-full bg-[#fcfcfc] font-sans flex items-center justify-center overflow-hidden">
+        <div className="relative min-h-[100dvh] w-full bg-[#050505] font-sans flex items-center justify-center overflow-hidden">
 
-            {/* --- BACKGROUND SHELL (Chrome Gradient) --- */}
+            {/* --- BACKGROUND SHELL (Desktop: Dark with Gold Glow) --- */}
             <div className="absolute inset-0 z-0 pointer-events-none">
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-200 via-gray-100 to-gray-400 opacity-80" />
-                <div className="absolute top-[-20%] left-[-20%] w-[80vw] h-[80vw] bg-white rounded-full blur-[100px] opacity-60 mix-blend-soft-light" />
-                <div className="absolute bottom-[-20%] right-[-20%] w-[80vw] h-[80vw] bg-gray-500 rounded-full blur-[120px] opacity-10 mix-blend-overlay" />
-                {/* Shiny Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/40 to-transparent opacity-50 backdrop-blur-[1px]" />
+                {/* Main Dark Radial */}
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-gray-900 via-[#050505] to-black" />
+
+                {/* Goldy Glow */}
+                <div className="absolute top-[20%] left-[50%] -translate-x-1/2 w-[80vw] h-[60vh] bg-orange-500/10 rounded-full blur-[120px] mix-blend-screen" />
+                <div className="absolute bottom-[-10%] right-[20%] w-[40vw] h-[40vw] bg-yellow-600/10 rounded-full blur-[100px] mix-blend-screen" />
+
+                <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 brightness-150 contrast-150 mix-blend-overlay" />
             </div>
 
-            {/* --- INTEMPOREL WRAPPER (The Phone Frame - Chrome Glass) --- */}
-            <main className="relative z-10 w-full max-w-[430px] h-[100dvh] sm:h-[90vh] sm:max-h-[900px] sm:rounded-[40px] bg-white/40 backdrop-blur-2xl text-gray-900 shadow-2xl overflow-hidden border border-white/60 ring-1 ring-black/5 flex flex-col">
+            {/* --- INTEMPOREL WRAPPER (The Phone Frame - Dark Chrome Gradient) --- */}
+            <main className="relative z-10 w-full max-w-[430px] h-[100dvh] sm:h-[90vh] sm:max-h-[900px] sm:rounded-[40px] bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white shadow-2xl overflow-hidden border border-white/10 ring-1 ring-white/5 flex flex-col">
 
                 {/* --- PRO CONTENT (Scrollable Area) --- */}
                 <div className="flex-1 overflow-y-auto no-scrollbar scroll-smooth pb-24">
 
                     {/* Header (Sticky) */}
-                    <header className="sticky top-0 z-50 bg-white/60 backdrop-blur-xl border-b border-white/20 px-6 pt-12 pb-4 flex items-center justify-between shadow-sm">
+                    <header className="sticky top-0 z-50 bg-[#121212]/80 backdrop-blur-xl border-b border-white/5 px-6 pt-12 pb-4 flex items-center justify-between shadow-sm">
                         <div>
                             <div className="flex items-center gap-2 mb-1">
                                 {/* Pulsing Dot */}
-                                <div className="h-2 w-2 rounded-full bg-green-500 shadow-[0_0_10px_rgba(34,197,94,0.4)] animate-pulse" />
-                                <span className="text-[10px] font-bold text-green-600 uppercase tracking-widest">En ligne</span>
+                                <div className="h-2 w-2 rounded-full bg-green-500 shadow-[0_0_10px_rgba(34,197,94,0.6)] animate-pulse" />
+                                <span className="text-[10px] font-bold text-green-500 uppercase tracking-widest">En ligne</span>
                             </div>
-                            <h1 className="text-xl font-black tracking-tight text-gray-800">Sairam - Paris 04</h1>
+                            <h1 className="text-xl font-bold tracking-tight text-gray-100">Sairam - Paris 04</h1>
                         </div>
-                        <div className="h-10 w-10 rounded-xl bg-white/80 flex items-center justify-center border border-white/50 text-gray-500 shadow-sm">
+                        <div className="h-10 w-10 rounded-xl bg-white/5 flex items-center justify-center border border-white/10 text-gray-400">
                             <Icons.Shop className="w-5 h-5" />
                         </div>
                     </header>
@@ -117,35 +120,35 @@ export default function ProConceptPage() {
                         <div className="px-6 mt-6 space-y-8">
 
                             {/* Friendly Greeting */}
-                            <div className="bg-gradient-to-br from-white to-gray-50 p-6 rounded-3xl border border-white shadow-sm">
-                                <h2 className="text-xl font-black mb-2 text-gray-800">Bonjour l'équipe Sairam</h2>
-                                <p className="text-sm text-gray-500 leading-relaxed">
+                            <div className="bg-gradient-to-br from-white/10 to-transparent p-6 rounded-3xl border border-white/5 shadow-inner">
+                                <h2 className="text-xl font-bold mb-2 text-white">Bonjour l'équipe Sairam</h2>
+                                <p className="text-sm text-gray-400 leading-relaxed">
                                     C'est une belle journée pour développer votre activité ! Voici un aperçu de ce qui se passe chez vous aujourd'hui.
                                 </p>
                             </div>
 
                             {/* KPI Section */}
                             <section>
-                                <h2 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Performances (24h)</h2>
+                                <h2 className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">Performances (24h)</h2>
                                 <div className="grid grid-cols-2 gap-3">
                                     {/* KPI 1 */}
-                                    <div className="bg-white/60 border border-white/40 rounded-2xl p-4 flex flex-col justify-between h-32 hover:bg-white/80 transition-colors cursor-pointer group shadow-sm">
-                                        <div className="h-8 w-8 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-500 group-hover:scale-110 transition-transform">
+                                    <div className="bg-[#1A1A1A]/80 border border-white/5 rounded-2xl p-4 flex flex-col justify-between h-32 hover:bg-white/10 transition-colors cursor-pointer group shadow-sm">
+                                        <div className="h-8 w-8 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform">
                                             <Icons.Eye className="w-4 h-4" />
                                         </div>
                                         <div>
-                                            <span className="text-3xl font-black block text-gray-800 group-hover:text-blue-500 transition-colors">128</span>
-                                            <span className="text-[11px] text-gray-400 font-bold">Vues aujourd'hui</span>
+                                            <span className="text-3xl font-black block text-gray-100 group-hover:text-blue-400 transition-colors">128</span>
+                                            <span className="text-[11px] text-gray-500 font-bold">Vues aujourd'hui</span>
                                         </div>
                                     </div>
                                     {/* KPI 2 */}
-                                    <div className="bg-white/60 border border-white/40 rounded-2xl p-4 flex flex-col justify-between h-32 hover:bg-white/80 transition-colors cursor-pointer group shadow-sm">
-                                        <div className="h-8 w-8 rounded-full bg-green-500/10 flex items-center justify-center text-green-600 group-hover:scale-110 transition-transform">
+                                    <div className="bg-[#1A1A1A]/80 border border-white/5 rounded-2xl p-4 flex flex-col justify-between h-32 hover:bg-white/10 transition-colors cursor-pointer group shadow-sm">
+                                        <div className="h-8 w-8 rounded-full bg-green-500/20 flex items-center justify-center text-green-500 group-hover:scale-110 transition-transform">
                                             <Icons.Check className="w-4 h-4" />
                                         </div>
                                         <div>
-                                            <span className="text-3xl font-black block text-gray-800 group-hover:text-green-600 transition-colors">12</span>
-                                            <span className="text-[11px] text-gray-400 font-bold">Abonnés SMS</span>
+                                            <span className="text-3xl font-black block text-gray-100 group-hover:text-green-500 transition-colors">12</span>
+                                            <span className="text-[11px] text-gray-500 font-bold">Abonnés SMS</span>
                                         </div>
                                     </div>
                                 </div>
@@ -153,14 +156,14 @@ export default function ProConceptPage() {
 
                             {/* Actions Section */}
                             <section>
-                                <h2 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Actions Rapides</h2>
+                                <h2 className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">Actions Rapides</h2>
 
                                 {/* Publish Offer Button */}
-                                <button className="w-full relative overflow-hidden group rounded-3xl bg-gray-900 p-1 transition-all active:scale-[0.98] shadow-lg">
-                                    <div className="absolute inset-0 bg-gradient-to-r from-gray-800 to-black opacity-100" />
-                                    <div className="relative rounded-[22px] p-5 border border-white/10 flex items-center justify-between group-hover:bg-gray-800 transition-colors">
+                                <button className="w-full relative overflow-hidden group rounded-3xl bg-brand-green p-1 transition-all active:scale-[0.98] shadow-lg shadow-brand-green/10">
+                                    <div className="absolute inset-0 bg-gradient-to-r from-transparent to-white/20 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                    <div className="bg-[#1A1A1A] rounded-[22px] p-5 border border-brand-green/30 flex items-center justify-between group-hover:bg-[#222] transition-colors">
                                         <div className="flex items-center gap-4">
-                                            <div className="h-12 w-12 rounded-full bg-white/10 flex items-center justify-center text-white">
+                                            <div className="h-12 w-12 rounded-full bg-brand-green/20 flex items-center justify-center text-brand-green">
                                                 <Icons.Plus className="w-6 h-6" />
                                             </div>
                                             <div className="text-left">
@@ -174,13 +177,13 @@ export default function ProConceptPage() {
 
                                 {/* Other Actions */}
                                 <div className="grid grid-cols-2 gap-3 mt-3">
-                                    <button className="bg-white/60 border border-white/40 rounded-2xl p-4 flex flex-col items-center justify-center gap-2 hover:bg-white/80 transition-colors group shadow-sm">
-                                        <Icons.Clock className="w-6 h-6 text-gray-400 group-hover:scale-110 transition-transform group-hover:text-gray-800" />
-                                        <span className="text-[11px] font-bold text-gray-500">Horaires</span>
+                                    <button className="bg-[#1A1A1A]/80 border border-white/5 rounded-2xl p-4 flex flex-col items-center justify-center gap-2 hover:bg-white/10 transition-colors group shadow-sm">
+                                        <Icons.Clock className="w-6 h-6 text-gray-400 group-hover:scale-110 transition-transform group-hover:text-white" />
+                                        <span className="text-[11px] font-bold text-gray-500 group-hover:text-gray-300">Horaires</span>
                                     </button>
-                                    <button className="bg-white/60 border border-white/40 rounded-2xl p-4 flex flex-col items-center justify-center gap-2 hover:bg-white/80 transition-colors group shadow-sm">
-                                        <Icons.Logout className="w-6 h-6 text-gray-400 group-hover:scale-110 transition-transform group-hover:text-gray-800" />
-                                        <span className="text-[11px] font-bold text-gray-500">Fermeture Ex.</span>
+                                    <button className="bg-[#1A1A1A]/80 border border-white/5 rounded-2xl p-4 flex flex-col items-center justify-center gap-2 hover:bg-white/10 transition-colors group shadow-sm">
+                                        <Icons.Logout className="w-6 h-6 text-gray-400 group-hover:scale-110 transition-transform group-hover:text-white" />
+                                        <span className="text-[11px] font-bold text-gray-500 group-hover:text-gray-300">Fermeture Ex.</span>
                                     </button>
                                 </div>
                             </section>
@@ -188,17 +191,17 @@ export default function ProConceptPage() {
                             {/* Preview Section */}
                             <section>
                                 <div className="flex items-center justify-between mb-4">
-                                    <h2 className="text-xs font-bold text-gray-400 uppercase tracking-widest">Aperçu Client</h2>
-                                    <span className="text-[10px] bg-gray-200 px-2 py-1 rounded text-gray-600 font-mono font-bold">live</span>
+                                    <h2 className="text-xs font-bold text-gray-500 uppercase tracking-widest">Aperçu Client</h2>
+                                    <span className="text-[10px] bg-white/10 px-2 py-1 rounded text-white font-mono font-bold">live</span>
                                 </div>
-                                <div className="relative h-48 w-full rounded-3xl overflow-hidden border border-white/50 opacity-100 shadow-md group cursor-pointer">
+                                <div className="relative h-48 w-full rounded-3xl overflow-hidden border border-white/10 opacity-80 mix-blend-luminosity hover:mix-blend-normal transition-all group cursor-pointer shadow-lg">
                                     {/* Fake content for preview */}
                                     <div className="absolute inset-0 bg-[#F4F2EC]">
-                                        <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/20 to-transparent z-10" />
-                                        <div className="h-full w-full bg-[url('/images/shop-placeholder.jpg')] bg-cover bg-center grayscale-[0.2]" />
+                                        <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/50 to-transparent z-10" />
+                                        <div className="h-full w-full bg-[url('/images/shop-placeholder.jpg')] bg-cover bg-center" />
                                     </div>
-                                    <div className="absolute inset-0 flex items-center justify-center bg-white/20 backdrop-blur-[2px] group-hover:backdrop-blur-none transition-all">
-                                        <span className="text-sm font-bold bg-white/80 backdrop-blur px-4 py-2 rounded-full border border-white shadow-sm text-gray-800">Voir ma page</span>
+                                    <div className="absolute inset-0 flex items-center justify-center bg-black/50 backdrop-blur-sm group-hover:backdrop-blur-none transition-all">
+                                        <span className="text-sm font-bold bg-black/60 px-4 py-2 rounded-full border border-white/20 shadow-sm text-white">Voir ma page</span>
                                     </div>
                                 </div>
                             </section>
@@ -209,19 +212,19 @@ export default function ProConceptPage() {
                     {currentTab === 'clients' && (
                         <div className="px-6 mt-6 pb-6">
                             <div className="mb-6">
-                                <h2 className="text-xl font-black mb-1 text-gray-800">Vos Clients</h2>
-                                <p className="text-sm text-gray-500">Suivez l'activité de vos clients en temps réel.</p>
+                                <h2 className="text-xl font-bold mb-1 text-white">Vos Clients</h2>
+                                <p className="text-sm text-gray-400">Suivez l'activité de vos clients en temps réel.</p>
                             </div>
 
                             {/* Filters */}
-                            <div className="flex bg-white/50 border border-white/50 p-1 rounded-xl mb-6 overflow-x-auto no-scrollbar shadow-inner">
+                            <div className="flex bg-white/5 p-1 rounded-xl mb-6 overflow-x-auto no-scrollbar border border-white/5">
                                 {(['24h', '1w', '1m', 'all'] as const).map((filter) => (
                                     <button
                                         key={filter}
                                         onClick={() => setClientFilter(filter)}
                                         className={`flex-1 px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap transition-all ${clientFilter === filter
-                                                ? 'bg-gray-800 text-white shadow-md'
-                                                : 'text-gray-500 hover:text-gray-800'
+                                                ? 'bg-brand-green text-white shadow-md'
+                                                : 'text-gray-500 hover:text-white'
                                             }`}
                                     >
                                         {filter === '24h' ? '24h' :
@@ -234,37 +237,37 @@ export default function ProConceptPage() {
                             {/* Clients List */}
                             <div className="space-y-4">
                                 {filteredClients.map((client) => (
-                                    <div key={client.id} className="bg-white/60 border border-white/50 p-4 rounded-2xl flex items-center justify-between hover:bg-white/90 transition-colors shadow-sm">
+                                    <div key={client.id} className="bg-[#1A1A1A]/60 border border-white/5 p-4 rounded-2xl flex items-center justify-between hover:bg-white/10 transition-colors shadow-sm">
                                         <div className="flex items-center gap-4">
-                                            <div className="h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 font-bold border border-white shadow-sm">
+                                            <div className="h-10 w-10 rounded-full bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center text-gray-300 font-bold border border-white/10 shadow-inner">
                                                 {/* Initials or User Icon */}
                                                 {client.name.charAt(0)}
                                             </div>
                                             <div>
-                                                <h3 className="font-bold text-sm text-gray-800">{client.name}</h3>
+                                                <h3 className="font-bold text-sm text-gray-200">{client.name}</h3>
                                                 <p className="text-[11px] text-gray-500">{client.time}</p>
                                             </div>
                                         </div>
                                         <div className="text-right">
                                             {client.action === 'scanned' && (
-                                                <span className="inline-flex items-center gap-1.5 bg-blue-50 text-blue-600 px-2 py-1 rounded-lg text-[10px] font-bold border border-blue-100">
+                                                <span className="inline-flex items-center gap-1.5 bg-blue-500/10 text-blue-400 px-2 py-1 rounded-lg text-[10px] font-bold border border-blue-500/10">
                                                     <Icons.Scan className="w-3 h-3" /> Scanné
                                                 </span>
                                             )}
                                             {client.action === 'reserved_bought' && (
                                                 <div className="flex flex-col items-end">
-                                                    <span className="inline-flex items-center gap-1.5 bg-green-50 text-green-600 px-2 py-1 rounded-lg text-[10px] font-bold border border-green-100 mb-1">
+                                                    <span className="inline-flex items-center gap-1.5 bg-green-500/10 text-green-400 px-2 py-1 rounded-lg text-[10px] font-bold border border-green-500/10 mb-1">
                                                         <Icons.Check className="w-3 h-3" /> Acheté
                                                     </span>
-                                                    <span className="text-xs font-bold text-gray-800">{client.amount}</span>
+                                                    <span className="text-xs font-bold text-white">{client.amount}</span>
                                                 </div>
                                             )}
                                             {client.action === 'reserved_cancelled' && (
                                                 <div className="flex flex-col items-end">
-                                                    <span className="inline-flex items-center gap-1.5 bg-red-50 text-red-500 px-2 py-1 rounded-lg text-[10px] font-bold border border-red-100 mb-1">
+                                                    <span className="inline-flex items-center gap-1.5 bg-red-500/10 text-red-400 px-2 py-1 rounded-lg text-[10px] font-bold border border-red-500/10 mb-1">
                                                         <Icons.Cross className="w-3 h-3" /> Annulé
                                                     </span>
-                                                    <span className="text-xs font-bold text-gray-400 line-through">{client.amount}</span>
+                                                    <span className="text-xs font-bold text-gray-500 line-through">{client.amount}</span>
                                                 </div>
                                             )}
                                         </div>
@@ -278,8 +281,8 @@ export default function ProConceptPage() {
                     {currentTab === 'settings' && (
                         <div className="px-6 mt-6 pb-6">
                             <div className="mb-6">
-                                <h2 className="text-xl font-black mb-1 text-gray-800">Réglages</h2>
-                                <p className="text-sm text-gray-500">Gérez votre compte et vos préférences.</p>
+                                <h2 className="text-xl font-bold mb-1 text-white">Réglages</h2>
+                                <p className="text-sm text-gray-400">Gérez votre compte et vos préférences.</p>
                             </div>
 
                             <div className="space-y-2">
@@ -290,21 +293,21 @@ export default function ProConceptPage() {
                                     { icon: Icons.UserGroup, label: 'Equipe', sub: 'Gérer les accès' },
                                     { icon: Icons.Lock, label: 'Sécurité', sub: 'Mot de passe, 2FA' },
                                 ].map((item) => (
-                                    <button key={item.label} className="w-full bg-white/60 px-4 py-4 rounded-2xl flex items-center justify-between border border-white/50 hover:bg-white/90 transition-colors group shadow-sm">
+                                    <button key={item.label} className="w-full bg-[#1A1A1A]/80 px-4 py-4 rounded-2xl flex items-center justify-between border border-white/5 hover:bg-white/10 transition-colors group shadow-sm">
                                         <div className="flex items-center gap-4">
-                                            <div className="h-10 w-10 rounded-xl bg-gray-100 flex items-center justify-center text-gray-400 group-hover:text-gray-800 group-hover:bg-white transition-colors border border-white/50">
+                                            <div className="h-10 w-10 rounded-xl bg-black/40 flex items-center justify-center text-gray-400 group-hover:text-white transition-colors border border-white/5">
                                                 <item.icon className="w-5 h-5" />
                                             </div>
                                             <div className="text-left">
-                                                <span className="font-bold text-sm block text-gray-800">{item.label}</span>
+                                                <span className="font-bold text-sm block text-gray-200">{item.label}</span>
                                                 <span className="text-[10px] text-gray-500">{item.sub}</span>
                                             </div>
                                         </div>
-                                        <Icons.ChevronRight className="w-5 h-5 text-gray-300 group-hover:text-gray-600 transition-colors" />
+                                        <Icons.ChevronRight className="w-5 h-5 text-gray-600 group-hover:text-white transition-colors" />
                                     </button>
                                 ))}
 
-                                <button className="w-full mt-8 bg-red-50 border border-red-100 text-red-500 font-bold text-sm py-4 rounded-2xl hover:bg-red-100 transition-colors flex items-center justify-center gap-2">
+                                <button className="w-full mt-8 bg-red-500/10 border border-red-500/20 text-red-500 font-bold text-sm py-4 rounded-2xl hover:bg-red-500/20 transition-colors flex items-center justify-center gap-2">
                                     <Icons.Logout className="w-4 h-4" />
                                     Déconnexion
                                 </button>
@@ -314,10 +317,10 @@ export default function ProConceptPage() {
                 </div>
 
                 {/* Bottom Nav (Sticky) */}
-                <div className="w-full bg-white/80 backdrop-blur-xl border-t border-white/40 pt-3 pb-6 px-8 flex justify-between items-end z-50">
+                <div className="w-full bg-[#1A1A1A]/90 backdrop-blur-xl border-t border-white/5 pt-3 pb-6 px-8 flex justify-between items-end z-50">
                     <button
                         onClick={() => setCurrentTab('dashboard')}
-                        className={`flex flex-col items-center gap-1 transition-colors ${currentTab === 'dashboard' ? 'text-gray-800' : 'text-gray-400 hover:text-gray-600'}`}
+                        className={`flex flex-col items-center gap-1 transition-colors ${currentTab === 'dashboard' ? 'text-brand-green' : 'text-gray-600 hover:text-gray-400'}`}
                     >
                         <Icons.Dashboard className="w-6 h-6" />
                         <span className="text-[10px] font-bold">Dashboard</span>
@@ -325,7 +328,7 @@ export default function ProConceptPage() {
 
                     <button
                         onClick={() => setCurrentTab('clients')}
-                        className={`flex flex-col items-center gap-1 transition-colors ${currentTab === 'clients' ? 'text-gray-800' : 'text-gray-400 hover:text-gray-600'}`}
+                        className={`flex flex-col items-center gap-1 transition-colors ${currentTab === 'clients' ? 'text-brand-green' : 'text-gray-600 hover:text-gray-400'}`}
                     >
                         <Icons.Users className="w-6 h-6" />
                         <span className="text-[10px] font-medium">Clients</span>
@@ -333,7 +336,7 @@ export default function ProConceptPage() {
 
                     <button
                         onClick={() => setCurrentTab('settings')}
-                        className={`flex flex-col items-center gap-1 transition-colors ${currentTab === 'settings' ? 'text-gray-800' : 'text-gray-400 hover:text-gray-600'}`}
+                        className={`flex flex-col items-center gap-1 transition-colors ${currentTab === 'settings' ? 'text-brand-green' : 'text-gray-600 hover:text-gray-400'}`}
                     >
                         <Icons.Settings className="w-6 h-6" />
                         <span className="text-[10px] font-medium">Réglages</span>
@@ -342,7 +345,7 @@ export default function ProConceptPage() {
 
                 {/* Floating indicator for "Concept" */}
                 {/* <div className="fixed top-24 right-4 z-50 pointer-events-none">
-                    <div className="bg-black/80 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest opacity-20">
+                    <div className="bg-white/10 backdrop-blur text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest opacity-30">
                         Concept Pro
                     </div>
                 </div> */}
