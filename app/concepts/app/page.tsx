@@ -104,8 +104,8 @@ export default function AppConceptPage() {
                                     <button
                                         key={i}
                                         className={`flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold whitespace-nowrap transition-all active:scale-95 ${cat.active
-                                            ? "bg-gray-900 text-white shadow-lg shadow-gray-900/20"
-                                            : "bg-white/60 border border-white/60 text-gray-600 hover:bg-white"
+                                            ? "bg-black text-white shadow-md"
+                                            : "bg-white border border-gray-200 text-gray-600 hover:bg-gray-50"
                                             }`}
                                     >
                                         <span className="text-sm">{cat.icon}</span>
