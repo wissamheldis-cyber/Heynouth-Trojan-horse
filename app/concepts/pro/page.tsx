@@ -60,30 +60,158 @@ const Icons = {
     Chat: ({ className }: { className?: string }) => (
         <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
     ),
+    TrendingUp: ({ className }: { className?: string }) => (
+        <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+    ),
+    ShoppingBag: ({ className }: { className?: string }) => (
+        <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>
+    ),
+    Close: ({ className }: { className?: string }) => (
+        <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M6 18L18 6M6 6l12 12" /></svg>
+    ),
+    Activity: ({ className }: { className?: string }) => (
+        <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+    ),
+};
+
+// Analytics Chart Component (SVG)
+// Analytics Chart Component (SVG)
+const AnalyticsChart = ({ color = "#f97316" }: { color?: string }) => {
+    // Mock Data points
+    const points = [10, 40, 30, 70, 45, 90, 65];
+    const max = 100;
+    const width = 300;
+    const height = 100;
+    const stepX = width / (points.length - 1);
+
+    // Generate Path
+    const pathD = points.map((p, i) => {
+        const x = i * stepX;
+        const y = height - (p / max) * height;
+        return `${i === 0 ? 'M' : 'L'} ${x} ${y}`;
+    }).join(' ');
+
+    const fillD = `${pathD} L ${width} ${height} L 0 ${height} Z`;
+
+    const gradientId = `chartGradient-${color.replace('#', '')}`;
+
+    return (
+        <div className="w-full h-full relative group/chart">
+            <svg viewBox={`0 0 ${width} ${height}`} className="w-full h-full overflow-visible">
+                <defs>
+                    <linearGradient id={gradientId} x1="0" x2="0" y1="0" y2="1">
+                        <stop offset="0%" stopColor={color} stopOpacity="0.4" />
+                        <stop offset="100%" stopColor={color} stopOpacity="0" />
+                    </linearGradient>
+                </defs>
+                {/* Area Fill */}
+                <path d={fillD} fill={`url(#${gradientId})`} />
+                {/* Line */}
+                <path d={pathD} fill="none" stroke={color} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                {/* Dots (Simulated with simple circles on peaks) */}
+                {points.map((p, i) => (
+                    <circle
+                        key={i}
+                        cx={i * stepX}
+                        cy={height - (p / max) * height}
+                        r="3"
+                        fill="#fff"
+                        stroke={color}
+                        strokeWidth="2"
+                        className="animate-pulse opacity-0 group-hover/chart:opacity-100 transition-opacity"
+                    />
+                ))}
+            </svg>
+            {/* Tooltip Overlay (Simple Interaction) */}
+            <div className="absolute inset-0 flex items-end justify-between px-2 pb-2 opacity-0 group-hover/chart:opacity-100 transition-opacity">
+                {points.map((p, i) => (
+                    <div key={i} className="flex flex-col items-center gap-1">
+                        <div className="bg-black/80 text-white text-[9px] px-1.5 py-0.5 rounded border border-white/10">{p}</div>
+                        <div className="h-full w-[1px] bg-white/10 border-l border-dashed border-white/20 h-10"></div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
 };
 
 
 export default function ProConceptPage() {
-    // Basic state for mock navigation
-    const [currentTab, setCurrentTab] = useState<"dashboard" | "clients" | "settings">("dashboard");
-    const [clientFilter, setClientFilter] = useState<"24h" | "1w" | "1m" | "all">("24h");
+    // Navigation State
+    // Navigation State
+    const [currentTab, setCurrentTab] = useState<"dashboard" | "clients" | "settings" | "stats">("dashboard");
+    const [clientFilter, setClientFilter] = useState<"24h" | "1w" | "1m" | "all">("all");
 
-    // Mock Client Data
+    // Modal State
+    const [activeModal, setActiveModal] = useState<"none" | "new_offer" | "hours" | "closure">("none");
+
+    // Form States
+    const [offerDetails, setOfferDetails] = useState({
+        name: "Menu Midi Express",
+        price: "9.50",
+        time: "12:00",
+        selectedProduct: "Menu Midi +"
+    });
+    const [shopStatus, setShopStatus] = useState({ isOpen: true, nextOpening: "08:00" });
+
+    // Toast State
+    const [toast, setToast] = useState<{ visible: boolean; message: string; type: 'success' | 'warning' }>({ visible: false, message: "", type: 'success' });
+
+    const showToast = (message: string, type: 'success' | 'warning' = 'success') => {
+        setToast({ visible: true, message, type });
+        setTimeout(() => setToast({ ...toast, visible: false }), 3000);
+    };
+
+    // Generic Action Handler for Settings
+    const handleGenericAction = (actionName: string) => {
+        showToast(`${actionName} - Bientôt disponible`, 'success');
+    }
+
+    // Handlers
+    const handlePublishOffer = () => {
+        closeModal();
+        showToast(`Offre "${offerDetails.name}" (${offerDetails.selectedProduct}) publiée !`, 'success');
+    };
+
+    const handleSaveHours = () => {
+        closeModal();
+        showToast("Horaires mis à jour.", 'success');
+    };
+
+    const handleConfirmClosure = () => {
+        setShopStatus({ ...shopStatus, isOpen: false });
+        closeModal();
+        showToast("Fermeture exceptionnelle activée.", 'warning');
+    };
+
+    // Mock Client Data - Expanded
     const clients = [
-        { id: 1, name: "Julie D.", action: "reserved_bought", time: "Il y a 2h", amount: "5€" },
-        { id: 2, name: "Thomas M.", action: "scanned", time: "Il y a 3h", amount: null },
-        { id: 3, name: "Sophie L.", action: "reserved_cancelled", time: "Il y a 5h", amount: "12€" },
-        { id: 4, name: "Marc A.", action: "reserved_bought", time: "Hier", amount: "8€" },
-        { id: 5, name: "Inès B.", action: "scanned", time: "Hier", amount: null },
-        { id: 6, name: "Lucas P.", action: "reserved_bought", time: "Il y a 2 jours", amount: "15€" },
+        { id: 1, name: "Julie D.", action: "reserved_bought", time: "Il y a 2h", amount: "5€", avatar: true, skin: "hue-rotate-0" },
+        { id: 2, name: "Thomas M.", action: "scanned", time: "Il y a 3h", amount: null, avatar: false },
+        { id: 3, name: "Sophie L.", action: "reserved_cancelled", time: "Il y a 5h", amount: "12€", avatar: true, skin: "hue-rotate-90" },
+        { id: 4, name: "Marc A.", action: "reserved_bought", time: "Hier", amount: "8€", avatar: false },
+        { id: 5, name: "Inès B.", action: "scanned", time: "Hier", amount: null, avatar: true, skin: "hue-rotate-180" },
+        { id: 6, name: "Lucas P.", action: "reserved_bought", time: "Il y a 2 jours", amount: "15€", avatar: false },
+        { id: 7, name: "Chloé R.", action: "scanned", time: "Il y a 2 jours", amount: null, avatar: true, skin: "hue-rotate-60" },
+        { id: 8, name: "Nathan S.", action: "reserved_bought", time: "Il y a 3 jours", amount: "22€", avatar: false },
+        { id: 9, name: "Emma W.", action: "reserved_bought", time: "Il y a 4 jours", amount: "9€", avatar: true, skin: "hue-rotate-270 saturate-150" },
+        { id: 10, name: "Gabriel M.", action: "reserved_cancelled", time: "Il y a 5 jours", amount: "15€", avatar: false },
+        { id: 11, name: "Léa K.", action: "scanned", time: "Semaine dernière", amount: null, avatar: true, skin: "sepia saturate-200" },
+        { id: 12, name: "Alexandre T.", action: "reserved_bought", time: "Semaine dernière", amount: "30€", avatar: false },
+        { id: 13, name: "Sarah B.", action: "reserved_bought", time: "Semaine dernière", amount: "11€", avatar: true, skin: "invert" },
+        { id: 14, name: "Maxime L.", action: "scanned", time: "Il y a 10 jours", amount: null, avatar: false },
+        { id: 15, name: "Charlotte D.", action: "reserved_bought", time: "Il y a 12 jours", amount: "6€", avatar: true, skin: "hue-rotate-30 saturate-50" },
     ];
 
-    // Filter logic (mocked for visual demo)
+    // Filter logic 
     const filteredClients = useMemo(() => {
         if (clientFilter === '24h') return clients.slice(0, 3);
-        if (clientFilter === '1w') return clients.slice(0, 5);
+        if (clientFilter === '1w') return clients.slice(0, 8);
         return clients;
     }, [clientFilter, clients]);
+
+    // Close Modals
+    const closeModal = () => setActiveModal("none");
 
     return (
         <div className="relative min-h-[100dvh] w-full bg-[#050505] font-sans flex items-center justify-center overflow-hidden">
@@ -114,8 +242,11 @@ export default function ProConceptPage() {
                     <header className="sticky top-0 z-50 bg-[#121212]/80 backdrop-blur-xl border-b border-white/5 px-6 pt-12 pb-4 flex items-center justify-between shadow-sm">
                         <div>
                             <div className="flex items-center gap-2 mb-1">
-                                <div className="h-2 w-2 rounded-full bg-green-500 shadow-[0_0_10px_rgba(34,197,94,0.6)] animate-pulse" />
-                                <span className="text-[10px] font-bold text-green-500 uppercase tracking-widest">En ligne</span>
+                                {/* Dynamic Online Status */}
+                                <div className={`h-2 w-2 rounded-full shadow-[0_0_10px_rgba(34,197,94,0.6)] ${shopStatus.isOpen ? 'bg-green-500 animate-pulse' : 'bg-red-500'}`} />
+                                <span className={`text-[10px] font-bold uppercase tracking-widest ${shopStatus.isOpen ? 'text-green-500' : 'text-red-500'}`}>
+                                    {shopStatus.isOpen ? 'En ligne' : 'Fermé'}
+                                </span>
                             </div>
                             <h1 className="text-xl font-bold tracking-tight text-gray-100">Sairam - Paris 04</h1>
                         </div>
@@ -125,21 +256,22 @@ export default function ProConceptPage() {
                     {currentTab === 'dashboard' && (
                         <div className="px-6 mt-6 space-y-8">
 
-                            {/* Friendly Greeting with Nouth Avatar */}
+                            {/* Friendly Greeting with Nouth Avatar in Circle Frame */}
                             <div className="bg-gradient-to-br from-white/10 to-transparent p-6 rounded-3xl border border-white/5 shadow-inner relative overflow-hidden group">
 
-                                {/* Nouth Avatar (Absolute Top Right) */}
-                                <div className="absolute top-1 right-2 w-24 h-24 pointer-events-none opacity-90">
+                                {/* Nouth Avatar (Profile Picture Style) */}
+                                <div className="absolute top-6 right-6 w-16 h-16 rounded-full overflow-hidden border-2 border-white/20 shadow-[0_0_20px_rgba(255,255,255,0.15)] bg-black/50 z-20">
                                     <Image
                                         src="/images/nouth-avatar.png"
                                         alt="Nouth Assistant"
-                                        width={100}
-                                        height={100}
-                                        className="object-contain"
+                                        fill
+                                        className="object-cover object-top hover:scale-110 transition-transform duration-500"
                                     />
                                 </div>
+                                {/* Background blur for the avatar */}
+                                <div className="absolute top-6 right-6 w-16 h-16 bg-white/10 rounded-full blur-xl z-10" />
 
-                                <div className="relative z-10 pr-16">
+                                <div className="relative z-10 pr-20">
                                     <h2 className="text-xl font-bold mb-2 text-white">Bonjour Sairam !</h2>
                                     <p className="text-sm text-gray-400 leading-relaxed font-medium">
                                         Je suis Nouth, ton assistant. Tout est calme pour le moment.
@@ -155,11 +287,11 @@ export default function ProConceptPage() {
                                 </div>
                             </div>
 
-                            {/* KPI Section */}
+                            {/* KPI Section (Expanded) */}
                             <section>
                                 <h2 className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">Performances (24h)</h2>
                                 <div className="grid grid-cols-2 gap-3">
-                                    {/* KPI 1 */}
+                                    {/* KPI 1: Views */}
                                     <div className="bg-[#1A1A1A]/60 backdrop-blur-md border border-white/5 rounded-2xl p-4 flex flex-col justify-between h-32 hover:bg-white/10 transition-colors cursor-pointer group shadow-lg">
                                         <div className="h-8 w-8 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform">
                                             <Icons.Eye className="w-4 h-4" />
@@ -169,7 +301,7 @@ export default function ProConceptPage() {
                                             <span className="text-[11px] text-gray-500 font-bold">Vues aujourd'hui</span>
                                         </div>
                                     </div>
-                                    {/* KPI 2 */}
+                                    {/* KPI 2: Subscribers */}
                                     <div className="bg-[#1A1A1A]/60 backdrop-blur-md border border-white/5 rounded-2xl p-4 flex flex-col justify-between h-32 hover:bg-white/10 transition-colors cursor-pointer group shadow-lg">
                                         <div className="h-8 w-8 rounded-full bg-green-500/20 flex items-center justify-center text-green-500 group-hover:scale-110 transition-transform">
                                             <Icons.Check className="w-4 h-4" />
@@ -179,25 +311,40 @@ export default function ProConceptPage() {
                                             <span className="text-[11px] text-gray-500 font-bold">Abonnés SMS</span>
                                         </div>
                                     </div>
+                                    {/* KPI 3: Revenue (New) */}
+                                    <div className="bg-[#1A1A1A]/60 backdrop-blur-md border border-white/5 rounded-2xl p-4 flex flex-col justify-between h-32 hover:bg-white/10 transition-colors cursor-pointer group shadow-lg">
+                                        <div className="h-8 w-8 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400 group-hover:scale-110 transition-transform">
+                                            <Icons.TrendingUp className="w-4 h-4" />
+                                        </div>
+                                        <div>
+                                            <span className="text-3xl font-black block text-gray-100 group-hover:text-purple-400 transition-colors">142€</span>
+                                            <span className="text-[11px] text-gray-500 font-bold">CA Estimé</span>
+                                        </div>
+                                    </div>
+                                    {/* KPI 4: Orders (New) */}
+                                    <div className="bg-[#1A1A1A]/60 backdrop-blur-md border border-white/5 rounded-2xl p-4 flex flex-col justify-between h-32 hover:bg-white/10 transition-colors cursor-pointer group shadow-lg">
+                                        <div className="h-8 w-8 rounded-full bg-yellow-500/20 flex items-center justify-center text-yellow-400 group-hover:scale-110 transition-transform">
+                                            <Icons.ShoppingBag className="w-4 h-4" />
+                                        </div>
+                                        <div>
+                                            <span className="text-3xl font-black block text-gray-100 group-hover:text-yellow-400 transition-colors">8</span>
+                                            <span className="text-[11px] text-gray-500 font-bold">Commandes</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </section>
 
-                            {/* Actions Section with Nouth Pointing */}
+
+
+                            {/* Actions Section */}
                             <section className="relative">
                                 <h2 className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">Actions Rapides</h2>
 
-                                {/* Nouth Pointing (Absolute Left) - Overlapping nicely */}
-                                <div className="absolute -top-12 -left-8 w-28 h-40 pointer-events-none z-20">
-                                    <Image
-                                        src="/images/nouth-pointing.png"
-                                        alt="Nouth Pointing"
-                                        fill
-                                        className="object-contain transform rotate-[-5deg]"
-                                    />
-                                </div>
-
                                 {/* Publish Offer Button */}
-                                <button className="relative w-full overflow-hidden group rounded-3xl bg-orange-600/90 p-[1px] transition-all active:scale-[0.98] shadow-lg shadow-orange-500/20 z-10 ml-6 w-[calc(100%-1.5rem)]">
+                                <button
+                                    onClick={() => setActiveModal("new_offer")}
+                                    className="relative w-full overflow-hidden group rounded-3xl bg-orange-600/90 p-[1px] transition-all active:scale-[0.98] shadow-lg shadow-orange-500/20 z-10"
+                                >
                                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity animate-shimmer" />
                                     <div className="bg-[#151515] rounded-[23px] p-5 border border-transparent flex items-center justify-between group-hover:bg-[#1a1a1a] transition-colors relative z-10 h-full">
                                         <div className="flex items-center gap-4">
@@ -215,15 +362,42 @@ export default function ProConceptPage() {
 
                                 {/* Other Actions */}
                                 <div className="grid grid-cols-2 gap-3 mt-3">
-                                    <button className="bg-[#1A1A1A]/60 backdrop-blur-sm border border-white/5 rounded-2xl p-4 flex flex-col items-center justify-center gap-2 hover:bg-white/10 transition-colors group shadow-sm">
+                                    <button
+                                        onClick={() => setActiveModal("hours")}
+                                        className="bg-[#1A1A1A]/60 backdrop-blur-sm border border-white/5 rounded-2xl p-4 flex flex-col items-center justify-center gap-2 hover:bg-white/10 transition-colors group shadow-sm active:scale-95"
+                                    >
                                         <Icons.Clock className="w-6 h-6 text-gray-400 group-hover:scale-110 transition-transform group-hover:text-orange-400" />
                                         <span className="text-[11px] font-bold text-gray-500 group-hover:text-gray-300">Horaires</span>
                                     </button>
-                                    <button className="bg-[#1A1A1A]/60 backdrop-blur-sm border border-white/5 rounded-2xl p-4 flex flex-col items-center justify-center gap-2 hover:bg-white/10 transition-colors group shadow-sm">
+                                    <button
+                                        onClick={() => setActiveModal("closure")}
+                                        className="bg-[#1A1A1A]/60 backdrop-blur-sm border border-white/5 rounded-2xl p-4 flex flex-col items-center justify-center gap-2 hover:bg-white/10 transition-colors group shadow-sm active:scale-95"
+                                    >
                                         <Icons.Logout className="w-6 h-6 text-gray-400 group-hover:scale-110 transition-transform group-hover:text-red-400" />
                                         <span className="text-[11px] font-bold text-gray-500 group-hover:text-gray-300">Fermeture Ex.</span>
                                     </button>
                                 </div>
+                            </section>
+
+                            {/* --- ANALYTICS CURVE (Moved & Updated) --- */}
+                            <section className="bg-gradient-to-b from-[#1A1A1A]/60 to-black/40 backdrop-blur-md border border-white/5 rounded-3xl p-6 relative overflow-hidden group">
+                                <div className="flex items-center justify-between mb-4 relative z-10">
+                                    <h2 className="text-xs font-bold text-gray-500 uppercase tracking-widest">Analyse d'Activité</h2>
+                                    <span className="text-[10px] bg-orange-500/10 px-2 py-1 rounded text-orange-500 font-mono font-bold">+18%</span>
+                                </div>
+
+                                {/* Chart Container */}
+                                <div className="h-32 w-full relative z-10 mb-4">
+                                    <AnalyticsChart />
+                                </div>
+
+                                {/* View All Button */}
+                                <button onClick={() => showToast("Analyses détaillées Bientôt disponible", "success")} className="w-full relative z-10 bg-white/5 border border-white/10 hover:bg-white/10 text-xs font-bold text-gray-300 py-3 rounded-xl transition-colors">
+                                    Voir toutes les statistiques
+                                </button>
+
+                                {/* Decorative Glow */}
+                                <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-orange-500/10 to-transparent pointer-events-none" />
                             </section>
 
                             {/* Preview Section */}
@@ -246,6 +420,7 @@ export default function ProConceptPage() {
                         </div>
                     )}
 
+
                     {/* 2. CLIENTS TAB */}
                     {currentTab === 'clients' && (
                         <div className="px-6 mt-6 pb-6">
@@ -254,6 +429,22 @@ export default function ProConceptPage() {
                                 <p className="text-sm text-gray-400">Suivez l'activité de vos clients en temps réel.</p>
                             </div>
 
+                            {/* --- ANALYTICS CURVE (New for Clients) --- */}
+                            <section className="bg-gradient-to-b from-[#1A1A1A]/60 to-black/40 backdrop-blur-md border border-white/5 rounded-3xl p-6 relative overflow-hidden group mb-6">
+                                <div className="flex items-center justify-between mb-4 relative z-10">
+                                    <h2 className="text-xs font-bold text-gray-500 uppercase tracking-widest">Fréquentation</h2>
+                                    <span className="text-[10px] bg-blue-500/10 px-2 py-1 rounded text-blue-500 font-mono font-bold">+5%</span>
+                                </div>
+
+                                {/* Chart Container (Blue tint) */}
+                                <div className="h-28 w-full relative z-10">
+                                    <AnalyticsChart color="#3b82f6" />
+                                </div>
+
+                                {/* Decorative Glow */}
+                                <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-blue-500/10 to-transparent pointer-events-none" />
+                            </section>
+
                             {/* Filters */}
                             <div className="flex bg-white/5 p-1 rounded-xl mb-6 overflow-x-auto no-scrollbar border border-white/5">
                                 {(['24h', '1w', '1m', 'all'] as const).map((filter) => (
@@ -261,8 +452,8 @@ export default function ProConceptPage() {
                                         key={filter}
                                         onClick={() => setClientFilter(filter)}
                                         className={`flex-1 px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap transition-all ${clientFilter === filter
-                                                ? 'bg-orange-600 text-white shadow-lg shadow-orange-500/20'
-                                                : 'text-gray-500 hover:text-white'
+                                            ? 'bg-orange-600 text-white shadow-lg shadow-orange-500/20'
+                                            : 'text-gray-500 hover:text-white'
                                             }`}
                                     >
                                         {filter === '24h' ? '24h' :
@@ -275,14 +466,22 @@ export default function ProConceptPage() {
                             {/* Clients List */}
                             <div className="space-y-4">
                                 {filteredClients.map((client) => (
-                                    <div key={client.id} className="bg-[#1A1A1A]/70 backdrop-blur-sm border border-white/5 p-4 rounded-2xl flex items-center justify-between hover:bg-white/10 transition-colors shadow-sm">
+                                    <button key={client.id} className="w-full text-left bg-[#1A1A1A]/70 backdrop-blur-sm border border-white/5 p-4 rounded-2xl flex items-center justify-between hover:bg-white/10 transition-colors shadow-sm group">
                                         <div className="flex items-center gap-4">
-                                            <div className="h-10 w-10 rounded-full bg-gradient-to-br from-gray-800 to-black flex items-center justify-center text-gray-400 font-bold border border-white/10 shadow-inner">
-                                                {/* Initials or User Icon */}
-                                                {client.name.charAt(0)}
+                                            <div className="relative h-10 w-10 rounded-full bg-gradient-to-br from-gray-800 to-black flex items-center justify-center text-gray-400 font-bold border border-white/10 shadow-inner overflow-hidden">
+                                                {client.avatar ? (
+                                                    <Image
+                                                        src="/images/nouth-avatar.png"
+                                                        alt="Nouth Skin"
+                                                        fill
+                                                        className={`object-cover ${client.skin || ''}`}
+                                                    />
+                                                ) : (
+                                                    client.name.charAt(0)
+                                                )}
                                             </div>
                                             <div>
-                                                <h3 className="font-bold text-sm text-gray-200">{client.name}</h3>
+                                                <h3 className="font-bold text-sm text-gray-200 group-hover:text-white transition-colors">{client.name}</h3>
                                                 <p className="text-[11px] text-gray-500">{client.time}</p>
                                             </div>
                                         </div>
@@ -309,13 +508,100 @@ export default function ProConceptPage() {
                                                 </div>
                                             )}
                                         </div>
-                                    </div>
+                                    </button>
                                 ))}
                             </div>
                         </div>
                     )}
 
-                    {/* 3. SETTINGS TAB */}
+
+
+                    {/* 3. STATS TAB (New) */}
+                    {currentTab === 'stats' && (
+                        <div className="px-6 mt-6 pb-6 space-y-8">
+                            <div>
+                                <h2 className="text-xl font-bold mb-1 text-white">Analyses Détaillées</h2>
+                                <p className="text-sm text-gray-400">Comprenez vos performances.</p>
+                            </div>
+
+                            {/* 1. REVENUE CURVE */}
+                            <section className="bg-gradient-to-b from-[#1A1A1A]/60 to-black/40 backdrop-blur-md border border-white/5 rounded-3xl p-6 relative overflow-hidden group">
+                                <div className="flex items-center justify-between mb-4 relative z-10">
+                                    <h2 className="text-xs font-bold text-gray-500 uppercase tracking-widest">Chiffre d'Affaires</h2>
+                                    <span className="text-[10px] bg-purple-500/10 px-2 py-1 rounded text-purple-500 font-mono font-bold">+142€</span>
+                                </div>
+                                <div className="h-32 w-full relative z-10 mb-2">
+                                    <AnalyticsChart color="#a855f7" />
+                                </div>
+                                <p className="text-[10px] text-center text-gray-500 font-mono">7 derniers jours</p>
+                                <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-purple-500/10 to-transparent pointer-events-none" />
+                            </section>
+
+                            {/* 2. CONVERSION FUNNEL */}
+                            <section>
+                                <h2 className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">Entonnoir de Conversion</h2>
+                                <div className="space-y-2">
+                                    {/* Views */}
+                                    <div className="bg-[#1A1A1A]/60 p-4 rounded-2xl border border-white/5 flex items-center justify-between relative overflow-hidden">
+                                        <div className="flex items-center gap-3 relative z-10">
+                                            <div className="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400"><Icons.Eye className="w-4 h-4" /></div>
+                                            <span className="text-sm font-bold text-gray-300">Vues Totales</span>
+                                        </div>
+                                        <span className="text-xl font-black text-white relative z-10">1,240</span>
+                                        <div className="absolute inset-y-0 left-0 bg-blue-500/5 w-full"></div>
+                                    </div>
+                                    {/* Scans */}
+                                    <div className="ml-4 bg-[#1A1A1A]/60 p-4 rounded-2xl border border-white/5 flex items-center justify-between relative overflow-hidden">
+                                        <div className="absolute left-[-16px] top-1/2 -translate-y-1/2 w-4 h-[2px] bg-white/10"></div>
+                                        <div className="flex items-center gap-3 relative z-10">
+                                            <div className="w-8 h-8 rounded-full bg-orange-500/20 flex items-center justify-center text-orange-500"><Icons.Scan className="w-4 h-4" /></div>
+                                            <span className="text-sm font-bold text-gray-300">Scans (QR)</span>
+                                        </div>
+                                        <div className="text-right relative z-10">
+                                            <span className="text-xl font-black text-white block">380</span>
+                                            <span className="text-[10px] text-gray-500 font-bold">30% conv.</span>
+                                        </div>
+                                        <div className="absolute inset-y-0 left-0 bg-orange-500/5 w-[30%]"></div>
+                                    </div>
+                                    {/* Sales */}
+                                    <div className="ml-8 bg-[#1A1A1A]/60 p-4 rounded-2xl border border-white/5 flex items-center justify-between relative overflow-hidden shadow-[0_0_15px_rgba(34,197,94,0.1)]">
+                                        <div className="absolute left-[-16px] top-1/2 -translate-y-1/2 w-4 h-[2px] bg-white/10"></div>
+                                        <div className="flex items-center gap-3 relative z-10">
+                                            <div className="w-8 h-8 rounded-full bg-green-500/20 flex items-center justify-center text-green-500"><Icons.ShoppingBag className="w-4 h-4" /></div>
+                                            <span className="text-sm font-bold text-white">Achats (Commandes)</span>
+                                        </div>
+                                        <div className="text-right relative z-10">
+                                            <span className="text-xl font-black text-green-400 block">85</span>
+                                            <span className="text-[10px] text-green-600 font-bold">22% conv.</span>
+                                        </div>
+                                        <div className="absolute inset-y-0 left-0 bg-green-500/5 w-[22%]"></div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            {/* 3. OFFER PERFORMANCE */}
+                            <section>
+                                <h2 className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">Top Offres</h2>
+                                <div className="space-y-3">
+                                    {[{ name: "Menu Midi +", views: 450, sales: 42, rev: "399€" }, { name: "Tacos XL", views: 320, sales: 28, rev: "280€" }, { name: "Pizza 4 From.", views: 210, sales: 15, rev: "180€" }].map((offer, i) => (
+                                        <div key={i} className="bg-[#1A1A1A]/40 p-4 rounded-2xl border border-white/5 flex items-center justify-between hover:bg-white/5 transition-colors">
+                                            <div>
+                                                <h3 className="font-bold text-sm text-gray-200">{offer.name}</h3>
+                                                <div className="flex items-center gap-3 mt-1">
+                                                    <span className="text-[10px] text-gray-500 flex items-center gap-1"><Icons.Eye className="w-3 h-3" /> {offer.views}</span>
+                                                    <span className="text-[10px] text-gray-500 flex items-center gap-1"><Icons.ShoppingBag className="w-3 h-3" /> {offer.sales}</span>
+                                                </div>
+                                            </div>
+                                            <span className="font-mono font-bold text-orange-500 bg-orange-500/10 px-2 py-1 rounded text-xs">{offer.rev}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </section>
+                        </div>
+                    )}
+
+
+                    {/* 4. SETTINGS TAB */}
                     {currentTab === 'settings' && (
                         <div className="px-6 mt-6 pb-6">
                             <div className="mb-6">
@@ -331,7 +617,7 @@ export default function ProConceptPage() {
                                     { icon: Icons.UserGroup, label: 'Equipe', sub: 'Gérer les accès' },
                                     { icon: Icons.Lock, label: 'Sécurité', sub: 'Mot de passe, 2FA' },
                                 ].map((item) => (
-                                    <button key={item.label} className="w-full bg-[#1A1A1A]/80 px-4 py-4 rounded-2xl flex items-center justify-between border border-white/5 hover:bg-white/10 transition-colors group shadow-sm">
+                                    <button key={item.label} onClick={() => handleGenericAction(item.label)} className="w-full bg-[#1A1A1A]/80 px-4 py-4 rounded-2xl flex items-center justify-between border border-white/5 hover:bg-white/10 transition-colors group shadow-sm active:scale-98">
                                         <div className="flex items-center gap-4">
                                             <div className="h-10 w-10 rounded-xl bg-black/40 flex items-center justify-center text-gray-400 group-hover:text-white transition-colors border border-white/5">
                                                 <item.icon className="w-5 h-5" />
@@ -345,7 +631,7 @@ export default function ProConceptPage() {
                                     </button>
                                 ))}
 
-                                <button className="w-full mt-8 bg-red-500/10 border border-red-500/20 text-red-500 font-bold text-sm py-4 rounded-2xl hover:bg-red-500/20 transition-colors flex items-center justify-center gap-2">
+                                <button onClick={() => showToast("Vous avez été déconnecté.", "warning")} className="w-full mt-8 bg-red-500/10 border border-red-500/20 text-red-500 font-bold text-sm py-4 rounded-2xl hover:bg-red-500/20 transition-colors flex items-center justify-center gap-2 active:scale-95">
                                     <Icons.Logout className="w-4 h-4" />
                                     Déconnexion
                                 </button>
@@ -354,32 +640,212 @@ export default function ProConceptPage() {
                     )}
                 </div>
 
-                {/* Bottom Nav (Sticky) */}
-                <div className="relative z-50 w-full bg-[#121212]/90 backdrop-blur-xl border-t border-white/5 pt-3 pb-6 px-8 flex justify-between items-end">
+                {/* --- BOTTOM NAVIGATION (Restored) --- */}
+                <div className="relative z-20 bg-[#121212]/90 backdrop-blur-xl border-t border-white/5 px-6 py-4 flex items-center justify-between shrink-0 mb-safe active:mb-0">
                     <button
                         onClick={() => setCurrentTab('dashboard')}
-                        className={`flex flex-col items-center gap-1 transition-colors ${currentTab === 'dashboard' ? 'text-orange-500' : 'text-gray-600 hover:text-gray-400'}`}
+                        className={`flex flex-col items-center gap-1 transition-colors ${currentTab === 'dashboard' ? 'text-orange-500' : 'text-gray-500 hover:text-gray-300'}`}
                     >
-                        <Icons.Dashboard className="w-6 h-6" />
-                        <span className="text-[10px] font-bold">Dashboard</span>
+                        <Icons.Dashboard className={`w-6 h-6 ${currentTab === 'dashboard' ? 'fill-current' : ''}`} />
+                        <span className="text-[10px] font-bold">Accueil</span>
                     </button>
-
                     <button
                         onClick={() => setCurrentTab('clients')}
-                        className={`flex flex-col items-center gap-1 transition-colors ${currentTab === 'clients' ? 'text-orange-500' : 'text-gray-600 hover:text-gray-400'}`}
+                        className={`flex flex-col items-center gap-1 transition-colors ${currentTab === 'clients' ? 'text-orange-500' : 'text-gray-500 hover:text-gray-300'}`}
                     >
-                        <Icons.Users className="w-6 h-6" />
-                        <span className="text-[10px] font-medium">Clients</span>
+                        <Icons.Users className={`w-6 h-6 ${currentTab === 'clients' ? 'fill-current' : ''}`} />
+                        <span className="text-[10px] font-bold">Clients</span>
                     </button>
-
+                    <button
+                        onClick={() => setCurrentTab('stats')}
+                        className={`flex flex-col items-center gap-1 transition-colors ${currentTab === 'stats' ? 'text-orange-500' : 'text-gray-500 hover:text-gray-300'}`}
+                    >
+                        <Icons.Activity className={`w-6 h-6 ${currentTab === 'stats' ? 'fill-current' : ''}`} />
+                        <span className="text-[10px] font-bold">Analyses</span>
+                    </button>
                     <button
                         onClick={() => setCurrentTab('settings')}
-                        className={`flex flex-col items-center gap-1 transition-colors ${currentTab === 'settings' ? 'text-orange-500' : 'text-gray-600 hover:text-gray-400'}`}
+                        className={`flex flex-col items-center gap-1 transition-colors ${currentTab === 'settings' ? 'text-orange-500' : 'text-gray-500 hover:text-gray-300'}`}
                     >
-                        <Icons.Settings className="w-6 h-6" />
-                        <span className="text-[10px] font-medium">Réglages</span>
+                        <Icons.Settings className={`w-6 h-6 ${currentTab === 'settings' ? 'fill-current' : ''}`} />
+                        <span className="text-[10px] font-bold">Réglages</span>
                     </button>
                 </div>
+
+                {/* --- MODALS (Blurred Backdrop) --- */}
+                {activeModal !== "none" && (
+                    <div className="absolute inset-0 z-[100] flex items-end sm:items-center justify-center pointer-events-auto">
+                        {/* Backdrop Blur */}
+                        <div
+                            onClick={closeModal}
+                            className="absolute inset-0 bg-black/60 backdrop-blur-md transition-opacity animate-fade-in"
+                        />
+
+                        {/* Modal Content */}
+                        <div className="relative z-10 bg-[#151515] w-full max-h-[80%] rounded-t-[30px] sm:rounded-[30px] border-t sm:border border-white/10 shadow-2xl p-6 flex flex-col gap-6 animate-slide-up sm:m-6">
+
+                            {/* NEW OFFER MODAL */}
+                            {activeModal === "new_offer" && (
+                                <>
+                                    <div className="flex items-center justify-between">
+                                        <h3 className="text-xl font-bold text-white">Nouvelle Offre</h3>
+                                        <button onClick={closeModal} className="p-2 bg-white/5 rounded-full hover:bg-white/10"><Icons.Close className="w-5 h-5 text-gray-400" /></button>
+                                    </div>
+
+                                    <div className="space-y-4 overflow-y-auto">
+                                        {/* Product Selection */}
+                                        <div>
+                                            <label className="text-xs font-bold text-gray-500 uppercase">Produit</label>
+                                            <div className="mt-2 flex gap-3 overflow-x-auto no-scrollbar pb-2">
+                                                {["Menu Midi +", "Pizza 4 From.", "Tacos XL"].map((prod) => (
+                                                    <button
+                                                        key={prod}
+                                                        onClick={() => setOfferDetails({ ...offerDetails, selectedProduct: prod })}
+                                                        className={`shrink-0 px-4 py-2 rounded-xl text-sm font-bold border transition-colors ${offerDetails.selectedProduct === prod
+                                                            ? 'bg-orange-500/20 border-orange-500 text-orange-500'
+                                                            : 'bg-white/5 border-white/10 text-gray-400 hover:text-white'
+                                                            }`}
+                                                    >
+                                                        {prod}
+                                                    </button>
+                                                ))}
+                                                <button className="shrink-0 bg-white/5 border border-white/10 text-gray-400 px-4 py-2 rounded-xl text-sm font-bold hover:text-white">+ Créer</button>
+                                            </div>
+                                        </div>
+
+                                        {/* Inputs */}
+                                        <div className="grid grid-cols-2 gap-4">
+                                            <div>
+                                                <label className="text-xs font-bold text-gray-500 uppercase">Nom</label>
+                                                <input
+                                                    type="text"
+                                                    value={offerDetails.name}
+                                                    onChange={(e) => setOfferDetails({ ...offerDetails, name: e.target.value })}
+                                                    className="w-full mt-1 bg-black/40 border border-white/10 rounded-xl px-3 py-3 text-white text-sm font-bold focus:outline-none focus:border-orange-500"
+                                                />
+                                            </div>
+                                            <div>
+                                                <label className="text-xs font-bold text-gray-500 uppercase">Prix (€)</label>
+                                                <input
+                                                    type="text"
+                                                    value={offerDetails.price}
+                                                    onChange={(e) => setOfferDetails({ ...offerDetails, price: e.target.value })}
+                                                    className="w-full mt-1 bg-black/40 border border-white/10 rounded-xl px-3 py-3 text-white text-sm font-bold focus:outline-none focus:border-orange-500"
+                                                />
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <label className="text-xs font-bold text-gray-500 uppercase">Heure de fin</label>
+                                            <input
+                                                type="time"
+                                                value={offerDetails.time}
+                                                onChange={(e) => setOfferDetails({ ...offerDetails, time: e.target.value })}
+                                                className="w-full mt-1 bg-black/40 border border-white/10 rounded-xl px-3 py-3 text-white text-sm font-bold focus:outline-none focus:border-orange-500"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <button onClick={handlePublishOffer} className="w-full bg-orange-600 text-white font-bold py-4 rounded-2xl shadow-lg shadow-orange-600/20 active:scale-95 transition-transform">
+                                        Publier l'Offre
+                                    </button>
+                                </>
+                            )}
+
+                            {/* HOURS MODAL */}
+                            {activeModal === "hours" && (
+                                <>
+                                    <div className="flex items-center justify-between">
+                                        <h3 className="text-xl font-bold text-white">Gérer les Horaires</h3>
+                                        <button onClick={closeModal} className="p-2 bg-white/5 rounded-full hover:bg-white/10"><Icons.Close className="w-5 h-5 text-gray-400" /></button>
+                                    </div>
+
+                                    <div className="space-y-4">
+                                        <div className="bg-white/5 p-4 rounded-2xl flex items-center justify-between">
+                                            <span className="text-gray-200 font-bold">Statut Actuel</span>
+                                            <span className={`px-3 py-1 rounded-full text-xs font-bold ${shopStatus.isOpen ? 'bg-green-500/20 text-green-500' : 'bg-red-500/20 text-red-500'}`}>
+                                                {shopStatus.isOpen ? 'OUVERT' : 'FERMÉ'}
+                                            </span>
+                                        </div>
+
+                                        <div>
+                                            <label className="text-xs font-bold text-gray-500 uppercase">Ouverture Exceptionnelle</label>
+                                            <div className="grid grid-cols-2 gap-4 mt-2">
+                                                <button
+                                                    onClick={() => setShopStatus({ ...shopStatus, isOpen: true })}
+                                                    className={`py-3 rounded-xl font-bold text-sm border transition-colors ${shopStatus.isOpen ? 'bg-green-600 border-green-600 text-white' : 'bg-transparent border-white/10 text-gray-500 hover:text-white'}`}
+                                                >
+                                                    Ouvrir
+                                                </button>
+                                                <button
+                                                    onClick={() => setShopStatus({ ...shopStatus, isOpen: false })}
+                                                    className={`py-3 rounded-xl font-bold text-sm border transition-colors ${!shopStatus.isOpen ? 'bg-red-600 border-red-600 text-white' : 'bg-transparent border-white/10 text-gray-500 hover:text-white'}`}
+                                                >
+                                                    Fermer
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <label className="text-xs font-bold text-gray-500 uppercase">Prochaine Ouverture</label>
+                                            <input
+                                                type="time"
+                                                value={shopStatus.nextOpening}
+                                                onChange={(e) => setShopStatus({ ...shopStatus, nextOpening: e.target.value })}
+                                                className="w-full mt-1 bg-black/40 border border-white/10 rounded-xl px-3 py-3 text-white text-sm font-bold focus:outline-none focus:border-brand-green"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <button onClick={handleSaveHours} className="w-full bg-white text-black font-bold py-4 rounded-2xl shadow-lg active:scale-95 transition-transform">
+                                        Enregistrer
+                                    </button>
+                                </>
+                            )}
+
+                            {/* CLOSURE MODAL */}
+                            {activeModal === "closure" && (
+                                <>
+                                    <div className="flex items-center justify-between">
+                                        <h3 className="text-xl font-bold text-white">Fermeture Exceptionnelle</h3>
+                                        <button onClick={closeModal} className="p-2 bg-white/5 rounded-full hover:bg-white/10"><Icons.Close className="w-5 h-5 text-gray-400" /></button>
+                                    </div>
+
+                                    <p className="text-sm text-gray-400">
+                                        Confirmez la fermeture immédiate de votre établissement. Vos clients seront notifiés.
+                                    </p>
+
+                                    <div className="space-y-3">
+                                        <button className="w-full bg-white/5 border border-white/10 text-white font-bold py-3 rounded-2xl hover:bg-white/10 flex items-center justify-between px-4 active:bg-white/20">
+                                            <span>Fermer pour 1h</span>
+                                            <Icons.ChevronRight className="w-4 h-4 text-gray-500" />
+                                        </button>
+                                        <button className="w-full bg-white/5 border border-white/10 text-white font-bold py-3 rounded-2xl hover:bg-white/10 flex items-center justify-between px-4 active:bg-white/20">
+                                            <span>Fermer jusqu'à demain</span>
+                                            <Icons.ChevronRight className="w-4 h-4 text-gray-500" />
+                                        </button>
+                                    </div>
+
+                                    <button onClick={handleConfirmClosure} className="w-full bg-red-600 text-white font-bold py-4 rounded-2xl shadow-lg shadow-red-600/20 active:scale-95 transition-transform mt-2">
+                                        Confirmer la Fermeture
+                                    </button>
+                                </>
+                            )}
+
+                        </div>
+                    </div>
+                )}
+
+                {/* --- TOAST NOTIFICATION --- */}
+                {toast.visible && (
+                    <div className="absolute top-20 left-1/2 -translate-x-1/2 z-[110] animate-bounce-in w-full flex justify-center pointer-events-none">
+                        <div className={`mx-4 px-6 py-3 rounded-full shadow-2xl flex items-center gap-3 border font-bold text-sm backdrop-blur-xl ${toast.type === 'success' ? 'bg-green-500/90 text-white border-green-400/50' : 'bg-red-500/90 text-white border-red-400/50'}`}>
+                            {toast.type === 'success' ? <Icons.Check className="w-5 h-5" /> : <Icons.Lock className="w-5 h-5" />}
+                            <span>{toast.message}</span>
+                        </div>
+                    </div>
+                )}
+
             </main>
         </div>
     );

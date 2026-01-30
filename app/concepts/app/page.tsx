@@ -56,7 +56,12 @@ export default function AppConceptPage() {
                             </div>
                             <div className="relative h-10 w-10 overflow-hidden rounded-full border border-black/10">
                                 {/* Placeholder Avatar */}
-                                <div className="h-full w-full bg-brand-yellow/20 flex items-center justify-center text-brand-yellow text-xs font-bold">You</div>
+                                <Image
+                                    src="/images/julie-pixar.png"
+                                    alt="Julie Avatar"
+                                    fill
+                                    className="object-cover"
+                                />
                             </div>
                         </div>
                     </header>
@@ -69,14 +74,9 @@ export default function AppConceptPage() {
                             {/* Section: Map */}
                             <div className="px-6 mt-6">
                                 <div className="relative h-32 w-full rounded-3xl overflow-hidden shadow-sm border border-black/5 group cursor-pointer bg-gray-200">
-                                    <div className="absolute inset-0 bg-[url('https://maps.googleapis.com/maps/api/staticmap?center=Paris&zoom=13&size=600x300&sensor=false')] bg-cover bg-center opacity-60 grayscale group-hover:grayscale-0 transition-all duration-700" />
+                                    <div className="absolute inset-0 bg-[url('/images/paris-map-pixar.png')] bg-cover bg-center group-hover:scale-105 transition-transform duration-700" />
                                     <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-gray-900/10 to-transparent" />
-                                    <div className="absolute inset-0 flex flex-col items-center justify-center">
-                                        <div className="bg-white/90 backdrop-blur px-4 py-2 rounded-full shadow-lg flex items-center gap-2 border border-white/50">
-                                            <span className="text-lg">🗺️</span>
-                                            <span className="text-xs font-bold text-gray-800">Voir la carte</span>
-                                        </div>
-                                    </div>
+
                                 </div>
                             </div>
 
