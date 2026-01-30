@@ -6,6 +6,7 @@ import type { Shop } from "@/data/shops";
 import { isShopOpen, formatTodayHoursLabel } from "@/lib/shopHours";
 import { QuickIconSearch, QuickIconTimer, QuickIconPhone, QuickIconQuestion } from "@/components/icons/QuickActionIcons";
 import SmsSubscribeModal from "./SmsSubscribeModal";
+import NouthJourney from "@/components/NouthJourney";
 // ...
 
 
@@ -135,6 +136,23 @@ export default function ShopLanding({ shop }: { shop: Shop }) {
     const [isOpen, setIsOpen] = useState(true);
     const [isSmsModalOpen, setIsSmsModalOpen] = useState(false);
     const [hoursLabel, setHoursLabel] = useState("");
+
+    // Nouth Journey
+    const [journey, setJourney] = useState<{ visible: boolean; variant: 'welcome' | 'hub' | 'pro' | 'merchant' | 'custom'; onComplete?: () => void }>({
+        visible: false,
+        variant: 'custom'
+    });
+
+    useEffect(() => {
+        // Initial Shop Journey
+        setTimeout(() => {
+            setJourney({
+                visible: true,
+                variant: 'custom',
+                onComplete: () => setJourney(prev => ({ ...prev, visible: false }))
+            });
+        }, 500);
+    }, []);
 
     useEffect(() => {
         const updateStatus = () => {
@@ -492,6 +510,14 @@ export default function ShopLanding({ shop }: { shop: Shop }) {
                     </footer>
                 </div>
             </div>
+            {/* --- NOUTH JOURNEY INTERSTITIAL --- */}
+            <NouthJourney
+                isVisible={journey.visible}
+                variant={'merchant'}
+                customTitle={`Bienvenue chez ${shop.name} !`}
+                customText="Découvre les produits du moment et les offres exclusives de ton commerçant."
+                onContinue={() => journey.onComplete?.()}
+            />
         </main>
     );
 }

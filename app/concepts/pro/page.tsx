@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
+import NouthJourney from "@/components/NouthJourney";
 
 // Minimalist Icon Components
 const Icons = {
@@ -154,6 +155,29 @@ export default function ProConceptPage() {
     });
     const [shopStatus, setShopStatus] = useState({ isOpen: true, nextOpening: "08:00" });
 
+    // Nouth Journey State
+    const [journey, setJourney] = useState<{ visible: boolean; variant: 'welcome' | 'hub' | 'pro' | 'merchant' | 'clients' | 'stats' | 'settings'; onComplete?: () => void }>({
+        visible: false,
+        variant: 'pro'
+    });
+
+    // Initial Pro Journey (One per session)
+    useEffect(() => {
+        const hasSeen = sessionStorage.getItem('nouth_pro_welcome');
+        if (!hasSeen) {
+            setTimeout(() => {
+                setJourney({
+                    visible: true,
+                    variant: 'pro',
+                    onComplete: () => {
+                        setJourney(prev => ({ ...prev, visible: false }));
+                        sessionStorage.setItem('nouth_pro_welcome', 'true');
+                    }
+                });
+            }, 500);
+        }
+    }, []);
+
     // Toast State
     const [toast, setToast] = useState<{ visible: boolean; message: string; type: 'success' | 'warning' }>({ visible: false, message: "", type: 'success' });
 
@@ -224,6 +248,38 @@ export default function ProConceptPage() {
 
     // Close Modals
     const closeModal = () => setActiveModal("none");
+
+    // Tab Navigation Handler with Journey (One per session check)
+    const handleTabChange = (tab: "dashboard" | "clients" | "settings" | "stats") => {
+        let variant: 'clients' | 'stats' | 'settings' | undefined;
+
+        switch (tab) {
+            case 'clients': variant = 'clients'; break;
+            case 'stats': variant = 'stats'; break;
+            case 'settings': variant = 'settings'; break;
+        }
+
+        if (variant) {
+            const storageKey = `nouth_pro_${variant}`;
+            const hasSeen = sessionStorage.getItem(storageKey);
+
+            if (!hasSeen) {
+                setJourney({
+                    visible: true,
+                    variant: variant,
+                    onComplete: () => {
+                        setJourney(prev => ({ ...prev, visible: false }));
+                        setCurrentTab(tab);
+                        sessionStorage.setItem(storageKey, 'true');
+                    }
+                });
+            } else {
+                setCurrentTab(tab);
+            }
+        } else {
+            setCurrentTab(tab);
+        }
+    };
 
     return (
         <div className="relative min-h-[100dvh] w-full bg-[#050505] font-sans flex items-center justify-center overflow-hidden">
@@ -668,36 +724,36 @@ export default function ProConceptPage() {
                 </div >
 
                 {/* --- BOTTOM NAVIGATION (Restored) --- */}
-                < div className="relative z-20 bg-[#121212]/90 backdrop-blur-xl border-t border-white/5 px-6 py-4 flex items-center justify-between shrink-0 mb-safe active:mb-0" >
+                <div className="relative z-20 bg-[#121212]/90 backdrop-blur-xl border-t border-white/5 px-6 py-4 flex items-center justify-between shrink-0 mb-safe active:mb-0">
                     <button
-                        onClick={() => setCurrentTab('dashboard')}
+                        onClick={() => handleTabChange('dashboard')}
                         className={`flex flex-col items-center gap-1 transition-colors ${currentTab === 'dashboard' ? 'text-orange-500' : 'text-gray-500 hover:text-gray-300'}`}
                     >
                         <Icons.Dashboard className={`w-6 h-6 ${currentTab === 'dashboard' ? 'fill-current' : ''}`} />
                         <span className="text-[10px] font-bold">Accueil</span>
                     </button>
                     <button
-                        onClick={() => setCurrentTab('clients')}
+                        onClick={() => handleTabChange('clients')}
                         className={`flex flex-col items-center gap-1 transition-colors ${currentTab === 'clients' ? 'text-orange-500' : 'text-gray-500 hover:text-gray-300'}`}
                     >
                         <Icons.Users className={`w-6 h-6 ${currentTab === 'clients' ? 'fill-current' : ''}`} />
                         <span className="text-[10px] font-bold">Clients</span>
                     </button>
                     <button
-                        onClick={() => setCurrentTab('stats')}
+                        onClick={() => handleTabChange('stats')}
                         className={`flex flex-col items-center gap-1 transition-colors ${currentTab === 'stats' ? 'text-orange-500' : 'text-gray-500 hover:text-gray-300'}`}
                     >
                         <Icons.Activity className={`w-6 h-6 ${currentTab === 'stats' ? 'fill-current' : ''}`} />
                         <span className="text-[10px] font-bold">Analyses</span>
                     </button>
                     <button
-                        onClick={() => setCurrentTab('settings')}
+                        onClick={() => handleTabChange('settings')}
                         className={`flex flex-col items-center gap-1 transition-colors ${currentTab === 'settings' ? 'text-orange-500' : 'text-gray-500 hover:text-gray-300'}`}
                     >
                         <Icons.Settings className={`w-6 h-6 ${currentTab === 'settings' ? 'fill-current' : ''}`} />
                         <span className="text-[10px] font-bold">Réglages</span>
                     </button>
-                </div >
+                </div>
 
                 {/* --- MODALS (Blurred Backdrop) --- */}
                 {
@@ -1008,6 +1064,13 @@ export default function ProConceptPage() {
                         </div>
                     )
                 }
+
+                {/* --- NOUTH JOURNEY INTERSTITIAL --- */}
+                <NouthJourney
+                    isVisible={journey.visible}
+                    variant={journey.variant}
+                    onContinue={() => journey.onComplete?.()}
+                />
 
             </main >
         </div >

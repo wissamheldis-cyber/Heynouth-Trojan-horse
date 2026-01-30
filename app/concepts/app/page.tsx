@@ -3,13 +3,57 @@
 import Image from "next/image";
 import { SHOPS } from "@/data/shops";
 import Link from "next/link";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
+import NouthJourney from "@/components/NouthJourney";
 
 export default function AppConceptPage() {
     // State for navigation
     const [currentTab, setCurrentTab] = useState<"home" | "offers" | "cart" | "profile" | "hub">("home");
     const [searchQuery, setSearchQuery] = useState("");
     const [selectedHubDistrict, setSelectedHubDistrict] = useState("all");
+
+    // Nouth Journey State
+    const [journey, setJourney] = useState<{ visible: boolean; variant: 'welcome' | 'hub' | 'pro' | 'merchant'; onComplete?: () => void }>({
+        visible: false,
+        variant: 'welcome'
+    });
+
+    // Initial Welcome Journey (One per session)
+    useEffect(() => {
+        const hasSeen = sessionStorage.getItem('nouth_app_welcome');
+        if (!hasSeen) {
+            setTimeout(() => {
+                setJourney({
+                    visible: true,
+                    variant: 'welcome',
+                    onComplete: () => {
+                        setJourney(prev => ({ ...prev, visible: false }));
+                        sessionStorage.setItem('nouth_app_welcome', 'true');
+                    }
+                });
+            }, 500);
+        }
+    }, []);
+
+    // Handlers for Interstitial Transitions
+    // Handlers for Interstitial Transitions
+    const handleHubClick = () => {
+        const hasSeen = sessionStorage.getItem('nouth_app_hub');
+
+        if (!hasSeen) {
+            setJourney({
+                visible: true,
+                variant: 'hub',
+                onComplete: () => {
+                    setJourney(prev => ({ ...prev, visible: false }));
+                    setCurrentTab('hub');
+                    sessionStorage.setItem('nouth_app_hub', 'true');
+                }
+            });
+        } else {
+            setCurrentTab('hub');
+        }
+    };
 
     // Mock user
     const userName = "Julie";
@@ -83,7 +127,6 @@ export default function AppConceptPage() {
                     {currentTab === "home" && (
                         <>
                             {/* Section: Map */}
-                            {/* Section: Map */}
                             <div className="px-6 mt-6">
                                 <div className="relative h-32 w-full rounded-3xl overflow-hidden shadow-lg shadow-orange-900/5 border border-white/60 group cursor-pointer ring-1 ring-black/5">
                                     <div className="absolute inset-0 bg-[url('/images/paris-map-pixar.png')] bg-cover bg-center group-hover:scale-105 transition-transform duration-700" />
@@ -120,7 +163,7 @@ export default function AppConceptPage() {
                                     <div className="flex items-center justify-between mb-4 px-1">
                                         <h2 className="text-lg font-black tracking-tight text-gray-800">Mes Commerces</h2>
                                         <button
-                                            onClick={() => setCurrentTab('hub')}
+                                            onClick={handleHubClick}
                                             className="text-[10px] font-bold text-brand-green bg-brand-green/10 px-3 py-1.5 rounded-full hover:bg-brand-green/20 transition-colors"
                                         >
                                             Voir tout
@@ -128,7 +171,11 @@ export default function AppConceptPage() {
                                     </div>
                                     <div className="flex gap-4 overflow-x-auto pb-2 -mx-5 px-5 no-scrollbar snap-x snap-mandatory">
                                         {favoriteShops.map((shop) => (
-                                            <Link href={`/${shop.slug}`} key={shop.slug} className="snap-start shrink-0 w-[120px] flex flex-col gap-2 group">
+                                            <Link
+                                                href={`/${shop.slug}`}
+                                                key={shop.slug}
+                                                className="snap-start shrink-0 w-[120px] flex flex-col gap-2 group text-left"
+                                            >
                                                 <div className="relative h-[120px] w-full overflow-hidden rounded-2xl shadow-sm border border-white/50 group-hover:shadow-md transition-all">
                                                     <Image src={shop.mapImage} alt={shop.name} fill className="object-cover" />
                                                     {shop.isPartner && (
@@ -160,7 +207,11 @@ export default function AppConceptPage() {
                                     </div>
                                     <div className="flex gap-4 overflow-x-auto pb-2 -mx-5 px-5 no-scrollbar snap-x snap-mandatory">
                                         {discoveryShops.map((shop) => (
-                                            <Link href={`/${shop.slug}`} key={shop.slug} className="snap-start shrink-0 w-[140px] flex flex-col gap-3 group">
+                                            <Link
+                                                href={`/${shop.slug}`}
+                                                key={shop.slug}
+                                                className="snap-start shrink-0 w-[140px] flex flex-col gap-3 group text-left"
+                                            >
                                                 <div className="relative h-[160px] w-full overflow-hidden rounded-[20px] shadow-sm border border-white/50 group-hover:shadow-md transition-all">
                                                     <Image src={shop.mapImage} alt={shop.name} fill className="object-cover" />
                                                     <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/60 to-transparent" />
@@ -321,7 +372,7 @@ export default function AppConceptPage() {
                                     <Link
                                         href={`/${shop.slug}`}
                                         key={shop.slug}
-                                        className="flex items-center gap-4 bg-white p-3 rounded-2xl shadow-sm border border-gray-100/50 hover:shadow-md transition-all active:scale-[0.99]"
+                                        className="w-full flex items-center gap-4 bg-white p-3 rounded-2xl shadow-sm border border-gray-100/50 hover:shadow-md transition-all active:scale-[0.99] text-left"
                                     >
                                         <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-xl border border-gray-100">
                                             <Image src={shop.mapImage} alt={shop.name} fill className="object-cover" />
@@ -395,6 +446,7 @@ export default function AppConceptPage() {
 
                 </div>
 
+
                 {/* Bottom Nav (Floating Glass) */}
                 <div className="absolute bottom-6 left-6 right-6 z-50">
                     <div className="bg-white/80 backdrop-blur-xl border border-white/60 shadow-2xl shadow-orange-900/5 rounded-3xl py-3 px-6 flex justify-between items-center ring-1 ring-black/5">
@@ -430,6 +482,13 @@ export default function AppConceptPage() {
                     </div>
                 </div>
 
+
+                {/* --- NOUTH JOURNEY INTERSTITIAL --- */}
+                <NouthJourney
+                    isVisible={journey.visible}
+                    variant={journey.variant}
+                    onContinue={() => journey.onComplete?.()}
+                />
 
             </main>
         </div>
