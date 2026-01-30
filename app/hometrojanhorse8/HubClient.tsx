@@ -123,10 +123,17 @@ export default function HubClient() {
                         {/* Concept Pro Button (White/Black) */}
                         <Link
                             href="/concepts/pro"
-                            className="relative w-12 h-[54px] rounded-2xl border border-white/80 bg-white/70 backdrop-blur-2xl shadow-lg transition-all flex items-center justify-center z-50 shrink-0 hover:bg-white/90 active:scale-95 text-black"
+                            className="relative w-12 h-[54px] rounded-2xl border border-white/80 bg-white shadow-lg transition-all flex items-center justify-center z-50 shrink-0 hover:bg-gray-50 active:scale-95"
                             title="Concept Heynouth PRO"
                         >
-                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                            <div className="relative w-6 h-6">
+                                <Image
+                                    src="/logo-hey.png"
+                                    alt="PRO"
+                                    fill
+                                    className="object-contain brightness-0"
+                                />
+                            </div>
                         </Link>
 
                         {/* District Dropdown (Custom) */}
