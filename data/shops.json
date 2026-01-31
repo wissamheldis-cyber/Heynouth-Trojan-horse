@@ -2124,7 +2124,7 @@
         "isPartner": true
     },
     {
-        "slug": "67 Rue Saint-Louis en l'Île, 75004 Paris",
+        "slug": "le-prestige-paris04",
         "name": "Le Prestige",
         "rating": 5,
         "districtLabel": "PARIS 04",
@@ -10974,7 +10974,7 @@
         "isPartner": false
     },
     {
-        "slug": "le-marché-d'a-coté-paris13",
+        "slug": "le-marche-d-a-cote-paris13",
         "name": "Le marché d'à coté",
         "rating": 5,
         "districtLabel": "PARIS 13",
@@ -11061,7 +11061,7 @@
             }
         ],
         "about": {
-            "p1": "Retrouvez-nous au 53 Boulevard Blanqui, 75013 Paris.",
+            "p1": "Retrouvez-nous au 9 Bd Saint-Marcel, 75013 Paris.",
             "p2": "Votre commerce Hey de quartier.",
             "images": [
                 "/shops/le-marché-d'a-coté-paris13c/a1.png",
