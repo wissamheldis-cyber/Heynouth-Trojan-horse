@@ -2006,8 +2006,8 @@
         "isPartner": false
     },
     {
-        "slug": "hey-67-rue-saint-louis-en-l-le-75004",
-        "name": "Nom de commerce 019",
+        "slug": "sairam-paris04",
+        "name": "Sairam",
         "rating": 5,
         "districtLabel": "PARIS 04",
         "statusLabel": "OUVERT",
@@ -2057,11 +2057,129 @@
                 ]
             ]
         },
-        "mapImage": "/shops/generic/map.png",
-        "mapsUrl": "https://www.google.fr/maps/place/67%20Rue%20Saint-Louis%20en%20l'%C3%8Ele%2C%2075004%20Paris",
+        "mapImage": "/shops/sairam-paris-04/map.png",
+        "mapsUrl": "https://www.google.fr/maps/place/Sairam+Alimentation+Generale/@48.8479642,2.3650404,17z/data=!4m17!1m10!3m9!1s0x47e671f86159dc3b:0x4218eb78eb739c6e!2sSairam+Alimentation+Generale!8m2!3d48.8479758!4d2.3652469!10e5!14m1!1BCgIgARICCAI!16s%2Fg%2F11lgskzw26!3m5!1s0x47e671f86159dc3b:0x4218eb78eb739c6e!8m2!3d48.8479758!4d2.3652469!16s%2Fg%2F11lgskzw26?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoASAFQAw%3D%3D",
         "contact": {
-            "phoneE164": "0146347080",
-            "phoneDisplay": "01 46 34 70 80",
+            "phoneE164": "+33695842569",
+            "phoneDisplay": "06 95 84 25 69",
+            "address": "4 Bd Morland, 75004"
+        },
+        "dailyOffer": {
+            "label": "OFFRE DE LA SEMAINE",
+            "title": "Panier Frais",
+            "price": "4,99 €",
+            "oldPrice": "7,99 €",
+            "image": "/shops/sairam-paris-04/offer.png",
+            "protocolHref": "#reservation"
+        },
+        "products": [
+            {
+                "id": "p1",
+                "title": "Panier de Fruits",
+                "price": "7,99 €",
+                "image": "/shops/sairam-paris-04/p1.png"
+            },
+            {
+                "id": "p2",
+                "title": "Les Essentiels",
+                "price": "5,50 €",
+                "image": "/shops/sairam-paris-04/p2.png"
+            },
+            {
+                "id": "p3",
+                "title": "Snack Box",
+                "price": "12,00 €",
+                "image": "/shops/sairam-paris-04/p3.png"
+            }
+        ],
+        "about": {
+            "p1": "Bienvenue chez Sairam, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien : boissons, snacks, produits frais et basiques, avec une sélection qui bouge selon les arrivages.",
+            "p2": "Notre principe est simple : du service humain et du temps gagné. Vous appelez, vous réservez ce qu’il vous faut, vous passez à l’heure qui vous arrange, on prépare et on met de côté selon le stock.",
+            "images": [
+                "/shops/sairam-paris-04/a1.png",
+                "/shops/sairam-paris-04/a2.png",
+                "/shops/sairam-paris-04/a3.png"
+            ]
+        },
+        "reviews": [
+            {
+                "author": "Flynn S",
+                "rating": 5,
+                "text": "Le homme est toujours très sympa et attentif",
+                "time": "Il y a 7 mois"
+            },
+            {
+                "author": "Jean P",
+                "rating": 5,
+                "text": "Très gentil",
+                "time": "Il y a 8 mois"
+            },
+            {
+                "author": "Petre",
+                "rating": 5,
+                "text": "Le jeune patron est très sympathique,j'ai pu récupérer mon colis a midi des l'ouverture comme indiqué que sa ouvre a midi,on peut récupérer nos colis jusqu'à 00h30 et le vendredi samedi jusqu'à 1h30 je trouve sa très pratique,avant les gens se plaignaient  car ils arrivaient pas a récupérer leur colis le matin mais faut bien comprendre si les gens se mettent à la place du gérant qui doit se réveiller tout les matins alors qu'il ferme très tard les gens vont pas assumer, chapeau au gérant 👏🏻",
+                "time": "Il y a 10 mois"
+            }
+        ],
+        "isPartner": true
+    },
+    {
+        "slug": "67 Rue Saint-Louis en l'Île, 75004 Paris",
+        "name": "Le Prestige",
+        "rating": 5,
+        "districtLabel": "PARIS 04",
+        "statusLabel": "OUVERT",
+        "hoursLabel": "08:00 — 22:00",
+        "timezone": "Europe/Paris",
+        "hours": {
+            "mon": [
+                [
+                    "08:00",
+                    "22:00"
+                ]
+            ],
+            "tue": [
+                [
+                    "10:00",
+                    "02:00"
+                ]
+            ],
+            "wed": [
+                [
+                    "08:00",
+                    "22:00"
+                ]
+            ],
+            "thu": [
+                [
+                    "08:00",
+                    "22:00"
+                ]
+            ],
+            "fri": [
+                [
+                    "08:00",
+                    "22:00"
+                ]
+            ],
+            "sat": [
+                [
+                    "08:00",
+                    "22:00"
+                ]
+            ],
+            "sun": [
+                [
+                    "08:00",
+                    "22:00"
+                ]
+            ]
+        },
+        "mapImage": "/shops/le-prestige-de-l'alimentation-paris04/map.png",
+        "mapsUrl": "https://www.google.fr/maps/place/Le+Prestige+de+l'Alimentation/@48.8524957,2.3545906,17z/data=!4m8!3m7!1s0x47e671e33994b291:0xfda35e90931724e1!8m2!3d48.8524957!4d2.3545906!9m1!1b1!16s%2Fg%2F1tdkr338?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D",
+        "contact": {
+            "phoneE164": "0146347030",
+            "phoneDisplay": "0146347030",
             "address": "67 Rue Saint-Louis en l'Île, 75004 Paris"
         },
         "dailyOffer": {
@@ -2069,7 +2187,7 @@
             "title": "Offre du jour",
             "price": "4,99 €",
             "oldPrice": "7,99 €",
-            "image": "/shops/generic/offer.png",
+            "image": "/shops/le-prestige-de-l'alimentation-paris04/offer.png",
             "protocolHref": "#reservation"
         },
         "products": [
@@ -2077,51 +2195,51 @@
                 "id": "p1",
                 "title": "Nom du produit",
                 "price": "7,99 €",
-                "image": "/shops/generic/p1.png"
+                "image": "/shops/le-prestige-de-l'alimentation-paris04/p1.png"
             },
             {
                 "id": "p2",
                 "title": "Snack box",
                 "price": "5,50 €",
-                "image": "/shops/generic/p2.png"
+                "image": "/shops/le-prestige-de-l'alimentation-paris04/p2.png"
             },
             {
                 "id": "p3",
                 "title": "Panier frais",
                 "price": "12,00 €",
-                "image": "/shops/generic/p3.png"
+                "image": "/shops/le-prestige-de-l'alimentation-paris04/p3.png"
             }
         ],
         "about": {
             "p1": "Retrouvez-nous au 67 Rue Saint-Louis en l'Île, 75004 Paris.",
             "p2": "Votre commerce Hey de quartier.",
             "images": [
-                "/shops/generic/a1.png",
-                "/shops/generic/a2.png",
-                "/shops/generic/a3.png"
+                "/shops/le-prestige-de-l'alimentation-paris04/a1.png",
+                "/shops/le-prestige-de-l'alimentation-paris04/a2.png",
+                "/shops/le-prestige-de-l'alimentation-paris04/a3.png"
             ]
         },
         "reviews": [
             {
-                "author": "Kamy D.",
+                "author": "Andrew A.",
                 "rating": 5,
-                "text": "C’est vraiment ouvert toute la nuit même si ça a l’air fermé il faut juste aller toquer. Bonne adresse à avoir ;)",
-                "time": "Il y a 3 mois"
+                "text": "Ce magasin s'est avéré très pratique lors de mon long séjour à proximité. Le personnel était accueillant et on y trouvait un bon choix de fruits et légumes frais, ainsi que des produits de première nécessité. C'était vraiment pratique de l'avoir à portée de main !",
+                "time": "Il y a 7 mois"
             },
             {
-                "author": "Que D.R",
+                "author": "Julien L.",
                 "rating": 5,
-                "text": "Abdel la crème de la crème que dieux lui donne plus 🙏🏽 ….",
-                "time": "Il y a  5 mois"
+                "text": "Petit mais du choix. Prix ok. Courtois.",
+                "time": "Il y a  12 mois"
             },
             {
-                "author": "Ouague C.",
+                "author": "Kiekste.",
                 "rating": 5,
-                "text": "Nickel appelles sur son numéro",
-                "time": "Il y a 8 mois"
+                "text": "Parfait ❤️",
+                "time": "Il y a 14 mois"
             }
         ],
-        "isPartner": false
+        "isPartner": true
     },
     {
         "slug": "hey-13-rue-de-la-roquette-75004",
@@ -2240,123 +2358,6 @@
             }
         ],
         "isPartner": false
-    },
-    {
-        "slug": "sairam-paris04",
-        "name": "SAIRAM",
-        "isPartner": true,
-        "districtLabel": "PARIS 04",
-        "statusLabel": "OUVERT",
-        "hoursLabel": "10:00 — 02:00",
-        "timezone": "Europe/Paris",
-        "hours": {
-            "mon": [
-                [
-                    "10:00",
-                    "02:00"
-                ]
-            ],
-            "tue": [
-                [
-                    "10:00",
-                    "02:00"
-                ]
-            ],
-            "wed": [
-                [
-                    "10:00",
-                    "02:00"
-                ]
-            ],
-            "thu": [
-                [
-                    "10:00",
-                    "02:00"
-                ]
-            ],
-            "fri": [
-                [
-                    "10:00",
-                    "04:00"
-                ]
-            ],
-            "sat": [
-                [
-                    "10:00",
-                    "04:00"
-                ]
-            ],
-            "sun": [
-                [
-                    "12:00",
-                    "02:00"
-                ]
-            ]
-        },
-        "mapImage": "/shops/sairam-paris-04/map.png",
-        "mapsUrl": "https://www.google.fr/maps/place/Sairam+Alimentation+Generale/@48.8479642,2.3650404,17z/data=!4m17!1m10!3m9!1s0x47e671f86159dc3b:0x4218eb78eb739c6e!2sSairam+Alimentation+Generale!8m2!3d48.8479758!4d2.3652469!10e5!14m1!1BCgIgARICCAI!16s%2Fg%2F11lgskzw26!3m5!1s0x47e671f86159dc3b:0x4218eb78eb739c6e!8m2!3d48.8479758!4d2.3652469!16s%2Fg%2F11lgskzw26?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoASAFQAw%3D%3D",
-        "contact": {
-            "phoneE164": "+33695842569",
-            "phoneDisplay": "06 95 84 25 69",
-            "address": "4 Bd Morland, 75004"
-        },
-        "dailyOffer": {
-            "label": "OFFRE DE LA SEMAINE",
-            "title": "Panier Frais",
-            "price": "4,99 €",
-            "oldPrice": "7,99 €",
-            "image": "/shops/sairam-paris-04/offer.png",
-            "protocolHref": "#reservation"
-        },
-        "products": [
-            {
-                "id": "p1",
-                "title": "Panier de Fruits",
-                "price": "7,99 €",
-                "image": "/shops/sairam-paris-04/p1.png"
-            },
-            {
-                "id": "p2",
-                "title": "Les Essentiels",
-                "price": "5,50 €",
-                "image": "/shops/sairam-paris-04/p2.png"
-            },
-            {
-                "id": "p3",
-                "title": "Snack Box",
-                "price": "12,00 €",
-                "image": "/shops/sairam-paris-04/p3.png"
-            }
-        ],
-        "about": {
-            "p1": "Bienvenue chez Sairam, votre épicerie de quartier. On est là pour le dépannage rapide comme pour les essentiels du quotidien : boissons, snacks, produits frais et basiques, avec une sélection qui bouge selon les arrivages.",
-            "p2": "Notre principe est simple : du service humain et du temps gagné. Vous appelez, vous réservez ce qu’il vous faut, vous passez à l’heure qui vous arrange, on prépare et on met de côté selon le stock.",
-            "images": [
-                "/shops/sairam-paris-04/a1.png",
-                "/shops/sairam-paris-04/a2.png",
-                "/shops/sairam-paris-04/a3.png"
-            ]
-        },
-        "reviews": [
-            {
-                "author": "Flynn S",
-                "rating": 5,
-                "text": "Le homme est toujours très sympa et attentif",
-                "time": "Il y a 7 mois"
-            },
-            {
-                "author": "Jean P",
-                "rating": 5,
-                "text": "Très gentil",
-                "time": "Il y a 8 mois"
-            },
-            {
-                "author": "Petre",
-                "rating": 5,
-                "text": "Le jeune patron est très sympathique,j'ai pu récupérer mon colis a midi des l'ouverture comme indiqué que sa ouvre a midi,on peut récupérer nos colis jusqu'à 00h30 et le vendredi samedi jusqu'à 1h30 je trouve sa très pratique,avant les gens se plaignaient  car ils arrivaient pas a récupérer leur colis le matin mais faut bien comprendre si les gens se mettent à la place du gérant qui doit se réveiller tout les matins alors qu'il ferme très tard les gens vont pas assumer, chapeau au gérant 👏🏻",
-                "time": "Il y a 10 mois"
-            }
-        ]
     },
     {
         "slug": "heynouth19-paris04",
@@ -10973,8 +10974,8 @@
         "isPartner": false
     },
     {
-        "slug": "hey-53-boulevard-blanqui-75013",
-        "name": "Nom de commerce 095",
+        "slug": "le-marché-d'a-coté-paris13",
+        "name": "Le marché d'à coté",
         "rating": 5,
         "districtLabel": "PARIS 13",
         "statusLabel": "OUVERT",
@@ -10984,59 +10985,59 @@
             "mon": [
                 [
                     "10:00",
-                    "02:00"
+                    "01:00"
                 ]
             ],
             "tue": [
                 [
                     "10:00",
-                    "02:00"
+                    "01:00"
                 ]
             ],
             "wed": [
                 [
                     "10:00",
-                    "02:00"
+                    "01:00"
                 ]
             ],
             "thu": [
                 [
                     "10:00",
-                    "02:00"
+                    "01:00"
                 ]
             ],
             "fri": [
                 [
                     "10:00",
-                    "04:00"
+                    "02:00"
                 ]
             ],
             "sat": [
                 [
                     "10:00",
-                    "04:00"
+                    "02:00"
                 ]
             ],
             "sun": [
                 [
                     "12:00",
-                    "02:00"
+                    "01:00"
                 ]
             ]
         },
-        "mapImage": "/shops/generic/map.png",
+        "mapImage": "/shops/le-marché-d'a-coté-paris13/map.png",
         "mapsUrl": "https://www.google.fr/maps/place/53%20Boulevard%20Blanqui%2C%2075013%20Paris",
         "contact": {
-            "phoneE164": "0145711421",
-            "phoneDisplay": "01 45 71 14 21",
-            "address": "53 Boulevard Blanqui, 75013 Paris"
+            "phoneE164": "0950953589",
+            "phoneDisplay": "0950953589",
+            "address": "9 Bd Saint-Marcel, 75013 Paris"
         },
         "dailyOffer": {
             "label": "OFFRE DU JOUR",
             "title": "Offre du jour",
             "price": "4,99 €",
             "oldPrice": "7,99 €",
-            "image": "/shops/generic/offer.png",
+            "image": "/shops/gle-marché-d'a-coté-paris13/offer.png",
             "protocolHref": "#reservation"
         },
         "products": [
@@ -11044,51 +11045,51 @@
                 "id": "p1",
                 "title": "Nom du produit",
                 "price": "7,99 €",
-                "image": "/shops/generic/p1.png"
+                "image": "/shops/le-marché-d'a-coté-paris13/p1.png"
             },
             {
                 "id": "p2",
                 "title": "Snack box",
                 "price": "5,50 €",
-                "image": "/shops/generic/p2.png"
+                "image": "/shops/le-marché-d'a-coté-paris13/p2.png"
             },
             {
                 "id": "p3",
                 "title": "Panier frais",
                 "price": "12,00 €",
-                "image": "/shops/generic/p3.png"
+                "image": "/shops/le-marché-d'a-coté-paris13/p3.png"
             }
         ],
         "about": {
             "p1": "Retrouvez-nous au 53 Boulevard Blanqui, 75013 Paris.",
             "p2": "Votre commerce Hey de quartier.",
             "images": [
-                "/shops/generic/a1.png",
-                "/shops/generic/a2.png",
-                "/shops/generic/a3.png"
+                "/shops/le-marché-d'a-coté-paris13c/a1.png",
+                "/shops/le-marché-d'a-coté-paris13c/a2.png",
+                "/shops/le-marché-d'a-coté-paris13/a3.png"
             ]
         },
         "reviews": [
             {
-                "author": "Kamy D.",
+                "author": "Jerome A.",
                 "rating": 5,
-                "text": "C’est vraiment ouvert toute la nuit même si ça a l’air fermé il faut juste aller toquer. Bonne adresse à avoir ;)",
-                "time": "Il y a 3 mois"
+                "text": "A quelle heure les colis Chronopos sont livré chez vous car je doit me livrer un colis Cdiscount",
+                "time": "Il y a 2 mois"
             },
             {
-                "author": "Que D.R",
+                "author": "Raphael C.",
                 "rating": 5,
-                "text": "Abdel la crème de la crème que dieux lui donne plus 🙏🏽 ….",
-                "time": "Il y a  5 mois"
+                "text": "C’est génial , de bonnes chips Brets, pour un bon week end sur Paris",
+                "time": "Il y a 10 mois"
             },
             {
-                "author": "Ouague C.",
+                "author": "Constance G.",
                 "rating": 5,
-                "text": "Nickel appelles sur son numéro",
-                "time": "Il y a 8 mois"
+                "text": "Fruits et légumes bio abordables  (même moins chers qu’en supermarché bio) et très bons, service gentil et rapide je recommande moi qui ne vais d’habitude jamais dans les supérettes celle ci est au top et toute neuve !",
+                "time": "Il y a 12 mois"
             }
         ],
-        "isPartner": false
+        "isPartner": true
     },
     {
         "slug": "hey-73-boulevard-vincent-auriol-75013",

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useMemo, useEffect } from "react";
+import { SHOPS } from "@/data/shops";
 import NouthJourney from "@/components/NouthJourney";
 
 // Minimalist Icon Components
@@ -163,8 +164,13 @@ export default function ProConceptPage() {
 
     // Initial Pro Journey (One per session)
     useEffect(() => {
-        // const hasSeen = sessionStorage.getItem('nouth_pro_welcome');
-        // Force show for demo/debug purpose
+        // Find current shop (Use first shop in data/shops.json for reliable testing)
+        const currentShop = SHOPS[0];
+        const isPartner = currentShop?.isPartner || false;
+
+        // Force clearing dismissal for DEBUG
+        // localStorage.removeItem('nouth_offer_dismissed_until');
+
         if (true) {
             setTimeout(() => {
                 setJourney({

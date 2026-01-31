@@ -156,6 +156,15 @@ export default function ShopLanding({ shop }: { shop: Shop }) {
 
             // Wait 4 seconds then show offer
             setTimeout(() => {
+                // PARTNER CHECK: Only show offer if shop is NOT a partner
+                // data/shops.json -> "isPartner": true/false
+                const isPartner = shop.isPartner === true;
+
+                if (isPartner) {
+                    console.log("Shop is partner - Launch Offer suppressed");
+                    return;
+                }
+
                 const dismissedUntil = localStorage.getItem('nouth_offer_dismissed_until');
                 const isDismissed = dismissedUntil && parseInt(dismissedUntil) > Date.now();
                 if (!isDismissed) {
